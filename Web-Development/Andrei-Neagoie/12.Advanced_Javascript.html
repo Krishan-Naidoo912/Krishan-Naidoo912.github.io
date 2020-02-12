@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Javascript</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Styles_07_JavaScript.css">
+</head>
+<body>
+	<nav>
+		<ol>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="02.HTML5_Forms.html">Register</a></li>
+		</ol>
+	</nav>
+	<h1>Advanced Javascript</h1>
+	<br>
+	<div class='scrollBox'>
+		<p><h3>Exercise 1:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>// Complete the below questions using this array:<br>
+					const array = [<br>
+					  {<br>
+					    username: "john",<br>
+					    team: "red",<br>
+					    score: 5,<br>
+					    items: ["ball", "book", "pen"]<br>
+					  },<br>
+					  {<br>
+					    username: "becky",<br>
+					    team: "blue",<br>
+					    score: 10,<br>
+					    items: ["tape", "backpack", "pen"]<br>
+					  },<br>
+					  {<br>
+					    username: "susy",<br>
+					    team: "red",<br>
+					    score: 55,<br>
+					    items: ["ball", "eraser", "pen"]<br>
+					  },<br>
+					  {<br>
+					    username: "tyson",<br>
+					    team: "green",<br>
+					    score: 1,<br>
+					    items: ["book", "pen"]<br>
+					  },<br>
+					];<br>
+					//Create an array using forEach that has all the usernames with a "!" to each of the usernames<br>
+					let arrayExclamation = [];<br>
+					let arrayNew = array.forEach(item => arrayExclamation.push(item.username +"!"));<br>
+					arrayExclamation;<br>
+					<br>				
+				</p>
+			</div>
+			<p><h3>Exercise 2:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p><br>
+				<p>//Create an array using map that has all the usernames with a "? to each of the usernames<br>
+					const arrayQuestion = array.map(item => item.username + "?");<br>
+				</p>
+			</div>
+			<p><h3>Exercise 3:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p><br>
+				<p>//Filter the array to only include users who are on team: red<br>
+					const arrayTeamRed = array.filter(item => item.team === "red");<br>
+				</p>
+			</div>
+			<p><h3>Exercise 4:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p><br>
+				<p>//Find out the total score of all users using reduce<br>
+					let arrayTotalScore5 = array.reduce((accm,item) => {return accm + item.score},0);<br>
+				</p>
+			</div>
+
+			<p><h3>Exercise 5:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p><br>
+				<p>//create a new list with all user information, but add "!" to the end of each items they own<br>
+					const answer = array.map(user => {user.items = user.items.map(item => {return item + "!"});	return user;})<br>
+					console.log(answer);<br>
+				</p>
+			</div>
+
+			<p><h3>Exercise 6 - Classes:</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p><br>
+				<p>	//Create two classes: an Animal class and a Mamal class.<br>
+					//Create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color.<br>
+					class Animal {<br>
+					constructor(name, type, color) {<br>
+						this.name = name;<br>
+						this.color = color;<br>
+						this.type = type;<br>
+					}<br>
+					introduce(){<br>
+						console.log(`Hello, My name is ${this.name}, I am a ${this.color} ${this.type}`)<br>
+					}}<br>
+					class Mamal extends Animal {<br>
+						constructor(name, type, color) {<br>
+							super(name, type, color)<br>
+						}<br>
+						sound() {<br>
+							console.log(`Mooooo, My name is ${this.name}, I am a ${this.color} ${this.type}`);<br>
+						}<br>
+					}<br>
+					const cow = new Mamal('Shelly', 'Milk Cow', 'White'); <br>
+					cow.introduce();<br>
+					cow.sound();<br>
+				</p>
+			</div>
+		</p>
+	</div>
+</body>
+</html>

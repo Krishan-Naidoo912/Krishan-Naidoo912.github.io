@@ -1,0 +1,28 @@
+/*Andrei Neagoie CSS Course*/
+/*Krishan First CSS Style Sheets*/
+/* CSS for Bootstrap Grid*/
+
+body {
+	background-color: silver;
+	background-size: cover;
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+	border: 5px purple solid;
+	cursor: pointer;
+}
+
+.col {
+	background-color: teal;
+	color: white;
+	border: 2px solid white;
+}
+
+.scrollBox {
+	border: 5px solid grey;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}

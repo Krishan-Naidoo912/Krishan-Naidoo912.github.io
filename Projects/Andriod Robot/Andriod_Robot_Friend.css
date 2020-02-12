@@ -1,0 +1,153 @@
+/*Andrei Neagoie CSS Course*/
+/*Krishan First CSS Style Sheets*/
+/*CSS - Andriod Robot*/
+
+body {
+	background-color: silver;
+}
+
+h1 {
+	color: white;
+	background-color: teal;
+	box-shadow: 4px 4px 5px black;
+	border: 5px solid purple;
+	cursor: pointer;
+	text-align: center;
+	padding: 9px;
+}
+
+h1:hover {
+	color: teal;
+	background-color: white;
+}
+
+li {
+	list-style: none;
+}
+
+/*Draw Robot*/
+.Head {
+	margin: 0 auto;
+	background-color: #5f93e8;
+	width: 200px;
+	height: 150px;
+	border-radius: 200px 200px 0px 0px;
+	margin-bottom: 10px;
+	transition: all 1s;
+}
+
+.Eyes {
+	display: flex;
+}
+
+.LeftEye {
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.RightEye {
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
+
+.UpperBody {
+	display: flex;
+	height: 150px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.Torso {
+	background-color: #5f93e8;
+	width: 200px;
+	height: 200px;
+	border-radius: 0px 0px 70px 70px;
+	transition: all 0.5s;
+}
+
+.LeftArm {
+	background-color: #5f93e8;
+	width: 40px;
+	height: 125px;
+	border-radius: 50px;
+	margin-right: 10px;
+	transition: all 0.5s;
+}
+
+.RightArm {
+	background-color: #5f93e8;
+	width: 40px;
+	height: 125px;
+	border-radius: 50px;
+	margin-left: 10px;
+	transition: all 0.5s;
+}
+
+.LowerBody {
+	display: flex;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.LeftLeg {
+	background-color: #5f93e8;
+	width: 40px;
+	height: 120px;
+	border-radius: 50px;
+	margin-left: 45px;
+	transition: all 0.5s;
+}
+
+.RightLeg {
+	background-color: #5f93e8;
+	width: 40px;
+	height: 120px;
+	border-radius: 50px;
+	margin-left: 30px;
+	transition: all 0.5s;
+}
+
+/*Animate Robot using Hover Effects*/
+
+.Head:Hover {
+	width: 300px;
+}
+
+.Torso:Hover {
+	height: 180px;
+	width: 200px;
+}
+
+.LeftArm:Hover {
+	transform: rotate(45deg);
+}
+
+.RightArm:Hover {
+	transform: rotate(-45deg);
+}
+
+.LeftLeg:Hover {
+	transform: rotate(45deg);
+}
+
+.RightLeg:Hover {
+	transform: rotate(-45deg);
+}
+
+.scrollBox {
+	border: 5px solid grey;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}

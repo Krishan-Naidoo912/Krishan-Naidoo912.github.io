@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript ES7 Changes to ES6</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Styles_07_JavaScript.css">
+</head>
+<body>
+	<nav>
+		<ol>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="02.HTML5_Forms.html">Register</a></li>
+		</ol>
+	</nav>
+	<h1>Javascript ES7 changes to ES6</h1>
+	<br>
+	<div class='scrollBox'>
+		<p><h3>Exercise 1: Includes Method</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					//#1) Check if this array includes the name "John".<br>
+					const dragons1 = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];<br>
+					dragons1.includes("John");<br>
+					<br>
+					//#2) Check if this array includes any name that has "John" inside of it. If it does, return that<br>
+					//name or names in an array.<br>
+					const dragons2 = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];<br>
+					const newArray = dragons2.filter(name => name.includes("John"))<br>
+					console.log(newArray);<br>
+				</p>
+			</div>
+		</p>
+		<br>
+		<p><h3>Exercise 2: Exponational calulcation</h3><br>
+				<div class="Script">
+					<p>Copy and paste the below script into your Browser developer console to run.</p>
+					<p>
+						function powerOf(number){ <br>
+							return number**100;<br>
+						}<br>
+						<br>
+						const number = prompt("Enter in number to find the power of:");<br>
+						const result = powerOf(number);<br>
+						alert(`Power of ${number} is ${result}`);<br>
+					</p>
+				</div>
+			</p>
+	</div>
+</body>
+</html>

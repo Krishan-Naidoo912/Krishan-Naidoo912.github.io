@@ -1,0 +1,66 @@
+/*Andrei Neagoie CSS Course*/
+/*Krishan First CSS Style Sheets*/
+/*CSS - Images using Flex Box*/
+
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: blue;
+	border: 2px solid purple;
+	cursor: pointer;
+	text-align: center;
+}
+
+h3 {
+	color: purple;
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+.ImageFrame01,.ImageFrame02,.ImageFrame03,.ImageFrame04 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ImageFrame01 img {
+	width: 445px;
+	height: 497px;
+	margin: 1px;
+}
+
+
+.ImageFrame02 img {
+	width: 350px;
+	height: 420px;
+	margin: 1px;
+}
+
+.ImageFrame03 img {
+	width: 450px;
+	height: 300px;
+	margin: 1px;
+}
+
+.ImageFrame04 img {
+	width: 350px;
+	height: 490px;
+	margin: 10px;
+}
+
+img:hover {
+	transform: scale(1.1);
+	transition: all 2s;
+}
+
+.scrollBox {
+	border: 2px solid gold;
+	height: 600px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}
