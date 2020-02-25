@@ -1,3 +1,9 @@
+//React app component 'Robot Card List' to return Cards for each robot in the Robots.js array.
+//by Krishan Naidoo
+//App.js simply renders this CardList.js which returns each Card per Robot by looping through
+//the Robots.js array using Robots.map.
+//Receive destructered Robots from the Robots.js Array as properties
+
 import React from 'react'
 import Card from './Card.js'
 

@@ -1,3 +1,8 @@
+//Array of Robots to populate the CardList.js using the Card.js template
+//by Krishan Naidoo
+//because there are many objects, you have to destructure the object when importing into
+//App.js (ie import '{Robots}' from 'Robots.js')
+
 export const Robots = [
   {
     id: 1,

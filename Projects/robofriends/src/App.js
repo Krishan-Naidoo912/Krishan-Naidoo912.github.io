@@ -1,4 +1,7 @@
-//Main App for RoboFriends React App
+//Main App for RoboFriends React App components
+//by Krishan Naidoo
+//index.html will simply render this component
+
 import React, { Component } from 'react';
 import CardList from './CardList.js';
 import { Robots } from './Robots.js';
@@ -27,9 +30,9 @@ class App extends Component {
 		return (
 			<div className = "tc">
 				<h1 className='f1'>Krishan RoboFriends</h1>
-				<SearchBox searchChange={this.onSearchChange} />
+				<SearchBox OnSearchChange={this.onSearchChange} />
 				<Scroll>
-					<CardList Robots={filteredRobots}/>
+					<CardList Robots={filteredRobots}/> {/*pass filters Robots.js array as properties to CardList.js*/}
 				</Scroll>
 			</div>
 		);

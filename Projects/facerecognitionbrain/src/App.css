@@ -1,3 +1,6 @@
+/*CSS styles for various components of the React App "Face Recognition".*/
+/*by Krishan Naidoo.*/
+
 .App {
   text-align: center;
 }
@@ -7,6 +10,9 @@
   justify-content: center;
 }
 
+/*Animated background on webpages of React App "Face Recognition"*/
+/*Make full screen and fixed when scrolling*/
+/*index -1 so that particles are behind all other page content*/
 .particles {
   position: fixed;
   top: 0;

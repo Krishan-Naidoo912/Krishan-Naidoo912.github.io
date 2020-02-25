@@ -1,0 +1,11 @@
+/*CSS styles for the FaceRecognition Image bounding Box Component of the React App "Face Recognition".*/
+/*by Krishan Naidoo.*/
+
+.bounding-box {
+	position: absolute;
+	box-shadow: 0 0 0 3px green inset;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	cursor: pointer;
+}
