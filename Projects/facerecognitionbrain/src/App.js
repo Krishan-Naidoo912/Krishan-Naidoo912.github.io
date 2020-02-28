@@ -12,6 +12,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition.js';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import SignIn from './components/SignIn/SignIn.js';
+import Register from './components/Register/Register.js';
 
 //variable to hold properties of the Particles animated background
 const particlesOptions = {
@@ -40,22 +41,23 @@ class App extends Component {
     super();
     this.state = {
       //URL entered by user in text box
-      input:'',
+      userInputImage:'',
       ////Retrieve URL entered by user when Detect button is clicked
-      clarifaiImageUrl:'',
+      imageUrlToClarifai:'',
       //location of face on image (use funtion calculateFaceLocation)  
       //create box variable to contain value of box for face (topRow + BottomRow + leftCol + rightCol.
       //once boundingBox state has been updated by calculateFaceLocaion, pass to FaceRegcognition.js as prop
-      boundingBox:{},
+      imageBoundingBoxFromClarifai:{},
       //State to keep track of where user is on page. Start at SignIn Card.
-      route:'signIn'
+      activePage:'signIn',
+      isSignedIn: false
     }
   }
 
   /*Pass this function as a prop to the ImageLinkForm Component*/
   /*save user url image to class state 'input'*/
   onInputChange = (event) => {
-    this.setState({input:event.target.value})
+    this.setState({userInputImage:event.target.value})
   }
 
   /*Now set the detect button to read the url value from onInputChange*/
@@ -64,20 +66,20 @@ class App extends Component {
   /*clarifai api will validate key and respond with location of face on image in % numbers and not actuals*/
   /*pass % numbers to calculateFaceLocation*/
   onButtonSubmit = () => {
-    this.setState({clarifaiImageUrl:this.state.input});
+    this.setState({imageUrlToClarifai:this.state.userInputImage});
     //pass Krishan Naidoo clarifai key
     app.models.predict(
       //use Clairifai Face detect model
       Clarifai.FACE_DETECT_MODEL,
       //now send the user entered image url that is saved in state 'input' to clarifai API to detect face
-      this.state.input)
+      this.state.userInputImage)
       .then(response => {
         //you'll receive a response of face location in % on the image
         //https://filmfare.wwmindia.com/content/2020/feb/priyanka-chopra-thumb-600-x-4501582292965.jpg
         //use response from clarifai and call funtion to calculate face location
         //then return this calculateFaceLocation value to the this.bounding box object
         //by calling the function updateBoundingBoxAndDisplayFace
-        this.updateBoundingBoxAndDisplayFace(this.calculateFaceLocation(response))
+        this.updateBoundingBoxToHighlightFace(this.calculateFaceLocation(response))
       //log error if something fails
       .catch(err => console.log('There is an error ', err))
       }
@@ -90,7 +92,7 @@ class App extends Component {
     //1st save the clarifaiResponse to a variable in terms of the face bounding box in the image
     const clarifaiFace = clarifaiResponse.outputs[0].data.regions[0].region_info.bounding_box;
     //2nd Get the image that is displayed in the web page from FaceRecongnition.js
-    const imageOnScreen = document.getElementById('inputImage');
+    const imageOnScreen = document.getElementById('displayedImage');
     //3rd Work out the face bounding box in the Image
     const imageWidth = Number(imageOnScreen.width);
     const imageHeight = Number(imageOnScreen.height);
@@ -111,14 +113,19 @@ class App extends Component {
   }
 
   //function to update this.boundingBox and display box around a face in the clarifai image using location from calculateFaceLocation function.
-  updateBoundingBoxAndDisplayFace = (boxLocation) => {
-    console.log('location:',boxLocation);
-    this.setState({boundingBox: boxLocation});
+  updateBoundingBoxToHighlightFace = (boundingBoxLocation) => {
+    console.log('location:',boundingBoxLocation);
+    this.setState({imageBoundingBoxFromClarifai: boundingBoxLocation});
   }
 
   //when called from SignInCard, change signIn page to home page, When called by SignOut button on home page, change to signIn Card.
-  onRouteChange = (route) => {
-    this.setState({route: route});
+  onPageChange = (activePage) => {
+    if (activePage === 'signOut') {
+      this.setState({isSignedIn: false});
+    } else if (activePage === 'home') {
+      this.setState({isSignedIn: true});
+    }
+    this.setState({activePage: activePage});
   }
 
  render() {
@@ -129,10 +136,12 @@ class App extends Component {
         />
         {/*Create if then else statement to determine if the SignCard must show, or the face recognition page.
         Wrap statement in {} as it is jsx requirement for javascript code.*/}
-        <Navigation onRouteChange={this.onRouteChange} /> 
-        {this.state.route === 'signIn'
-          ? <SignIn onRouteChange={this.onRouteChange} /> //call function to change page from SignIn form to Home Page when user signs in
-          : <div>
+        <Navigation 
+            onPageChange={this.onPageChange}
+            isSignedIn={this.state.isSignedIn}
+        /> 
+        {this.state.activePage === 'home'
+          ? <div>
               <Logo />
               <Rank />
               <ImageLinkForm
@@ -140,11 +149,17 @@ class App extends Component {
                 onButtonSubmit={this.onButtonSubmit}
               />
               <FaceRecognition
-                clarifaiImageUrl={this.state.clarifaiImageUrl}
-                boundingBox={this.state.boundingBox}
+                imageUrlToClarifai={this.state.imageUrlToClarifai}
+                imageBoundingBoxFromClarifai={this.state.imageBoundingBoxFromClarifai}
               />
             </div>
-          }
+          : (
+            this.state.activePage === 'signIn'
+              //call function to change page from SignIn form to Home Page when user signs in
+              ? <SignIn onPageChange={this.onPageChange}/> 
+              : <Register onPageChange={this.onPageChange}/>
+            )
+        }
       </div>
     );
   }
