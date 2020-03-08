@@ -50,8 +50,24 @@ class App extends Component {
       imageBoundingBoxFromClarifai:{},
       //State to keep track of where user is on page. Start at SignIn Card.
       activePage:'signIn',
-      isSignedIn: false
+      isSignedIn: false,
+      //user details when registering
+      user: {
+          id:'',
+          name:'',
+          email:'',
+          entries: 0,
+          joined: new Date(),
+        }
+      }
     }
+
+  //now link the App.js (running on port 3000) to the Express Server.js (running on port 3001)
+  //install npm package cors to tell google chrome to trust the express server you creating
+  componentDidMount() {
+    fetch('http://localhost:3001')
+      .then(response => response.json())
+      .then(console.log);
   }
 
   /*Pass this function as a prop to the ImageLinkForm Component*/
@@ -128,7 +144,20 @@ class App extends Component {
     this.setState({activePage: activePage});
   }
 
- render() {
+  //update user state from info received in the Register.js component
+  loadUser = (data) => {
+    this.setState({user:{
+        id: data.id,
+        name: data.name,
+        email: data.email,
+        entries: data.entries,
+        joined: data.joined
+      }
+    }
+    );
+  }
+
+  render() {
     return (
       <div className="App"> {/*center align all text*/}
         <Particles className='particles' 
@@ -157,7 +186,7 @@ class App extends Component {
             this.state.activePage === 'signIn'
               //call function to change page from SignIn form to Home Page when user signs in
               ? <SignIn onPageChange={this.onPageChange}/> 
-              : <Register onPageChange={this.onPageChange}/>
+              : <Register onPageChange={this.onPageChange} loadUser={this.loadUser}/>
             )
         }
       </div>

@@ -27,7 +27,18 @@ const database = {
 	]
 }
 
+//install npm package cors to tell google chrome to trust this express server when connecting to the App.js React App
+const cors = require('cors');
+
+//now npm install bcrypt node package to hash user passwords
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+const myPlaintextPassword = 's0/\/\P4$$w0rD';
+const someOtherPlaintextPassword = 'not_bacon';
+
+
 app.use(bodyParser.json());
+app.use(cors());
 
 //create route to confirm app is running
 app.get('/',(req, res) => {
@@ -39,7 +50,7 @@ app.get('/',(req, res) => {
 app.post('/signin', (req,res) => {
 	if(req.body.email === database.users[0].email &&
 		req.body.password === database.users[0].password) {
-		res.json('Krishan Succesfully Logged in!');
+		res.json('Succesfully Logged in!');
 	} else {
 		res.status(400).json('Error Logging in')
 	}
@@ -51,7 +62,7 @@ app.post('/signin', (req,res) => {
 app.post('/register',(req,res) => {
 	database.users.push(
 		{
-			id: '1982',
+			id: Math.floor(Math.random() * 100),
 			name: req.body.name,
 			email: req.body.email,
 			password: req.body.password,
@@ -96,7 +107,7 @@ app.post('/image', (req,res) => {
 	}
 });
 
-app.listen('3000', () => {
-	console.log('Your app is running on port 3000.');
+app.listen('3001', () => {
+	console.log('Your app is running on port 3001.');
 	}
 );
