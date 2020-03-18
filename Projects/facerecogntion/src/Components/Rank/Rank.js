@@ -1,26 +1,18 @@
 //Rank
 
-import React, {Component} from 'react';
+import React from 'react';
 
-class Rank extends Component {
-	constructor() {
-		super();
-		this.state = {
-		}
-	}
-
-	render() {
-		return (
-			<div>
-				<div className='white f3'>
-					{`Krishan, your entry count is ...`}
-				</div>
-				<div className='white f4'>
-					{`#1`}
-				</div>
+const Rank = function ({entries, name}) {
+	return (
+		<div>
+			<div className='white f3'>
+				{`${name}, your entry count is ...`}
 			</div>
-		)
-	}
+			<div className='white f4'>
+				{`${entries}`}
+			</div>
+		</div>
+	)
 }
 
 export default Rank;

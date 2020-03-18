@@ -33,6 +33,7 @@ class SignIn extends Component {
 			.then(data => {
 				if(data.id) {
 					this.props.onPageChange('home');
+					this.props.loadUser(data);
 					alert(`Success, Welcome! ${data.name}`)
 				}
 				else {

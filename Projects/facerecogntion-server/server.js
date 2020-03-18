@@ -61,6 +61,16 @@ app.post('/register',(req,res) => {
 
 
 //Image - req=Put, res count of id
+app.put('/image',(req,res) => {
+	let userExist = false;
+	database.users.forEach(user => {
+		if(req.body.id===user.id) {
+		userExist=true,
+		user.entries++
+		return res.json(user.entries)
+	}
+});
+});
 
 app.listen('3001', () => {
 	console.log('Server running on port 3001');

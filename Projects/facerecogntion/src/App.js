@@ -30,6 +30,7 @@ const app = new Clarifai.App(
   }
 );
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +39,15 @@ class App extends Component {
       clarifaiImageUrl:'',
       activePage:'signin',
       isUserSignedIn:false,
-      boundingBox:{}
+      boundingBox:{},
+      user : {
+        id:'',
+        name:'',
+        email:'',
+        password:'',
+        entries:0,
+        joined:''
+      }
     }
   }
 
@@ -74,10 +83,23 @@ class App extends Component {
       Clarifai.FACE_DETECT_MODEL,
       //now send the user entered image url that is saved in state 'input' to clarifai API to detect face
       this.state.inputImageUrl)
-    .then(response => this.saveBox(this.calculateBox(response)))
-    .catch(err => console.log(err))
-    }
-  
+    .then(response => {
+      if(response) {
+        fetch('http://localhost:3001/image', {
+          method:'put',
+          headers:{'Content-Type':'application/JSON'},
+          body: JSON.stringify({
+          id:this.state.user.id
+        })
+      })
+      .then(response => response.json())
+      .then(count => {
+        this.setState(Object.assign(this.state.user,{entries:count}))
+      })}
+      this.saveBox(this.calculateBox(response))})
+      .catch(err => console.log(err))
+   
+  }
 
   onPageChange = (activePage) => {
     if (activePage === 'signout') {
@@ -86,6 +108,17 @@ class App extends Component {
       this.setState({isUserSignedIn: true});
     }
     this.setState({activePage: activePage});
+  }
+
+  loadUser = (data) => {
+    this.setState({user:{
+      id : data.id,
+      name : data.name,
+      email : data.email,
+      password : data.password,
+      entries : data.entries,
+      joined : data.joined}
+    });
   }
 
  render() {
@@ -101,7 +134,10 @@ class App extends Component {
         {this.state.activePage==='home'
          ? <div>
               <Logo />
-              <Rank />
+              <Rank 
+                entries={this.state.user.entries}
+                name={this.state.user.name}
+              />
               <ImageLinkForm
                 onChangeInputUrl={this.onChangeInputUrl}
                 onButtomSubmit={this.onButtomSubmit}
@@ -114,9 +150,11 @@ class App extends Component {
           : this.state.activePage==='signin'
           ? <SignIn 
               onPageChange={this.onPageChange}
+              loadUser={this.loadUser}
             />
           : <Register 
               onPageChange={this.onPageChange}
+              loadUser={this.loadUser}
             />
         }   
       </div>

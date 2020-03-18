@@ -43,6 +43,7 @@ class Register extends Component {
 		.then(user => {
 			if(user){
 				this.props.onPageChange('home');
+				this.props.loadUser(user);
 				alert(`User ${this.state.registerName} is now registered`);
 			}
 		})
