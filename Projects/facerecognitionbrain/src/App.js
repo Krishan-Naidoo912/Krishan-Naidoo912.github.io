@@ -14,11 +14,11 @@ import Clarifai from 'clarifai';
 import SignIn from './components/SignIn/SignIn.js';
 import Register from './components/Register/Register.js';
 
-//variable to hold properties of the Particles animated background
+//variable to hold properties of the animated Particles background
 const particlesOptions = {
   particles: {
     number: {
-      value:120,
+      value: 120,
       density: {
         enable: true,
         value_area: 800
@@ -27,8 +27,7 @@ const particlesOptions = {
   }
 };
 
-//To use Face Recognition API,
-//Save Clarifai API Key for Krishan.Naidoo912 to const app
+//In order to use Face Recognition API, save Clarifai API Key for Krishan.Naidoo912 Clarifai account.
 const app = new Clarifai.App(
   {
     apiKey:'8152c775f0214f55a31d6e06a10f1762'
@@ -36,51 +35,51 @@ const app = new Clarifai.App(
 );
 
 class App extends Component {
-  /*Create Listener to read picture url the user paste*/
   constructor() {
     super();
     this.state = {
-      //URL entered by user in text box
+      //URL of image pasted by user in input text box
       userInputImage:'',
-      ////Retrieve URL entered by user when Detect button is clicked
+      //Retrieve and store image URL entered by user when Detect button is clicked. then send to clarifai API to detect face
       imageUrlToClarifai:'',
-      //location of face on image (use funtion calculateFaceLocation)  
-      //create box variable to contain value of box for face (topRow + BottomRow + leftCol + rightCol.
-      //once boundingBox state has been updated by calculateFaceLocaion, pass to FaceRegcognition.js as prop
+      //save response from Clarifai API which is the location of face on the user image (use function calculateFaceLocation)  
+      //then create box variable to contain value of box for the face (topRow + BottomRow + leftCol + rightCol.
+      //once boundingBox state has been updated by calculateFaceLocaion, pass to FaceRegcognition.js as prop which will draw the box on face
       imageBoundingBoxFromClarifai:{},
-      //State to keep track of where user is on page. Start at SignIn Card.
+      //State to keep track of which page the user is on website (SignIn, Register or Home).
+      //Start at SignIn Card.
       activePage:'signIn',
       isSignedIn: false,
-      //user details when registering
+      //store user details that is sent from expressServer when use is registering on Register component
       user: {
           id:'',
           name:'',
           email:'',
           entries: 0,
-          joined: new Date(),
+          joined:''
         }
       }
     }
 
   //now link the App.js (running on port 3000) to the Express Server.js (running on port 3001)
-  //install npm package cors to tell google chrome to trust the express server you creating
+  //install npm package "cors" to tell google chrome to trust the express server created for this ReactApp
   componentDidMount() {
     fetch('http://localhost:3001')
       .then(response => response.json())
       .then(console.log);
   }
 
-  /*Pass this function as a prop to the ImageLinkForm Component*/
-  /*save user url image to class state 'input'*/
+  //Pass this function as a prop to the ImageLinkForm Component
+  //save user url image to class state 'input'
   onInputChange = (event) => {
     this.setState({userInputImage:event.target.value})
   }
 
-  /*Now set the detect button to read the url value from onInputChange*/
-  /*then call the clarifai api and pass Krishan Naidoo key and url image to the clarifai api service*/
-  /*then pass this url to FaceRecognitaion.js*/
-  /*clarifai api will validate key and respond with location of face on image in % numbers and not actuals*/
-  /*pass % numbers to calculateFaceLocation*/
+  //Now set the detect button to read the url value from onInputChange
+  //then call the clarifai api and pass Krishan.Naidoo912 key and url image to the clarifai api service
+  //then pass this url to FaceRecognitaion.js
+  //clarifai api will validate key and respond with location of face on image in % numbers and not actuals
+  //pass % numbers to calculateFaceLocation
   onButtonSubmit = () => {
     this.setState({imageUrlToClarifai:this.state.userInputImage});
     //pass Krishan Naidoo clarifai key
@@ -90,18 +89,30 @@ class App extends Component {
       //now send the user entered image url that is saved in state 'input' to clarifai API to detect face
       this.state.userInputImage)
       .then(response => {
+        if(response) {
+          fetch('http://localhost:3001/image', {
+            method: 'put',
+            headers: {'Content-Type' : 'application/json'},
+            body: JSON.stringify({
+              id: this.state.user.id
+            })
+          })
+          .then(response => response.json())
+          .then(count => {
+            this.setState(Object.assign(this.state.user, {entries: count}))
+          })
+        }
         //you'll receive a response of face location in % on the image
         //https://filmfare.wwmindia.com/content/2020/feb/priyanka-chopra-thumb-600-x-4501582292965.jpg
         //use response from clarifai and call funtion to calculate face location
         //then return this calculateFaceLocation value to the this.bounding box object
         //by calling the function updateBoundingBoxAndDisplayFace
         this.updateBoundingBoxToHighlightFace(this.calculateFaceLocation(response))
+      })
       //log error if something fails
-      .catch(err => console.log('There is an error ', err))
-      }
-    );
+      .catch(err => console.log('There is an error ', err));
   }
-
+  
   //Call and Calculate Face location based on response from Clarifai API for face bounding Boxes
   calculateFaceLocation = (clarifaiResponse) => {
     //https://filmfare.wwmindia.com/content/2020/feb/priyanka-chopra-thumb-600-x-4501582292965.jpg
@@ -146,15 +157,13 @@ class App extends Component {
 
   //update user state from info received in the Register.js component
   loadUser = (data) => {
-    this.setState({user:{
+    this.setState({user: {
         id: data.id,
         name: data.name,
         email: data.email,
         entries: data.entries,
         joined: data.joined
-      }
-    }
-    );
+    }})
   }
 
   render() {
@@ -166,13 +175,16 @@ class App extends Component {
         {/*Create if then else statement to determine if the SignCard must show, or the face recognition page.
         Wrap statement in {} as it is jsx requirement for javascript code.*/}
         <Navigation 
-            onPageChange={this.onPageChange}
             isSignedIn={this.state.isSignedIn}
+            onPageChange={this.onPageChange}
         /> 
         {this.state.activePage === 'home'
           ? <div>
               <Logo />
-              <Rank />
+              <Rank 
+                name={this.state.user.name}
+                entries={this.state.user.entries}
+              />
               <ImageLinkForm
                 onInputChange={this.onInputChange}
                 onButtonSubmit={this.onButtonSubmit}
@@ -185,8 +197,8 @@ class App extends Component {
           : (
             this.state.activePage === 'signIn'
               //call function to change page from SignIn form to Home Page when user signs in
-              ? <SignIn onPageChange={this.onPageChange}/> 
-              : <Register onPageChange={this.onPageChange} loadUser={this.loadUser}/>
+              ? <SignIn loadUser={this.loadUser} onPageChange={this.onPageChange}/> 
+              : <Register loadUser={this.loadUser} onPageChange={this.onPageChange}/>
             )
         }
       </div>

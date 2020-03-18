@@ -14,15 +14,15 @@ const database = {
 			email:'krishan@gmail.com',
 			password:'naidoo',
 			entries:0,
-			joined: new Date(),
+			joined: new Date()
 		},
 		{
-			id:'123',
+			id:'82',
 			name:'Naidoo',
 			email:'naidoo@gmail.com',
 			password:'krishan',
 			entries:0,
-			joined: new Date(),
+			joined: new Date()
 		}
 	]
 }
@@ -46,11 +46,11 @@ app.get('/',(req, res) => {
 	}
 );
 
-//Sign In: POST = username, RESPONSE = 'Success\Fail'
+//Sign In: POST = username, RESPONSE = user object that will be used by ReactApp SignIn and Rank
 app.post('/signin', (req,res) => {
 	if(req.body.email === database.users[0].email &&
 		req.body.password === database.users[0].password) {
-		res.json('Succesfully Logged in!');
+		res.json(database.users[0])
 	} else {
 		res.status(400).json('Error Logging in')
 	}
@@ -93,15 +93,15 @@ app.get('/profile/:id', (req,res) => {
 });
 
 //Image: PUT request to accept users id and update count of user pasting image for face recognition
-app.post('/image', (req,res) => {
+app.put('/image', (req,res) => {
 	let userExist = false;
 	database.users.forEach(user => {
 		if(user.id === req.body.id) {
 			userExist = true;
-			user.entries++;
+			user.entries++
 			return res.json(user.entries);
 		}
-	});
+	})
 	if(!userExist) {
 		res.status(400).json('user does not exist');
 	}
