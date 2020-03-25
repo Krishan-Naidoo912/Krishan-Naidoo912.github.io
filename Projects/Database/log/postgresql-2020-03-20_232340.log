@@ -1,0 +1,19 @@
+2020-03-20 23:23:40.905 CAT [26044] LOG:  database system was shut down at 2020-03-20 23:22:09 CAT
+2020-03-20 23:23:41.272 CAT [2180] LOG:  database system is ready to accept connections
+2020-03-20 23:28:16.079 CAT [20340] FATAL:  password authentication failed for user "krishan"
+2020-03-20 23:28:16.079 CAT [20340] DETAIL:  Role "krishan" does not exist.
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2020-03-20 23:28:23.413 CAT [24348] FATAL:  password authentication failed for user "krishan"
+2020-03-20 23:28:23.413 CAT [24348] DETAIL:  Role "krishan" does not exist.
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2020-03-20 23:28:55.496 CAT [13052] FATAL:  password authentication failed for user "postgres"
+2020-03-20 23:28:55.496 CAT [13052] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2020-03-20 23:29:09.206 CAT [15964] FATAL:  password authentication failed for user "krishan"
+2020-03-20 23:29:09.206 CAT [15964] DETAIL:  Role "krishan" does not exist.
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2020-03-20 23:29:11.213 CAT [21956] FATAL:  password authentication failed for user "krishan"
+2020-03-20 23:29:11.213 CAT [21956] DETAIL:  Role "krishan" does not exist.
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2020-03-20 23:56:53.951 CAT [24380] ERROR:  syntax error at or near "'Krishan'" at character 37
+2020-03-20 23:56:53.951 CAT [24380] STATEMENT:  select age from users where name is 'Krishan'
