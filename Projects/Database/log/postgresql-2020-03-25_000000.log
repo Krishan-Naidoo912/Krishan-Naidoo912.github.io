@@ -1,0 +1,7 @@
+2020-03-25 20:32:44.746 CAT [31904] ERROR:  syntax error at or near "NOT" at character 66
+2020-03-25 20:32:44.746 CAT [31904] STATEMENT:  CREATE TABLE login (
+		id serial PRIMARY KEY,
+		hash varchar(100), NOT NULL,
+		email text UNIQUE NOT NULL
+	);
+	
