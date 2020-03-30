@@ -1,0 +1,8 @@
+2020-03-28 19:28:02.536 CAT [13804] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-03-29 12:39:28.898 CAT [13804] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-03-29 12:39:39.805 CAT [13804] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-03-30 10:03:43.941 CAT [13748] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-03-30 10:03:43.941 CAT [26828] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-03-30 10:11:04.030 CAT [2180] LOG:  received fast shutdown request
