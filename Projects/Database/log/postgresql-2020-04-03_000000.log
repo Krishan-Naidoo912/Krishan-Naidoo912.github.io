@@ -1,0 +1,8 @@
+2020-04-03 08:53:58.036 CAT [6732] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-03 08:53:58.036 CAT [14020] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-03 08:54:02.990 CAT [26388] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-03 08:54:02.994 CAT [21684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -39,7 +39,7 @@ class Register extends React.Component {
 		})
 		.then(response => response.json())
 		.then(user => {
-			if(user) {
+			if(user.id) {
 				//first update use state in App.js then change page to home page
 				this.props.loadUser(user)
 				this.props.onPageChange('home');
