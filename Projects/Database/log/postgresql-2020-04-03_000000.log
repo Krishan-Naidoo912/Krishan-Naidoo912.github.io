@@ -6,3 +6,48 @@
 	
 2020-04-03 08:54:02.994 CAT [21684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
 	
+2020-04-04 00:02:16.388 CAT [12136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:02:16.391 CAT [12320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:07:41.024 CAT [8104] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:07:41.025 CAT [24648] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:13:47.751 CAT [24060] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:13:47.751 CAT [19088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:16:31.050 CAT [7024] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 00:16:31.050 CAT [9540] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:07:10.404 CAT [15276] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:07:10.404 CAT [6516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:10:26.242 CAT [2532] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:10:26.242 CAT [18900] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:10:30.609 CAT [18772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:10:30.609 CAT [26336] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:20:18.285 CAT [16476] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:20:18.287 CAT [22660] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:21:52.895 CAT [17692] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:21:52.897 CAT [6740] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:22:10.086 CAT [13516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:22:10.087 CAT [1520] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:22:16.810 CAT [16788] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:22:16.812 CAT [25172] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-04 01:25:06.836 CAT [2552] LOG:  using stale statistics instead of current ones because stats collector is not responding
