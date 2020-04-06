@@ -53,8 +53,8 @@ app.get('/profile.:id', (req,res) => { profile.handleProfileGet(req, res, postgr
 app.put('/image', (req,res) => { image.handleImage(req, res, postgresDB) })
 //Clarifai Image: POST request to pass user entered image url to the Clarifai API, response is the boudning box to the APP.js
 app.post('/ClarifaiImageUrl', (req,res) => { image.handleClarifaiApiCall(req, res) })
-app.listen('3001', () => {
-	console.log('Your app is running on port 3001.');
+app.listen(process.env.PORT || 3001, () => {
+	console.log(`Your app is running on port ${process.env.PORT}.`);
 })
 
 
