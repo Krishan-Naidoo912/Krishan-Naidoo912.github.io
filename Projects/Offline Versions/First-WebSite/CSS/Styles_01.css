@@ -1,0 +1,72 @@
+/*Andrei Neagoie CSS Course*/
+/*Krishan First CSS Style Sheets*/
+
+body {
+	background-color: silver;
+	background-size: cover;
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+	border: 5px purple solid;
+	cursor: pointer;
+}
+
+h1:hover {
+	color: purple;
+	border: 5px blue solid;
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+.firstP {
+	background-color: teal;
+	color: white;
+}
+
+.firstP:hover {
+	background-color: white;
+	color: teal;
+}
+
+.secondP {
+	background-color: teal;
+	color: yellow;
+}
+
+.secondP:hover {
+	background-color: yellow;
+	color: teal;
+	font-style: italic;
+}
+
+.thirdP {
+	background-color: teal;
+	color: silver;
+	border: 4px blue solid;
+}
+
+.thirdP:hover {
+	background-color: silver;
+	color: teal;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.ordered1:hover{
+	color: green;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.scrollBox {
+	border: 5px solid grey;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}

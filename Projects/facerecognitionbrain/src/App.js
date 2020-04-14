@@ -91,7 +91,9 @@ class App extends Component {
   //pass % numbers to calculateFaceLocation
   onButtonSubmit = () => {
     this.setState({imageUrlToClarifai:this.state.userInputImage});
-    fetch('http://localhost:3001/ClarifaiImageUrl', {
+    //use the below only when you are not linking to heroku hosted server
+    //fetch('http://localhost:3001/ClarifaiImageUrl', {
+    fetch('https://krishan-face-recognition-brain.herokuapp.com/ClarifaiImageUrl', {
       method: 'post',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
@@ -101,7 +103,9 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if(response) {
-        fetch('http://localhost:3001/image', {
+        //use the below only when you are not linking to heroku hosted server
+        //fetch('http://localhost:3001/image', {
+        fetch('https://krishan-face-recognition-brain.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type' : 'application/json'},
           body: JSON.stringify({
@@ -193,11 +197,13 @@ class App extends Component {
         /> 
         {this.state.activePage === 'home'
           ? <div>
-              <Logo />
-              <Rank 
-                name={this.state.user.name}
-                entries={this.state.user.entries}
-              />
+              <div className="pageHeading">
+                <Logo />
+                <Rank 
+                  name={this.state.user.name}
+                  entries={this.state.user.entries}
+                />
+              </div>
               <ImageLinkForm
                 onInputChange={this.onInputChange}
                 onButtonSubmit={this.onButtonSubmit}

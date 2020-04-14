@@ -1,0 +1,8 @@
+/*CSS for React Scroll Component*/
+
+.scrollCards {
+	overflow-y: scroll;
+	border: 5px grey solid;
+	height: 500px;
+	border-radius: 20px;
+}

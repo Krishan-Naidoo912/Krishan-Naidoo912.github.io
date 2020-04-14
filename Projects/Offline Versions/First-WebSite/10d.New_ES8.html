@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript ES8 Changes to ES7</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Styles_07_JavaScript.css">
+</head>
+<body>
+	<nav>
+		<ol>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="02.HTML5_Forms.html">Register</a></li>
+		</ol>
+	</nav>
+	<h1>Javascript ES8 changes to ES7</h1>
+	<br>
+	<div class='scrollBox'>
+		<p><h3>Exercise 1: String Padding</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					// Solve the below problems:<br>
+					<br>
+					// #1) Line up the Turtle and the Rabbit at the start line:<br>
+					const startLine = '     <- Start line';<br>
+					const line = '||'<br>
+					let turtle = '🐢';<br>
+					let rabbit = '🐇';<br>
+					console.log("This is how they are before the line up:");<br><br>
+					console.log(line + startLine);<br>
+					console.log(line + turtle);<br>
+					console.log(line + rabbit);<br>
+					console.log("This is how they are after the line up:");<br><br>
+					console.log(line + startLine);<br>
+					console.log(line + turtle.padStart(9));<br>
+					console.log(line + rabbit.padStart(9));<br>
+					console.log("This is the Turtle wining:");<br><br>
+					console.log(line + startLine);<br>
+					console.log(line + turtle.trim().padEnd(9,'='));<br>
+					console.log(line + rabbit.padStart(9));<br>
+				</p>
+			</div>
+		</p>
+		<br>
+		<p><h3>Exercise 2: Object.Value + Object.Entries</h3><br>
+				<div class="Script">
+					<p>Copy and paste the below script into your Browser developer console to run.</p>
+					<p>
+						// #3) Get the below object to go from:<br>
+						let obj = {<br>
+						  my: 'name',<br>
+						  is: 'Rudolf',<br>
+						  the: 'raindeer'<br>
+						}<br>
+						// to this: 'my name is Rudolf the raindeer'<br>
+						<br>
+						Object.entries(obj).map(value => value.join(" ")).join(' ')<br>
+					</p>
+				</div>
+			</p>
+	</div>
+</body>
+</html>

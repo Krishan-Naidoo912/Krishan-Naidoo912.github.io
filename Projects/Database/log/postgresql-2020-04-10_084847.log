@@ -1,0 +1,92 @@
+2020-04-10 08:48:48.450 CAT [6280] LOG:  database system was shut down at 2020-04-10 02:42:47 CAT
+2020-04-10 08:48:49.018 CAT [6036] LOG:  database system is ready to accept connections
+2020-04-10 23:34:39.472 CAT [10136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-10 23:34:39.472 CAT [2812] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-10 23:37:02.402 CAT [1856] FATAL:  password authentication failed for user "PC"
+2020-04-10 23:37:02.402 CAT [1856] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-10 23:37:02.402 CAT [236] FATAL:  password authentication failed for user "PC"
+2020-04-10 23:37:02.402 CAT [236] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 00:21:05.756 CAT [16816] FATAL:  password authentication failed for user "PC"
+2020-04-11 00:21:05.756 CAT [16816] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 00:21:05.757 CAT [2940] FATAL:  password authentication failed for user "PC"
+2020-04-11 00:21:05.757 CAT [2940] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 00:21:20.293 CAT [10384] FATAL:  password authentication failed for user "PC"
+2020-04-11 00:21:20.293 CAT [10384] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 00:21:20.293 CAT [18092] FATAL:  password authentication failed for user "PC"
+2020-04-11 00:21:20.293 CAT [18092] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 00:45:34.728 CAT [15996] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-11 00:45:34.729 CAT [14636] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-11 00:48:46.821 CAT [12268] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-11 00:48:46.822 CAT [16664] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-11 01:04:30.406 CAT [14760] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:04:30.406 CAT [14760] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:04:30.406 CAT [12424] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:04:30.406 CAT [12424] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:05:05.969 CAT [19820] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:05:05.969 CAT [19820] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:05:05.969 CAT [17744] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:05:05.969 CAT [17744] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:07:33.914 CAT [15408] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:07:33.914 CAT [15408] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:07:33.914 CAT [2036] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:07:33.914 CAT [2036] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:07:53.315 CAT [15896] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:07:53.315 CAT [15896] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-11 01:07:53.315 CAT [17960] FATAL:  password authentication failed for user "PC"
+2020-04-11 01:07:53.315 CAT [17960] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:28.832 CAT [8196] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:28.832 CAT [8196] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:28.832 CAT [16772] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:28.832 CAT [16772] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:32.085 CAT [1496] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:32.085 CAT [1496] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:32.085 CAT [10464] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:32.085 CAT [10464] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:57.492 CAT [15312] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:57.492 CAT [15312] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:16:57.492 CAT [13688] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:16:57.492 CAT [13688] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:33:09.683 CAT [18336] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:33:09.683 CAT [18336] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:33:09.683 CAT [20028] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:33:09.683 CAT [20028] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:56:41.060 CAT [13136] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:56:41.060 CAT [13136] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 11:56:41.060 CAT [16448] FATAL:  password authentication failed for user "PC"
+2020-04-12 11:56:41.060 CAT [16448] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 12:00:05.876 CAT [19972] FATAL:  password authentication failed for user "PC"
+2020-04-12 12:00:05.876 CAT [19972] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2020-04-12 12:00:05.877 CAT [13272] FATAL:  password authentication failed for user "PC"
+2020-04-12 12:00:05.877 CAT [13272] DETAIL:  Role "PC" does not exist.
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"

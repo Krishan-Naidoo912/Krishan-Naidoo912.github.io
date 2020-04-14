@@ -8,15 +8,31 @@ const app = express();
 const bodyParser = require('body-parser');
 //create knex connection to postsql db for user logins
 const knex = require('knex');
+
+//use the below when using a local postgres DB
+//const postgresDB = knex({
+//	client: 'pg',
+//	connection: {
+//		host: '127.0.0.1',
+//		user: 'postgres',
+//		password: 'krishan',
+//		database: 'smart-brain-face-recognition'
+//	} 
+//})
+
+//use the below when using a heroku postgres DB
 const postgresDB = knex({
 	client: 'pg',
 	connection: {
-		host: '127.0.0.1',
-		user: 'postgres',
-		password: 'krishan',
-		database: 'smart-brain-face-recognition'
+		//connection: process.env.DATABASE_URL,
+		connectionString: 'postgres://niouidmqopuxkf:b72b0681e81064a7c6516039565c302e3ee6a57cf8d706907438c9adfcfd1499@ec2-52-6-143-153.compute-1.amazonaws.com:5432/dfsi2e1gkbdtn9',
+		ssl: true,
+		ssl: {
+  		  rejectUnauthorized: false,
+		},
 	} 
-})
+});
+
 //install npm package cors to tell google chrome to trust this express server when connecting to the App.js React App
 const cors = require('cors');
 //now npm install bcrypt node package to hash user passwords
@@ -38,7 +54,9 @@ postgresDB.select('*').from('login').then(data => console.log(data))
 app.use(bodyParser.json());
 app.use(cors());
 //create route to confirm app is running
-app.get('/', (req,res) => { root.handleRoot(req, res, postgresDB) })
+//use this once your postgress DB is running on heroku
+//app.get('/', (req,res) => { root.handleRoot(req, res, postgresDB) })
+//app.get('/', (req,res) => {res.send('Hooray, all working well!')})
 //Sign In with postgres database: POST = username, RESPONSE = user object that will be used by ReactApp SignIn and Rank
 app.post('/signin', (req,res) => { signin.handleSignIn(req, res, postgresDB, bcrypt) })
 //Register: POST = username, RESPONSE = 'Success\Fail'

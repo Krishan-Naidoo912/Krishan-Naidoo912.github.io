@@ -1,0 +1,31 @@
+/*Startup Landing Page*/
+
+.title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+h2 {
+	color: yellow;
+}
+
+.button {
+	margin-top: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn {
+	background-color: orange;
+	color: teal;
+}
+
+.scrollBox {
+	border: 5px solid grey;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}

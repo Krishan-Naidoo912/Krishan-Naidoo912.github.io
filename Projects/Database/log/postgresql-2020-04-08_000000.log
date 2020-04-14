@@ -1,0 +1,13 @@
+2020-04-08 00:14:04.553 CAT [25548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-08 00:14:04.553 CAT [26604] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-08 00:30:59.020 CAT [2280] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-08 00:30:59.020 CAT [30452] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-08 11:24:41.904 CAT [31700] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-08 11:24:41.905 CAT [19172] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-04-10 02:42:44.143 CAT [6096] LOG:  received fast shutdown request

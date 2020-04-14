@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Styles_07_JavaScript.css">
+</head>
+<body>
+	<nav>
+		<ol>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="02.HTML5_Forms.html">Register</a></li>
+		</ol>
+	</nav>
+	<h1>Javascript</h1>
+		<br>
+	<div class='scrollBox'>
+		<p><h3>Exercise 1: Simple Calculator</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					var firstNumber = prompt("Enter in first Number: ");<br>
+					var secondNumber = prompt("Enter in second Number: ");<br>
+					var sum = Number(firstNumber) + Number(secondNumber);<br>
+					alert("The Sum of " + firstNumber + " and " + secondNumber + " is: " + sum);<br>				
+				</p>
+			</div>
+		</p>
+		<br>
+		<p><h3>Exercise 2: Simple Calculator USING FUNCTIONS</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					function Add(a,b) { <br>
+						var sum = a+b; <br>
+						alert("The Sum of " + a + " and " + b + " is: " + sum); <br>
+					} <br>
+					var firstNumber = prompt("Enter in first Number: "); <br>
+					var secondNumber = prompt("Enter in second Number: "); <br>
+					Add(Number(firstNumber),Number(secondNumber)); <br>
+				</p>
+			</div>
+		</p>
+		<br>
+		<p><h3>Exercise 3: Keyless Car.<br>This car will only let you drive if you are 18 or over.</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					var driverAge = prompt("What is your age? "); <br>
+					if(driverAge < 18) { <br>
+						alert("Sorry, you are too young to drive this car. Powering off"); <br>
+					} else if(driverAge == 18) { <br>
+						alert("You are 18, Congradulations on your first year of driving. Enjoy the ride!"); <br>
+					} else if(driverAge > 18) { <br>
+						alert("You are over 18, Powering On. Enjoy the ride!"); <br>
+					} else <br>
+						alert("Please enter in a valid age number!"); <br>
+				</p>
+			</div>
+		</p>
+		<br>
+		<h3>Exercise 4: Keyless Car USING FUNCTION DELCARATION.<br>This car will only let you drive if you are 18 or over.</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					function checkDriverAge() { <br>
+						var driverAge = prompt("What is your age? "); <br>
+						if(driverAge < 18) { <br>
+						alert("Sorry, you are too young to drive this car. Powering off"); <br>
+						} else if(driverAge == 18) { <br>
+						alert("You are 18, Congradulations on your first year of driving. Enjoy the ride!"); <br>
+						} else if(driverAge > 18) { <br>
+						alert("You are over 18, Powering On. Enjoy the ride!"); <br>
+						} else <br>
+						alert("Please enter in a valid age number!"); <br>
+					} <br>
+				</p>
+			</div>
+		</p>
+		<br>
+		<h3>Exercise 5: Keyless Car USING FUNCTION EXPRESSION.<br>This car will only let you drive if you are 18 or over.</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					var driverAge2 = function() { <br>
+						var driverAge = prompt("What is your age? "); <br>
+						if(driverAge < 18) { <br>
+						alert("Sorry, you are too young to drive this car. Powering off"); <br>
+						} else if(driverAge == 18) { <br>
+						alert("You are 18, Congradulations on your first year of driving. Enjoy the ride!"); <br>
+						} else if(driverAge > 18) { <br>
+						alert("You are over 18, Powering On. Enjoy the ride!"); <br>
+						} else <br>
+						alert("Please enter in a valid age number!"); <br>
+					} <br>
+				</p>
+			</div>
+		<br>
+		<h3>Exercise 6: Keyless Car USING FUNCTION EXPRESSION with Return.<br>This car will only let you drive if you are 18 or over.</h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					function checkDriverAge3(driverAge3) { <br>
+						if(driverAge3 < 18) { <br>
+						alert("Sorry, you are too young to drive this car. Powering off"); <br>
+						} else if(driverAge3 == 18) { <br>
+						alert("You are 18, Congradulations on your first year of driving. Enjoy the ride!"); <br>
+						} else if(driverAge3 > 18) { <br>
+						alert("You are over 18, Powering On. Enjoy the ride!"); <br>
+						} else <br>
+							alert("Please enter in a valid age number!"); <br>
+							alert("That the end of the JavaScript File, continue to Web Page on more JavaScript!"); <br>
+					} <br>
+					checkDriverAge3(30); <br>
+				</p>
+			</div>
+		<br>
+		<h3>Exercise 7: Arrays: Manipulation.<br></h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					var array = ["Banana", "Apples","Oranges","Blueberries"]; <br>
+					// 1. Remove the Banana from the array. <br>
+					array.shift(); <br>
+					// 2. Sort the array in order. <br>
+					array.sort(); <br>
+					// 3. Put "Kiwi" at the end of the array. <br>
+					array.push("Kiwi"); <br>
+					// 4. Remove "Apples" from the array. <br>
+					array.shift(); <br>
+					// 5. Sort the array in reverse order. <br>
+					array.sort(); <br>
+					array.reverse(); <br>
+				</p>
+			</div>
+			<br>
+		<h3>Exercise 8: Arrays: Accessing values.<br></h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					var array3 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]]; <br>
+					// access "Oranges". <br>
+					array3[1][1][0]; <br>
+				</p>
+			</div>
+			<br>
+		<h3>Exercise 9: Objects for FaceBook exercise.<br></h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					// 1. Create an object that has properties "username" and "password". <br>
+					var facebookUser1 = { <br>
+						username: "Krishan", <br>
+						password: "naidoo", <br>
+					}; <br>
+					// 2. Create an array which contains the object you have made above and name the array "database". <br>
+					var database = [ <br>
+						{ <br>
+							username: "Krishan", <br>
+							password: "naidoo", <br>
+						} <br>
+					]; <br>
+					// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline". <br>
+					var newsfeed = [ <br>
+						{ <br>
+							username: "Krishan", <br>
+							timeline: "Celebrating Happy Living with whole Family!", <br>
+						}, <br>
+						{ <br>
+							username: "Sha", <br>
+							timeline: "Received award for most amazing wining food menu!", <br>
+						}, <br>
+						{ <br>
+							username: "Keyuri", <br>
+							timeline: "Received Oscar award for amazing superstar performance!", <br>
+						}, <br>
+						{ <br>
+							username: "Sayuri", <br>
+							timeline: "Won Miss Universe, a true beauty queen!", <br>
+						}, <br>
+						{ <br>
+							username: "Sayuran", <br>
+							timeline: "Won another Championship! King of the race track!", <br>
+						}, <br>
+						{ <br>
+							username: "Menakay", <br>
+							timeline: "Received lifetime achievement award for Loving and care to all!", <br>
+						} <br>
+					]; <br>
+				</p>
+			</div>
+			<br>
+		<h3>Exercise 10: Objects for FaceBook Login.<br></h3><br>
+			<div class="Script">
+				<p>Copy and paste the below script into your Browser developer console to run.</p>
+				<p>
+					
+				</p>
+			</div>
+		<script type="text/javascript" src="Scripts/Scripts_01.js"></script>
+	</div>
+</body>
+</html>

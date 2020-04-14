@@ -1,0 +1,47 @@
+/*Styles for JavaScript*/
+
+body {
+	background-color: silver;
+	margin: 9px;
+}
+
+h1 {
+	color: white;
+	background-color: teal;
+	border: purple solid 5px;
+	box-shadow: 4px 4px 5px black;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+	padding: 9px;
+}
+
+h1:hover {
+	color: teal;
+	background-color: white;
+}
+
+li {
+	list-style: none;
+}
+
+.Script {
+	background-color: lightblue;
+	color: purple;
+	padding: 4px;
+	border:	solid gold 4px;
+	width: 900px;
+	margin-left: 100px;
+}
+
+.Script:hover {
+	transform: scaleY(1.06);
+	transition: all .2s;
+}
+
+.scrollBox {
+	border: 5px solid grey;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 50px;
+}
