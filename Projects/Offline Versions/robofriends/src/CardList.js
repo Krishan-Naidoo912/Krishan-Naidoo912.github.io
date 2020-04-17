@@ -12,17 +12,19 @@ const CardList = ( {Robots} ) => {
 		<div>
 			{
 				Robots.map((user,index) => {
-					return <Card
+					return
+						<Card
 							key={index}
 							id={Robots[index].id}
 							name={Robots[index].name}
 							username={Robots[index].username}
 							email={Robots[index].email}
-							/>
+						/>
 					}
 				)
 			}
-		</div>)
+		</div>
+	)
 } 
 
 export default CardList; 
