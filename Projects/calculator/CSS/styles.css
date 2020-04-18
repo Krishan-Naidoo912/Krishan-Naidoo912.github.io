@@ -1,44 +1,38 @@
-.main {
-	background: linear-gradient(to right,lightblue,purple);
-}
-
 .heading {
-	font-size: 30px;
+	font-size: 40px;
 	color: white;
 	display: flex;
 	justify-content: center;
-	align-content: center;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 .calculatorPage {
+	display: flex;
+	justify-content: center;
 	position: absolute;
-	top: 50%;
+	margin-top: 10px;
+	top: 35%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	align-content: center;
+	transform: translateX(-50%) translateY(-30%);
 }
 
 .calculatorSelf {
-	display: flex;
-	justify-content: center;
-	height: 100%;
+	background: linear-gradient(to right,#FF5EDF,#04C8DE);
 	border: 5px solid white;
 	border-radius: 10px;
 }
 
-.wrap {
-	word-wrap: break-word;
-}
 .screen {
 	background: linear-gradient(to right,silver,grey);
-	width: 120px;
-	height: 260px;
+	width: 480px;
+	height: 120px;
 	margin: 10px;
-	margin-right: 5px;
+	margin-bottom: 2px;
 	color: blue;
 	border-radius: 10px;
-	font-size: 25px;
+	font-size: 35px;
 	padding: 5px;
+	resize: none;
 }
 
 .keyboard {
@@ -46,31 +40,44 @@
 }
 
 .button {
-	width: 50px;
-	height: 50px;
+	width: 120px;
+	height: 80px;
 	background: teal;
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 .button0 {
-	width: 105px;
-	height: 50px;
+	width: 246px;
+	height: 80px;
 	background: teal;
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 .buttonResult {
-	width: 50px;
-	height: 105px;
+	width: 120px;
+	height: 160px;
 	background: green;
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 40px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,lightblue,purple);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }

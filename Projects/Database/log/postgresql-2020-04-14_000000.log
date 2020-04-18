@@ -1,0 +1,4 @@
+2020-04-17 22:56:06.058 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-17 22:56:20.044 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-17 22:57:53.952 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-17 22:58:08.995 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding

@@ -5,53 +5,57 @@
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 <body class="main">
-	<div class='heading'>
-		Krishan's simple Javascript Calcuator
-	</div>
-	<div class='calculatorPage'>
-		<div class='calculatorSelf'>
-			<form class='form' name='form'>
-				<textarea
-						id='screen'
-						name='screen'
-						class='screen' 
-						type='textarea'>
-				</textarea>
-			</form>
-			<table class="keyboard">
-				<tr>
-					<td><input id="clear" class='button' name='clear' type='button' value='C'></td>
-					<td><input id='<' class='button' type='button' value='<' onClick='backSpace()'></td>
-					<td><input id="/" class='button' type='button' value='/' onClick='addToScreen("/")'></td>
-					<td><input id="x"class='button' type='button' value='x' onClick='addToScreen("*")'></td>
-				</tr>
-				<tr>
-					<td><input id="7" class='button' type='button' value='7' onClick='addToScreen(7)'></td>
-					<td><input id="8" class='button' type='button' value='8' onClick='addToScreen(8)'></td>
-					<td><input id="9" class='button' type='button' value='9' onClick='addToScreen(9)'></td>
-					<td><input id="-" class='button' type='button' value='-' onClick='addToScreen("-")'></td>
-				</tr>
-				<tr>
-					<td><input id='4' class='button' type='button' value='4' onClick='addToScreen(4)'></td>
-					<td><input id='5' class='button' type='button' value='5' onClick='addToScreen(5)'></td>
-					<td><input id='6' class='button' type='button' value='6' onClick='addToScreen(6)'></td>
-					<td><input id='+' id='<' class='button' type='button' value='+' onClick='addToScreen("+")'></td>
-				</tr>
-				<tr>
-					<td><input id='1' class='button' type='button' value='1' onClick='addToScreen(1)'></td>
-					<td><input id='2' class='button' type='button' value='2' onClick='addToScreen(2)'></td>
-					<td><input id='3' class='button' type='button' value='3' onClick='addToScreen(3)'></td>
-					<td rowspan='2'><input id='=' class='buttonResult' type='button' value='=' onClick='result()'></td>
-				</tr>
-				<tr>
-					<td colspan='2'><input id='0' class='button0' type='button' value='0' onClick='addToScreen(0)'></td>
-					<td><input id='.' class='button' type='button' value='.' onClick='addToScreen(".")'>
-					</td>
-				</tr>
-			</table>
+	<div id="particles-js">
+		<div class='heading'>
+			Krishan's simple Javascript Calculator
+		</div>
+		<div class='calculatorPage'>
+			<div class='calculatorSelf'>
+				<form class='form' name='form'>
+					<textarea
+							id='screen'
+							name='screen'
+							class='screen' 
+							type='textarea'>
+					</textarea>
+				</form>
+				<table class="keyboard">
+					<tr>
+						<td><input id="clear" class='button'type='button' value='C' onClick='clearScreen()'></td>
+						<td><input id='<' class='button' type='button' value='<' onClick='backSpace()'></td>
+						<td><input id="/" class='button' type='button' value='/' onClick='addToScreen("/")'></td>
+						<td><input id="x"class='button' type='button' value='x' onClick='addToScreen("*")'></td>
+					</tr>
+					<tr>
+						<td><input id="7" class='button' type='button' value='7' onClick='addToScreen(7)'></td>
+						<td><input id="8" class='button' type='button' value='8' onClick='addToScreen(8)'></td>
+						<td><input id="9" class='button' type='button' value='9' onClick='addToScreen(9)'></td>
+						<td><input id="-" class='button' type='button' value='-' onClick='addToScreen("-")'></td>
+					</tr>
+					<tr>
+						<td><input id='4' class='button' type='button' value='4' onClick='addToScreen(4)'></td>
+						<td><input id='5' class='button' type='button' value='5' onClick='addToScreen(5)'></td>
+						<td><input id='6' class='button' type='button' value='6' onClick='addToScreen(6)'></td>
+						<td><input id='+' id='<' class='button' type='button' value='+' onClick='addToScreen("+")'></td>
+					</tr>
+					<tr>
+						<td><input id='1' class='button' type='button' value='1' onClick='addToScreen(1)'></td>
+						<td><input id='2' class='button' type='button' value='2' onClick='addToScreen(2)'></td>
+						<td><input id='3' class='button' type='button' value='3' onClick='addToScreen(3)'></td>
+						<td rowspan='2'><input id='=' class='buttonResult' type='button' value='=' onClick='result()'></td>
+					</tr>
+					<tr>
+						<td colspan='2'><input id='0' class='button0' type='button' value='0' onClick='addToScreen(0)'></td>
+						<td><input id='.' class='button' type='button' value='.' onClick='addToScreen(".")'>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="Scripts/scripts.js"></script>
+	<script type="text/javascript" src="Scripts/particles.js"></script>
+	<script type="text/javascript" src="Scripts/app.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
-const btn_clear = document.getElementById("clear");
+//const btn_clear = document.getElementById("clear");
 const screen = document.getElementById("screen");
 let evaluatedResult = false;
 
-btn_clear.addEventListener("click", function() {
-	screen.value ="";
-})
+//btn_clear.addEventListener("click", function() {
+//creen.value ="";
+//
+
+function clearScreen() {
+	screen.value = "";
+}
 
 function addToScreen(num) {
 	if (evaluatedResult) {
@@ -21,7 +25,7 @@ function backSpace() {
 function result() {
 	let exp = screen.value;
 	if(screen.value){
-		screen.value=eval(screen.value);
+		screen.value=`Result: ${eval(screen.value)}`;
 		evaluatedResult=true;
 	}
 }

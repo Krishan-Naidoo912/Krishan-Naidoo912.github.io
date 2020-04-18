@@ -1,0 +1,38 @@
+How to deploy a Simple Static HTML Website on Heroku
+
+To get started the following prerequisites are essential
+1. A Github account with Git installed on your PC
+2. A Heroku account with Heroku CLI installed on your PC NB: Heroku only hosts and supports applications and not static pages, hence in order to deploy our untended static html page to Heroku, we need to trick Heroku a little into thinking that out website is a PHP application.
+
+
+A. To get started, navigate to the root directory of your static application. example
+C:\projects\firstHTML
+
+Your website may have some Javascript, CSS and Image files like mine. At the very least it should have an index.html file.
+
+B. Rename the index.html in our website to home.html.
+
+C. Add a single dynamic PHP file, and from this PHP file, call other static html file.
+Thus create this single PHP file with the name ‘index.php’ in the root directory of your application. This can also be done from the terminal using the PHP echo command as shown in the code snippet below:
+
+C:\projects \Constech> echo ‘<?php include_once(“home.html”); ?>’ > index.php
+
+The above code snippet will create an ‘index.php’ file and inside this file append the the code <?php include_once(“home.html”); ?>
+
+D. Next, we create a composer.json file, which Heroku requires of any PHP application hosted on it to have. This should be created in the root directory of our website. It could be left empty, but in order to avoid some warning from Heroku, we will just insert empty parenthesis {} in this created composer.json file. All this can be done from the terminal using the command:
+C:\projects \Constech> echo ‘{}’ > composer.json
+
+E. We will initialize git in our project using the following command
+C:\projects\firstHTML\ git init
+
+F. Then, we will add all the files to this git repository.
+C:\projects\firstHTML> git add .
+
+G. Next, we will commit or save all the changes we have made so far our website, with a commit message describing what we’ve done.
+C:\projects\firstHTML> git commit -m “deploying my first static site on heroku”
+At this point the only thing remaining is to move these files to Heroku, thus in order to do this, we will login to Heroku from the terminal.
+
+H. Now, after a success creation of our application by Heroku, we will deploy using the command
+C:\projects\firstHTML> git push heroku master
+
+Hurray, we are done, we have successfully deployed our static website on heroku.
