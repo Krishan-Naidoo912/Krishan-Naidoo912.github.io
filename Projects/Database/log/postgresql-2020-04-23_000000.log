@@ -1,0 +1,6 @@
+2020-04-23 08:16:46.900 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-23 08:34:18.936 CAT [12708] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-25 21:34:10.596 CAT [6348] WARNING:  worker took too long to start; canceled
+2020-04-25 21:34:11.547 CAT [25272] WARNING:  autovacuum worker started without a worker entry
+2020-04-26 00:23:33.978 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-26 19:08:36.061 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding

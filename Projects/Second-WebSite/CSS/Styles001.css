@@ -1,0 +1,23 @@
+body {
+	background: url(../Images/McLaren_F1_LM_01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: yellow;
+}
+
+h4 {
+	color: purple;
+	background: pink;
+}
+
+ul {
+	border: purple 5px solid;
+	width: 120px;
+}
+
+li {
+	color: white;
+}

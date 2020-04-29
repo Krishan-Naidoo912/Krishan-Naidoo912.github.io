@@ -1,0 +1,21 @@
+body {
+	background: url(../Images/McLaren_F1_LM_01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: yellow ;
+}
+
+li {
+	color: white;
+}
+
+.learnLi {
+	color: yellow;
+}
+
+#specialLi {
+	color: gold;
+}

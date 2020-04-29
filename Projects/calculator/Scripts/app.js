@@ -51,11 +51,11 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 30,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 20,
           "size_min": 0.1,
           "sync": false
         }
@@ -65,7 +65,7 @@ particlesJS('particles-js',
         "distance": 150,
         "color": "#0000ff",
         "opacity": 1,
-        "width": 10
+        "width": 4
       },
       "move": {
         "enable": true,

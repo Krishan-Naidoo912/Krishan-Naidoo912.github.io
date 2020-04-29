@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>firstPage</title>
+</head>
+<body>
+	<h1>Welcome to Krishan Naidoo first html page created by learning the Colt Steel udemy course</h1>
+	
+	<h2>26 April 2020</h2>
+	
+	<p>This is my second Web development course learning straight after Andrei Neogoie udemy course</p>
+
+	<p>List of important tags you likely to use daily</p>
+	<ol>
+		<h1>Heading Tags</h1>
+		<ul>
+			<li><h1>< H1 ></h1></li>
+			<li><h2>< H2 ></h2></li>
+			<li><h3>< H3 ></h3></li>
+			<li><h4>< H4 ></h4></li>
+			<li><h5>< H5 ></h5></li>
+			<li><h6>< H6 ></h6></li>
+		</ul>
+		<h1>Paragraph</h1>
+		<ul>
+			<li><p>< p > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+		</ul>
+		<h1>Text Formating</h1>
+		<ul>
+			<li><strong>< strong > Bold </strong>></li>
+			<li><em> < em > italic </em></li>
+		</ul>
+		<h1>List</h1>
+		<ul>
+			<li><ol>
+				<li> < ol > Ordered List </li>
+			<li> < li > Item of ordered list </li>
+			</ol></li>
+			<li><ul> <li>< ul > UnOrdered List </li>
+			<li>< li > Item of unordered list </li></ul></li>
+		</ul>
+		<h1>Divs and Spans</h1>
+		<ul>
+			<li>< div > Groups content into blocks, there new paragraphs are created</li>
+			<li>< span > Groups content into inline, there you can group content within a paragraph </li>
+		</ul>
+		<h1>Images</h1>
+		<ol>
+			<li>Use < img > tag</li>
+			<img src="Images/Lord_Shiva_Family.jpg" height="497px" width="455px">
+		</ol>
+		<h1>Tables</h1>
+		<ol>
+			<li>Use < table > tag</li>
+			<li>Use < thead > for Table Heading - New to HTML5</li>
+			<li>Use < tbody > for Table Body - New to HTML5</li>
+			<li>Use < tr > tag for row</li>
+			<li>Use < td > tag for column</li>
+			<li>Use < th > tag for heading</li>
+			<br>
+			<table border="1">
+				<thead>
+					<th>ColA</th>
+					<th>ColB</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Row1 Col1
+						</td>
+						<td>
+							Row1 Col2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Row2 Col1
+						</td>
+						<td>
+							Row2 Col2
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</ol>
+		<h1>Forms</h1>
+		<ol>
+			<li>Use < form > tag with attributes "action (where to send data to" and "method (how to call http"</li>
+			<li>Some Input Types:</li>
+			<ul>
+				<li>Text</li>
+				<li>Date</li>
+				<li>password</li>
+				<li>color</li>
+				<li>radio</li>
+				<li>checkbox</li>
+				<li>Text Area</li>
+				<li>select</li>
+			</ul>
+			<li>Some Input Attributes:</li>
+				<ul>
+					<li>Validations: Present (example required) or type (example email, password)</li>
+					<li>id</li>
+					<li>name</li>
+					<li>label for</li>
+					<li>value</li>
+					<li>pattern=".{5x10}" for password validations</li>
+					<li>title="" for password validations</li>
+				</ul>
+			<li>Example</li>
+			<form action="01.firstPage.html" method="get">
+				<H1>Login</H1>
+				<label>
+					Username:
+						<input type="text" placeholder="username" name="username" required>
+				</label>
+				<label for="password">Password:</label>
+				<input id="password" type="password" placeholder="password" name="password" required>
+				<br>
+				<label for="Dog">Dog:</label>
+				<input type="radio" name="pets" id="Dog" value="Dog">
+				<label for="Cat">Cat:</label>
+				<input type="radio" name="pets" id="Cat" value="Cat">
+				<br>
+				<label for="Hobbies">Hobbies</label>
+				<select multiple name="Hobbies" id="Hobbies">
+					<option value="Lego">Lego</option>
+					<option value="Gundam">Gundam</option>
+					<option value="Transformers">Transformers</option>
+				</select>
+				<br>
+				<label for="comments">Comments:</label>
+				<textarea rows="4" cols="90" id="comments" name="comments"></textarea>
+				<br>
+				<input type="submit" name="submit">
+			</form>
+		</ol>
+		<h2>Exercises</h2>
+		<ol>
+			<ol><h1>HTML</h1>
+				<li><a href="01.htmlExercise01-list.html">Exercise 1 - List</a></li>
+				<li><a href="01.htmlExercise02-images.html">Exercise 2 - Images</a></li>
+				<li><a href="01.htmlExercise03-tables.html">Exercise 3 - Tables</a></li>
+				<li><a href="01.htmlExercise04-forms.html">Exercise 2 - Forms</a></li>
+			</ol>
+			<ol><h1>CSS</h1>
+				<li><a href="02.CSSExercise01-Internal Style.html">Exercise 1- CSS using internal Style tag</a></li>
+				<li><a href="02.CSSExercise02-External Style.html">Exercise 2 - CSS using external  Style file</a></li>
+				<li><a href="02.CSSExercise03-ToDoList.html">Exercise 3 - CSS To Do List</a></li>
+			</ol>
+		</ol>
+		<br>
+		<a href="01.firstPage.html">Back to Top</a>
+	</body>
+</html>
