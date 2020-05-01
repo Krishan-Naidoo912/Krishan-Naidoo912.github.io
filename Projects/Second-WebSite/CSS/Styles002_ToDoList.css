@@ -19,3 +19,7 @@ li {
 #specialLi {
 	color: gold;
 }
+
+input:checked+h4 {
+	text-decoration: line-through;
+}

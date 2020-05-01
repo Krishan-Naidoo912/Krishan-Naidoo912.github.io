@@ -1,0 +1,25 @@
+h1 {
+	font-family: cursive;
+	text-align: center;
+}
+
+table {
+	width: 20em;
+	height: 20em;
+	margin: 0 auto;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.verticalLine {
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+}
+
+.horizontalLine {
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+}
