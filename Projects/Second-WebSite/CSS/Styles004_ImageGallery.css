@@ -1,0 +1,15 @@
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+h1 {
+	font-family: cursive;
+	margin-left: 1.66%;
+	text-transform: uppercase;
+	width: 30%;
+	border-bottom: 1px teal solid;
+	font-size: 18px;
+	padding-bottom: 12px;
+}
