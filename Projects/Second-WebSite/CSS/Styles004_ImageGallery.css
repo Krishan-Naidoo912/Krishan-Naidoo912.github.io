@@ -2,6 +2,7 @@ img {
 	width: 30%;
 	float: left;
 	margin: 1.66%;
+	transition: all 1s;
 }
 
 h1 {
@@ -12,4 +13,15 @@ h1 {
 	border-bottom: 1px teal solid;
 	font-size: 18px;
 	padding-bottom: 12px;
+}
+
+img:hover {
+	transform: scale(1.2);
+}
+
+.scrollBox {
+	overflow-y: scroll;
+	border-radius: 12px;
+	border: 2px solid teal;
+	height: 600px;
 }
