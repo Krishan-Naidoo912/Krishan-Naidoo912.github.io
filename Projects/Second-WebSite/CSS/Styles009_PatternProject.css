@@ -1,0 +1,11 @@
+#header {
+	background: url(../Images/McLaren_F1_LM_01.jpg) center;
+}
+
+#title {
+	font-size: 0.9rem;
+}
+
+.btn-outline-success {
+	width: 4rem;
+}
