@@ -1,9 +1,11 @@
 #header {
 	background: url(../Images/McLaren_F1_LM_01.jpg) center;
+	padding-top: 0.1rem;
+	padding-bottom: 0.5rem;
 }
 
-#title {
-	font-size: 0.9rem;
+.navbar {
+	padding: 0.1rem;
 }
 
 .btn-outline-success {

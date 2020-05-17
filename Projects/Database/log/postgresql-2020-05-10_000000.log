@@ -1,0 +1,9 @@
+2020-05-10 01:34:34.931 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-10 22:52:49.114 CAT [6348] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-10 23:17:27.993 CAT [6036] LOG:  received fast shutdown request
+2020-05-10 23:17:29.368 CAT [6036] LOG:  aborting any active transactions
+2020-05-10 23:17:29.652 CAT [6384] ERROR:  canceling statement due to user request
+2020-05-10 23:17:29.660 CAT [6348] ERROR:  canceling statement due to user request
+2020-05-10 23:17:29.685 CAT [6036] LOG:  background worker "logical replication launcher" (PID 6384) exited with exit code 1
+2020-05-10 23:17:29.911 CAT [6304] LOG:  shutting down
+2020-05-10 23:17:46.257 CAT [6036] LOG:  database system is shut down

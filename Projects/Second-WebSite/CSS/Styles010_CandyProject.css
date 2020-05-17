@@ -1,0 +1,65 @@
+body {
+	background: #f5d9d5;
+	font-family: arial;
+	margin-right: 0;
+}
+
+html {
+	margin-right: 0px;
+}
+
+#mainNavbar .navbar-brand {
+	color: purple;
+}
+
+#mainNavbar .nav-link {
+	color: white;
+}
+
+#mainNavbar {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link:hover {
+	color: purple;
+}
+
+#headingText span {
+	color: purple;
+}
+
+#headingText h1 {
+	font-weight: 50;
+	font-size: 2rem;
+}
+
+
+/*Apply style based on screen size reduce heading here*/
+@media (max-width: 1100px) {
+	 #headingText h1 {
+	 	font-size: 1.5rem;
+	 	font-weight: 100;
+	 }
+}
+
+#subHeading h2 {
+	color: purple;
+	font-weight: 100;
+	font-size: 1rem;
+}
+
+#subHeading p {
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 2;
+}
+
+.spacingContents {
+	margin-bottom: 50px;
+}
+
+.navbar.scrolled {
+	background: yellow;
+	transition: background 500ms;
+}
