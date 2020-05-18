@@ -1,0 +1,5 @@
+2020-05-18 00:06:31.903 CAT [1020] LOG:  aborting any active transactions
+2020-05-18 00:06:32.028 CAT [6864] ERROR:  canceling statement due to user request
+2020-05-18 00:06:32.043 CAT [1020] LOG:  background worker "logical replication launcher" (PID 6864) exited with exit code 1
+2020-05-18 00:06:32.084 CAT [6800] LOG:  shutting down
+2020-05-18 00:06:40.469 CAT [1020] LOG:  database system is shut down

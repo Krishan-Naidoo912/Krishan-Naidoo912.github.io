@@ -1,0 +1,5 @@
+2020-05-16 20:33:06.739 CAT [6836] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-16 20:33:20.270 CAT [6836] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-16 20:36:53.357 CAT [6836] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-16 20:43:09.210 CAT [6836] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-18 00:06:31.529 CAT [1020] LOG:  received fast shutdown request
