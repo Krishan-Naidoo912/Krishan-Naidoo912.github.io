@@ -4,3 +4,7 @@
 2020-05-18 12:14:38.710 CAT [3440] LOG:  invalid record length at 0/16F0080: wanted 24, got 0
 2020-05-18 12:14:38.716 CAT [3440] LOG:  redo done at 0/16F0048
 2020-05-18 12:14:39.504 CAT [5576] LOG:  database system is ready to accept connections
+2020-05-19 14:32:11.779 CAT [3524] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-19 14:33:22.801 CAT [3524] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-19 21:39:25.863 CAT [3524] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-05-19 21:40:38.309 CAT [3524] LOG:  using stale statistics instead of current ones because stats collector is not responding
