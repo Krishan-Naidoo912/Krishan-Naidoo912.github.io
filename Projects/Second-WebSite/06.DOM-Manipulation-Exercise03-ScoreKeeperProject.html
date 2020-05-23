@@ -4,10 +4,10 @@
 	<title>DOM Exersice 3 - Score Keeper Project</title>
 	<link rel="stylesheet" type="text/css" href="CSS/Styles004_ImageGallery.css">
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Styles11_ScoreKeeperProject.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Styles011_ScoreKeeperProject.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
 		<div class="container">
 			<div>
 				<a href="01.firstPage.html" class="navbar-brand">
@@ -39,7 +39,19 @@
 		</div>
 	</div>
 	<br>
-
+	<div class="container">
+		<h2 class="text-info">First Player to reach goal Wins!</h2>
+		<br>
+		<h2><span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span></h2>
+		<h2>Playing to: <span id="winningScoreDisplay"></span></h2>
+		<input type="number" id="winningScoreSet" placeholder="Set Winning Score to play">
+		<button id="p1Button" class="btn-primary">Player One</button>
+		<button id="p2Button" class="btn-info">Player Two</button>
+		<button id="resetButton" class="btn-success">Reset Game</button>
+		<div class="bg-info text-white mt-4 mx-6 my-6 text-center">
+			<h1 id="winnerDisplay"></h1>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="Scripts/Scripts011-DOM-ScoreKeeperProject.js"></script>
 
