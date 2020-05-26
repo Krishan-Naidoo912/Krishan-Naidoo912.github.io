@@ -1,0 +1,23 @@
+body {
+	background-color: #232323;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+.square {
+	width: 30%;
+	background: blue;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+#containerSquares {
+	max-width: 600px;
+}
+
+#guessedMessage {
+	color: white;
+}
