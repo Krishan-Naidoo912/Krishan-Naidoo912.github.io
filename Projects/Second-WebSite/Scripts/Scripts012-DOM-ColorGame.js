@@ -1,14 +1,21 @@
-//Generate Array of random RGB Colors
-let colors = generateRandomColors(6);
-
-//Set Color to guess and display to player.
-let goalColor = generateGoalColor();
+//Select Elements from Screen
 let goalColorDisplay = document.querySelector("#goalColorDisplay");
-goalColorDisplay.textContent = goalColor;
-
 let squares = document.querySelectorAll(".square");
 let guessedMessage = document.querySelector('#guessedMessage');
 let h1 = document.querySelector("h1");
+let resetGameButton = document.querySelector("#resetGameButton");
+let easyButton = document.querySelector("#easyButton");
+let hardButton = document.querySelector("#hardButton");
+
+let gameMode = 6;
+
+//Generate Array of random RGB Colors
+let colors = generateRandomColors(gameMode);
+
+//Set Color to guess and display to player.
+let goalColor = generateGoalColor();
+
+goalColorDisplay.textContent = goalColor;
 
 //Repeat for all squares
 for(i=0; i<squares.length; i++) {
@@ -18,12 +25,13 @@ for(i=0; i<squares.length; i++) {
 	//Add click event listener to each square
 	squares[i].addEventListener("click", function() {
 		//get color clicked
-		clickedColor = this.style.backgroundColor;
+		let clickedColor = this.style.backgroundColor;
 		//compare to goal color
 		if(clickedColor === goalColor) {
 			//If Correct, change H1 background color to goal color and console "Play Again!""
-			guessedMessage.textContent = "Well Done! Play Again?"
+			guessedMessage.textContent = "WELL DONE!"
 			h1.style.backgroundColor = goalColor;
+			resetGameButton.textContent = "PLAY AGAIN?"
 			//Change all squares to goal color
 			changeColors(goalColor);
 		} else {
@@ -33,6 +41,56 @@ for(i=0; i<squares.length; i++) {
 		}
 	})
 }
+
+easyButton.addEventListener("click", function() {
+	easyButton.classList.add("selectedButton");
+	hardButton.classList.remove("selectedButton");
+	gameMode = 3;
+	colors = generateRandomColors(gameMode);
+	goalColor = generateGoalColor();
+	goalColorDisplay.textContent = goalColor;
+	h1.style.backgroundColor = "steelblue";
+	for(i=0; i<squares.length; i++) {
+		//Because easy only has 3 colors, the below if is true for the first 3 squares, squares aftwards are hidden
+		if(colors[i]) {
+			squares[i].style.backgroundColor = colors[i];
+		} else {
+			squares[i].style.display = "none";
+		}
+	}
+})
+
+hardButton.addEventListener("click", function() {
+	hardButton.classList.add("selectedButton");
+	easyButton.classList.remove("selectedButton");
+	gameMode = 6;
+	colors = generateRandomColors(gameMode);
+	goalColor = generateGoalColor();
+	goalColorDisplay.textContent = goalColor;
+	h1.style.backgroundColor = "steelblue";
+	for(i=0; i<squares.length; i++) {
+		squares[i].style.backgroundColor = colors[i];
+		squares[i].style.display = "block";
+	}
+})
+
+//reset Game
+resetGameButton.addEventListener("click", function() {
+	resetGameButton.textContent = "NEW COLORS";
+	//generate new colors
+	colors = generateRandomColors(gameMode);
+	//pick a new goal color from the colors array
+	goalColor = generateGoalColor()
+	//Display Player the new goal color
+	//Reset h1 color and Guessed Message
+	h1.style.backgroundColor = "steelblue";
+	guessedMessage.textContent = "";
+	goalColorDisplay.textContent = goalColor;
+	//change color of squares to one of list of colors
+	for(i=0; i<squares.length; i++) {
+		squares[i].style.backgroundColor = colors[i];
+	}
+});
 
 //When color guessed, change all squares to that color
 function changeColors(color) {
