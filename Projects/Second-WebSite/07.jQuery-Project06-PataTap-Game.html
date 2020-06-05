@@ -4,7 +4,25 @@
 	<title>jQuery Pata Tap Game</title>
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="CSS/Styles004_ImageGallery.css"> -->
-	<link rel="stylesheet" type="text/css" href="CSS/Styles014_jQuery-PataTap-Game.css">	
+	<link rel="stylesheet" type="text/css" href="CSS/Styles014_jQuery-PataTap-Game.css">
+	<script type="text/javascript" src="Scripts/paperjs-v0.12.8/dist/paper-full.js"></script>
+	<script type="text/javascript" src="Scripts/howler.js-master/dist/howler.js"></script>	
+	<!-- Draw Paper.js Canvas -->
+	<script type="text/paperscript" canvas="myCanvas">
+		// Create a Paper.js Path to draw a line into it:
+		var path = new Path();
+		// Give the stroke a color
+		path.strokeColor = 'black';
+		var start = new Point(100, 100);
+		// Move to start and draw a line from there
+		path.moveTo(start);
+		// Note the plus operator on Point objects.
+		// PaperScript does that for us, and much more!
+		path.lineTo(start + [ 100, -50 ]);
+		//Draw Circle
+		var myCircle = new Path.Circle(new Point(100, 70), 50);
+		myCircle.fillColor = 'blue';
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top text-white">
@@ -30,7 +48,7 @@
 			</div>
 		</div>
 	</nav>
-	
+	<canvas id="myCanvas" resize></canvas>
 	<script type="text/javascript" src="Scripts/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="Scripts/Scripts014-jQuery-PataTap-Game.js"></script>
 </body>
