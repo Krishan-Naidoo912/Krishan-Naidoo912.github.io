@@ -5,23 +5,160 @@
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="CSS/Styles004_ImageGallery.css"> -->
 	<link rel="stylesheet" type="text/css" href="CSS/Styles014_jQuery-PataTap-Game.css">
+	<!-- Import Paper.js for Animation -->
 	<script type="text/javascript" src="Scripts/paperjs-v0.12.8/dist/paper-full.js"></script>
+	<!-- Import Howler.js for sounds -->
 	<script type="text/javascript" src="Scripts/howler.js-master/dist/howler.js"></script>	
 	<!-- Draw Paper.js Canvas -->
 	<script type="text/paperscript" canvas="myCanvas">
-		// Create a Paper.js Path to draw a line into it:
-		var path = new Path();
-		// Give the stroke a color
-		path.strokeColor = 'black';
-		var start = new Point(100, 100);
-		// Move to start and draw a line from there
-		path.moveTo(start);
-		// Note the plus operator on Point objects.
-		// PaperScript does that for us, and much more!
-		path.lineTo(start + [ 100, -50 ]);
-		//Draw Circle
-		var myCircle = new Path.Circle(new Point(100, 70), 50);
-		myCircle.fillColor = 'blue';
+		//Draw Random Circle in a Random point in a variable size Canvas for each keyboard key press
+		//You need to save each generated circle into an array of circles so that we can loop through the array to animate each circle
+		
+		var circles = [];
+
+		//create sounds for each keyboard key
+		var keyData = {
+			a:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/bubbles.mp3']}) 
+				},
+			s:	{
+				color:"blue",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/clay.mp3']}) 
+				},
+			d:	{
+				color:"pink",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/confetti.mp3']}) 
+				},
+			f:	{
+				color:"yellow",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/dotted-spiral.mp3']})
+				},
+			g:	{
+				color:"green",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/flash-1.mp3']})
+				},
+			h:	{
+				color:"white",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/flash-2.mp3']}) 
+				},
+			j:	{
+				color:"rgb(45, 181, 214)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/bubbles.mp3']}) 
+				},
+			k:	{
+				color:"blue",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/flash-3.mp3']}) 
+				},
+			l:	{
+				color:"steelblue",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/glimmer.mp3']}) 
+				},
+			q:	{
+				color:"rgb(194, 38, 164)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/moon.mp3']})
+				},
+			w:	{
+				color:"RGB(84, 9, 129)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/pinwheel.mp3']}) 
+				},
+			e:	{
+				color:"yellow",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/piston-1.mp3']}) 
+				},
+			r:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/piston-2.mp3']}) 
+				},
+			t:	{
+				color:"rgb(146, 103, 214)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/piston-3.mp3']}) 
+				},
+			y:	{
+				color:"orange",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/prism-1.mp3']}) 
+				},
+			u:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/prism-2.mp3']}) 
+				},
+			i:	{
+				color:"red",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/prism-3.mp3']}) 
+				},
+			o:	{
+				color:"rgb(83, 238, 56)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/splits.mp3']}) 
+				},
+			p:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/squiggle.mp3']}) 
+				},
+			z:	{
+				color:"green",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/strike.mp3']})
+				},
+			x:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/suspension.mp3']}) 
+				},
+			c:	{
+				color:"steelblue",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/timer.mp3']})
+				},
+			v:	{
+				color:"rgb(160, 37, 71",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/veil.mp3']}) 
+				},
+			b:	{
+				color:"rgb(1, 139, 162)",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/wipe.mp3']}) 
+				},
+			n:	{
+				color:"yellow",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/zig-zag.mp3']}) 
+				},
+			m:	{
+				color:"purple",
+				sound: new Howl({src: ['Sounds/Neuronal-Synchrony-master/assets/A/bubbles.mp3']}) 
+				}
+		};
+		
+		function onKeyDown(event) {
+			//Run the below for keys available in the keys object (i.e only keyboard letters)
+			if(keyData[event.key]) {
+
+				//Calculate Current Canvas size based on windows size
+				var maxPoint = new Point(view.size.width, view.size.height);
+				console.log('Max Point:' + maxPoint);
+
+				//generate Random point
+				var randomPoint = Point.random();
+				console.log('random Point' + randomPoint);
+
+				//now set random point to fit withing Canvas size
+				var point = maxPoint * randomPoint;
+				console.log('Point' + point);
+
+				//Draw Circle in this new random point and play sound
+			 	var newCircle = new Path.Circle(point, 500);
+			
+		 		//Color Circle and Play sound for each key pressed
+		 		newCircle.fillColor = keyData[event.key].color;
+		 		keyData[event.key].sound.play();
+
+		 		//Add New Circle to Circles Array so that animation can be looped.
+		 		circles.push(newCircle);
+			}
+		}
+
+		//Loop through Circle Array and animate each by changing color and scalling down each circle
+		function onFrame(event) {
+			for(i=0; i<circles.length; i++) {
+				circles[i].fillColor.hue += 1;
+				circles[i].scale(0.9);
+			}
+		}
 	</script>
 </head>
 <body>

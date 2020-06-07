@@ -1,4 +1,4 @@
-answer = 9;
+let answer = 9;
 let userNumber = 1;
 
 while(userNumber != answer) {
@@ -11,6 +11,6 @@ while(userNumber != answer) {
 	} else if (userNumber < answer) {
 		alert("Your number is too low, guess again");
 	} else {
-		alert("Your number is too high, guess again")
+		alert("Your number is too high or you have entered a Letter instead of a Number, guess again")
 	}
 }
