@@ -1,0 +1,14 @@
+{
+  "name": "express-server-routing",
+  "version": "1.0.0",
+  "description": "Krishan Naidoo Learing Express Server Routing",
+  "main": "appserver.js",
+  "scripts": {
+    "start": "node appserver.js"
+  },
+  "author": "Krishan Naidoo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
