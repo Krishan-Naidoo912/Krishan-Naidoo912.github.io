@@ -1,0 +1,9 @@
+2020-06-30 14:14:55.129 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 15:14:26.100 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 15:56:44.971 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 16:05:14.222 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 20:21:00.943 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 20:22:18.198 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 20:23:35.389 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-06-30 20:24:52.189 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-07-02 14:35:42.561 CAT [1552] LOG:  using stale statistics instead of current ones because stats collector is not responding

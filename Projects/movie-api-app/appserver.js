@@ -1,6 +1,5 @@
 let express = require("express");
 let app = express();
-//let request = require("request");
 let rp = require("request-promise");
 
 app.get("/", function(req, res) {
@@ -9,7 +8,6 @@ app.get("/", function(req, res) {
 
 app.get("/movieApiResults", function(req, res) {
 	let movieSearch = req.query.movieName;
-	console.log(movieSearch)
 	rp("http://www.omdbapi.com/?s="+ movieSearch + "&apikey=b6b42e67")
 	.then(response => {
 		let searchResults = JSON.parse(response);
