@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Krishans Marvelous Camp</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+	</head>
+	<body>
+	<h1>INDEX</h1>
+	<div class="ui fixed inverted menu">
+		<div class="ui container">
+			<div class="header item"><i class="code icon"></i>Blog Site</div>
+			<a href="/" class="item">Home</a>
+			<a href="/blogs/new" class="item">New Post</a>
+		</div>
+	</div>
+	<div class="container">
+		<% allBlogs.forEach(function(blog) { %>
+			<div>
+				<h4> <%= blog.title %> </h4>
+				<img src= "<%= blog.image %>">
+				<p> <%= blog.body.substring(0,100) %>... </p>
+				<p> <%= blog.created.toDateString() %> </p>
+				<a href="/blogs/<%= blog._id %>">Read More</a>
+			</div>
+		<% }) %>
+	</div>
+	<p>Created by Krishan Naidoo</p>
+	</body>
+</html>
