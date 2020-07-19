@@ -4,4 +4,8 @@ i.icon {
 
 .container.main {
  	margin-top: 7em;
- }
+}
+
+#editForm {
+	display: inline;
+}
