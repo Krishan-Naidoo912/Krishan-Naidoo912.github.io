@@ -5,6 +5,14 @@ let express = require("express");
 let app = express();
 let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
+//Import Campground Mongoose Model
+let Campground = require("./models/Campground.js");
+//Import Comments Mongoose Model
+let Comment = require("./models/Comment.js"); 
+//Import script to initiate Database
+let seedDB = require("./seeds.js");
+
+seedDB();
 
 app.set("view engine", "ejs")
 app.use(express.static("public"));
@@ -16,32 +24,22 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.set('useNewUrlParser', true);
 mongoose.connect("mongodb+srv://Krishan:Naidoo@krishannaidoo.gny8h.mongodb.net/krishan-marvelous-camp");
 
-//ver2 Create MongoDB CampGround Schema
-let campGroundSchema = new mongoose.Schema(
-	{
- 		name: String,
-	 	image: String,
-	 	description: String
-	}
-);
 
-//ver2 Create MongoDB CampGround Model (which will now have Schema methods such as .find or .create etc)
-let Campground = new mongoose.model("Campground", campGroundSchema);
-Campground.create(
-	{
-		name: "CampA",
-		image: "/images/Camp-Ground-A.jpg",
-		description:"Lovely Camp!"
-	},
-	function(err, campground){
-		if(err) {
-			console.log("Error adding Camp to Campgound ", err);
-		} else {
-			console.log("NEWLEY CREATED CAMPGROUND: ");
-			console.log(campground);
-		}
-	}
-);
+// Campground.create(
+// 	{
+// 		name: "CampA",
+// 		image: "/images/Camp-Ground-A.jpg",
+// 		description:"Lovely Camp!"
+// 	},
+// 	function(err, campground){
+// 		if(err) {
+// 			console.log("Error adding Camp to Campgound ", err);
+// 		} else {
+// 			console.log("NEWLEY CREATED CAMPGROUND: ");
+// 			console.log(campground);
+// 		}
+// 	}
+// );
 
 //ver1: used var instead of database
 // let campgrounds = [
@@ -64,6 +62,10 @@ app.get("/", function(req, res) {
 	res.render("landingPage");
 });
 
+
+//=============
+// CAMPGROUNDS
+//=============
 
 //REST ROUTE 1 = INDEX
 app.get("/campgrounds", function(req, res) {
@@ -115,13 +117,51 @@ app.post("/campgrounds", function(req, res) {
 
 //REST ROUTE 4 = SHOW
 app.get("/campgrounds/:id", function(req, res) {
-	Campground.findById(req.params.id, function(err, foundCampGround){
+	Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampGround) {
 		if(err) {
 			console.log("Cannot find Campground using the ID you provided" + err);
 		} else {
+			console.log(foundCampGround);
 			res.render("showCampGroundInfo", {campground: foundCampGround});
 		}
 	})
+});
+
+
+//==========
+// COMMENTS
+//==========
+
+//REST ROUTE 2 NEW = SHOW COMMENTS FORM
+app.get("/campgrounds/:id/comments/new", function(req, res) {
+	Campground.findById(req.params.id, function(err, foundCampGround) {
+		if(err) {
+			console.log("Could not load Campground to add comments")
+		} else {
+			console.log("Found Campground to add comments");
+			res.render("addNewCampGroundComment", {campground: foundCampGround});
+		}
+	});
+});
+
+//REST ROUTE 3 CREATE = ADD COMMENTS TO CAMPGROUND
+app.post("/campgrounds/:id/comments", function(req, res) {
+	Campground.findById(req.params.id, function(err, foundCampGround) {
+		if(err) {
+			console.log("Could not load Campground to add comments")
+			res.redirect("/campgrounds");
+		} else {
+			Comment.create(req.body.comment, function(err, newComment) {
+				if(err) {
+					console.log("Could not add comment to campground")
+				} else {
+					foundCampGround.comments.push(newComment);
+					foundCampGround.save();
+					res.redirect("/campgrounds/"+ foundCampGround._id);
+				}
+			});
+		}
+	});
 });
 
 app.listen(3001, function() {

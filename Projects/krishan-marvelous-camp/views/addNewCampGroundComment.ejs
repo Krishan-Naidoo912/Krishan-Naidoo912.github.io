@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Krishans Marvelous Camp</title>
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-	</head>
-	<body>
+<head>
+	<title>Add New Camp Ground Comment</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+</head>
+<body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
 		<div class="container">
 			<div>
@@ -63,33 +63,32 @@
 		</div>
 	</nav>
 	<br>
+
 	<div class="container text-center">
 		<header class="jumbotron">
 			<div class="container">
-				<h1>Welcome!</h1>
-				<p>Herewith the info of the selected Marvelous Camp ground</p>
+				<h1>Welcome!</h2>
+				<p>Add new Comment to <%= campground.name %></p>
 				<a class="btn btn-info btn-large" href="/">Back Home</a>
-				<a class="btn btn-info btn-large" href="/campgrounds/addNewCampGround">Add New Camp Ground</a>
+				<a class="btn btn-info btn-large" href="/campgrounds">View All Camp Grounds</a>
 			</div>
 		</header>
-			<div>
-				<h1><%= campground.name %></h1>
-				<img class="img-fluid" src="<%= campground.image %>">
-					<div class="caption text-center">
-						<p><%= campground.description %></p>
-					</div>
 
-					<p>
-						<a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
-					</p>
-					<div>
-						<strong>
-							<% campground.comments.forEach(function(comment) { %>
-							<p> <%= comment.author %> - <%= comment.text %></p>
-						</strong>
-					<% }) %>
-					</div>
+		<form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+			<div style="width: 30%; margin:20px auto">
+				<div class="form-group">
+					<input class="form-control" type="text" name="comment[author]" placeholder="Author">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name=comment[text] placeholder="Comments">
+				</div>
+				<div class="form-group">
+					<button class="form-control btn btn-lg btn-block btn-success" type="submit">Add Comment</button>
+				</div>
 			</div>
-	<p>Created by Krishan Naidoo</p>
-	</body>
+		</form>
+		<br>
+		<p>Created by Krishan Naidoo</p>
+	</div>
+</body>
 </html>
