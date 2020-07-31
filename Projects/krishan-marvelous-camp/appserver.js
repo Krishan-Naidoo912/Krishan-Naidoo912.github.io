@@ -9,6 +9,8 @@ let mongoose = require("mongoose");
 let Campground = require("./models/Campground.js");
 //Import Comments Mongoose Model
 let Comment = require("./models/Comment.js"); 
+//Import User Mongoose Model
+let User = require("./models/User.js");
 //Import script to initiate Database
 let seedDB = require("./seeds.js");
 
