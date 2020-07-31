@@ -1,0 +1,2 @@
+2020-07-29 08:33:22.012 CAT [8820] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-07-29 21:38:22.750 CAT [8820] LOG:  using stale statistics instead of current ones because stats collector is not responding
