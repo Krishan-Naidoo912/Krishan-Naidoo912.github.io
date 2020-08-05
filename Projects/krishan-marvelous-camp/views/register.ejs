@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Camp Ground</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+</head>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+		<div class="container">
+			<div>
+				<a href="/" class="navbar-brand">
+					<span>
+						<svg class="bi bi-camera" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  					<path d="M9 5C7.343 5 5 6.343 5 8a4 4 0 014-4v1z"/>
+	  					<path fill-rule="evenodd" d="M14.333 3h-2.015A5.97 5.97 0 009 2a5.972 5.972 0 00-3.318 1H1.667C.747 3 0 3.746 0 4.667v6.666C0 12.253.746 13 1.667 13h4.015c.95.632 2.091 1 3.318 1a5.973 5.973 0 003.318-1h2.015c.92 0 1.667-.746 1.667-1.667V4.667C16 3.747 15.254 3 14.333 3zM1.5 5a.5.5 0 100-1 .5.5 0 000 1zM9 13A5 5 0 109 3a5 5 0 000 10z" clip-rule="evenodd"/>
+	  					<path d="M2 3a1 1 0 011-1h1a1 1 0 010 2H3a1 1 0 01-1-1z"/>
+						</svg>
+					</span>
+					MarvelousCamp
+				</a>
+			</div>
+			
+			<button
+				class="navbar-toggler collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="#navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+		   		<span class="navbar-toggler-icon"></span>
+		   	</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="nav navbar-nav ml-auto">
+					<% if(!currentUser) { %>
+						<li>
+							<a class="nav-link text-white" href="/register">
+								Sign Up
+								<svg class="bi bi-person-plus-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  	<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm7.5-3a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13V5.5a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+							  	<path fill-rule="evenodd" d="M13 7.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z" clip-rule="evenodd"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="nav-link text-white" href="/login">
+								Log In
+								<svg class="bi bi-person-check-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			  					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm9.854-2.854a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-1.5-1.5a.5.5 0 01.708-.708L12.5 7.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+								</svg>
+							</a>
+						</li>
+					<% } else { %>
+						<li><a class="nav-link text-white" href="#">Signed In As <%= currentUser.username %></a></li>
+						<li>
+							<a class="nav-link text-white" href="logout">
+								Log Out
+								<svg class="bi bi-person-check-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			  					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm9.854-2.854a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-1.5-1.5a.5.5 0 01.708-.708L12.5 7.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+								</svg>
+							</a>
+						</li>
+					<% } %>					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+
+	<div class="container text-center">
+		<header class="jumbotron">
+			<div class="container">
+				<h1>Register</h2>
+				<a class="btn btn-info btn-large" href="/">Back Home</a>
+				<a class="btn btn-info btn-large" href="/campgrounds">View All Camp Grounds</a>
+			</div>
+		</header>
+
+		<form action="/register" method="POST">
+			<div style="width: 30%; margin:20px auto">
+				<div class="form-group">
+					<input class="form-control" type="text" name="username" placeholder="User Name">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" name="password" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<button class="form-control btn btn-lg btn-block btn-success" type="submit">Sign Up</button>
+				</div>
+			</div>
+		</form>
+		<br>
+		<p>Created by Krishan Naidoo</p>
+	</div>
+</body>
+</html>

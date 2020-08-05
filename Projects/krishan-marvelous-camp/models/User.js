@@ -1,10 +1,14 @@
 let mongoose = require("mongoose");
+let passportLocalMongoose = require("passport-local-mongoose");
 
 let UserSchema = new mongoose.Schema({
 	username: String,
 	password: String
 });
 
-let User = new mongoose.Model("User", UserSchema);
+//Add authentication methods to user model
+UserSchema.plugin(passportLocalMongoose);
+
+let User = new mongoose.model("User", UserSchema);
 
 module.exports = User;

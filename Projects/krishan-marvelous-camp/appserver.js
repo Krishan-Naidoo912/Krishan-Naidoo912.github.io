@@ -13,8 +13,23 @@ let Comment = require("./models/Comment.js");
 let User = require("./models/User.js");
 //Import script to initiate Database
 let seedDB = require("./seeds.js");
+//Setup User Authentication
+let passport = require("passport");
+let LocalStrategy = require("passport-local");
 
 seedDB();
+
+//Password Configuation
+app.use(require("express-session")({
+	secret: "krishan naidoo",
+	resave: false,
+	saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 app.set("view engine", "ejs")
 app.use(express.static("public"));
@@ -58,6 +73,23 @@ mongoose.connect("mongodb+srv://Krishan:Naidoo@krishannaidoo.gny8h.mongodb.net/k
 // 		{name: "CampC", image: "/images/Camp-Ground-A.jpg"},
 // 		{name: "CampD", image: "/images/Camp-Ground-B.jpg"}	
 // 	]
+
+//ROUTE MIDDLEWARE
+
+//Get and pass logged in user to all routes so that the nav bar displays Login + Logout + SignUp correctly
+//req.user will be empty if not signed in or contains the current username and id
+app.use(function(req, res, next) {
+	res.locals.currentUser = req.user;
+	next();
+});
+
+//Check if user is logged in to view or add CampGround comments
+function isLoggedIn(req, res, next) {
+	if(req.isAuthenticated()) {
+		return next();
+	}
+	res.redirect("/login");
+}
 
 
 app.get("/", function(req, res) {
@@ -135,7 +167,7 @@ app.get("/campgrounds/:id", function(req, res) {
 //==========
 
 //REST ROUTE 2 NEW = SHOW COMMENTS FORM
-app.get("/campgrounds/:id/comments/new", function(req, res) {
+app.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
 			console.log("Could not load Campground to add comments")
@@ -147,7 +179,7 @@ app.get("/campgrounds/:id/comments/new", function(req, res) {
 });
 
 //REST ROUTE 3 CREATE = ADD COMMENTS TO CAMPGROUND
-app.post("/campgrounds/:id/comments", function(req, res) {
+app.post("/campgrounds/:id/comments", isLoggedIn,function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
 			console.log("Could not load Campground to add comments")
@@ -166,6 +198,50 @@ app.post("/campgrounds/:id/comments", function(req, res) {
 	});
 });
 
+//AUTH ROUTES
+//Show Register Form
+app.get("/register", function(req, res) {
+	res.render("register");
+});
+
+//Handle Sign Up Logic
+app.post("/register", function(req, res) {
+	//Store User Name
+	//Pass User Name as first argument and Password as second argument to the passport method User.register. This will encrypt the password before storing
+	let newUser = new User({username: req.body.username});
+	User.register(newUser, req.body.password, function(err, user) {
+		if(err) {
+			console.log(err);
+			res.render("register");
+		} else {
+			passport.authenticate("local")(req, res, function() {
+				res.redirect("/campgrounds");	
+		});
+		}
+	});
+});
+
+//Login Form
+app.get("/login", function(req, res) {
+	res.render("login");
+});
+
+//Login Logic
+//app.post("login", auth middleware, callback)
+app.post("/login", passport.authenticate("local",
+	{
+		successRedirect: "/campgrounds",
+		failureRedirect: "/login"
+	}), function(req, res) {
+});
+
+//logout route
+app.get("/logout", function(req, res) {
+	//user passport methods
+	req.logout();
+	res.redirect("/campgrounds");
+});
+
 app.listen(3001, function() {
-	console.log("Krishan Marvelous Camp AppServer is running on port 3001")
+	console.log("Krishan Marvelous Camp AppServer is running on port 3001");
 });
