@@ -9,3 +9,7 @@
 .thumbnail .caption-full {
 	padding-top: 9px;
 }
+
+#deleteCampGround {
+	display: inline;
+}

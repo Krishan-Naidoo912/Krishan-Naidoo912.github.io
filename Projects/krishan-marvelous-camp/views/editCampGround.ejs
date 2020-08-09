@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add New Camp Ground Comment</title>
+	<title>Edit Camp Ground</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 </head>
 <body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
 		<div class="container">
 			<div>
 				<a href="/" class="navbar-brand">
@@ -71,20 +71,25 @@
 	<div class="container text-center">
 		<header class="jumbotron">
 			<div class="container">
-				<h1>Welcome!</h2>
-				<p>Add new Comment to <%= campground.name %></p>
+				<h2>Edit Camp Ground "<%= campground.name %>"</h2>
 				<a class="btn btn-info btn-large" href="/">Back Home</a>
 				<a class="btn btn-info btn-large" href="/campgrounds">View All Camp Grounds</a>
 			</div>
 		</header>
-
-		<form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+		<!-- Receive campground and use id to send to edit form as a put request using method override _method	 -->
+		<form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
 			<div style="width: 30%; margin:20px auto">
 				<div class="form-group">
-					<input class="form-control" type="text" name=comment[text] placeholder="Comments">
+					<input class="form-control" type="text" name="campground[name]" value="<%= campground.name %>">
 				</div>
 				<div class="form-group">
-					<button class="form-control btn btn-lg btn-block btn-success" type="submit">Add Comment</button>
+					<input class="form-control" type="text" name="campground[image]" value="<%= campground.image %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="campground[description]" value="<%= campground.description %>">
+				</div>
+				<div class="form-group">
+					<button class="form-control btn btn-lg btn-block btn-success" type="submit">Edit Camp Ground</button>
 				</div>
 			</div>
 		</form>
