@@ -55,7 +55,7 @@
 					<% } else { %>
 						<li><a class="nav-link text-white" href="#">Signed In As <%= currentUser.username %></a></li>
 						<li>
-							<a class="nav-link text-white" href="logout">
+							<a class="nav-link text-white" href="/logout">
 								Log Out
 								<svg class="bi bi-person-check-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 			  					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm9.854-2.854a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-1.5-1.5a.5.5 0 01.708-.708L12.5 7.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
@@ -99,11 +99,17 @@
 								Submitted By - <a><%= campground.author.username %></a>
 							</em>
 						</p>
-						<a class="btn btn-info" href="/campgrounds/<%= campground._id %>/edit">Edit</a>
-						<!-- Create form to send a Delete method to the campground delete route using method-override -->
-						<form id="deleteCampGround" action="/campgrounds/<%= campground._id %>?_method=DELETE" method=POST>
-							<button class="btn btn-warning">Delete</button>
-						</form>
+
+						<!-- Show Edit and Delete Buttons on Campground only if there is a logged in user and that the logged in user submited this CampGround -->
+						<% if(currentUser && campground.author.id.equals(currentUser._id)) { %>
+						<%=console.log(currentUser)%> 
+							<a class="btn btn-info" href="/campgrounds/<%= campground._id %>/edit">Edit</a>
+							<!-- Create form to send a Delete method to the campground delete route using method-override -->
+							<form id="deleteCampGround" action="/campgrounds/<%= campground._id %>?_method=DELETE" method=POST>
+								<button class="btn btn-warning">Delete</button>
+							</form>
+						<% } %>
+						
 						<p><%= campground.description %></p>
 					</div>
 				</div>
@@ -118,6 +124,18 @@
 							<strong> <%= comment.author.username %> </strong>
 							<span class="pull-right">10 days ago</span>
 							<p> <%= comment.text %> </p>
+							<!-- Now hide Edit and Delete Buttons if the current user does not own a comment -->
+							<% if(currentUser && comment.author.id.equals(currentUser._id)) { %>
+								<a
+									class="btn btn-xs btn-warning"
+								 	href="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>/edit"
+								 	>Edit
+								</a>
+								<!-- Create form to send a Delete method to the campground delete route using method-override -->
+								<form id="deleteCampGround" action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE" method=POST>
+									<button class="btn btn-xs btn-warning">Delete</button>
+								</form>
+							<% } %>	
 						</div>
 					</div>
 					<% }) %>

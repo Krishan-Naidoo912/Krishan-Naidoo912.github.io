@@ -24,6 +24,6 @@ let campGroundSchema = new mongoose.Schema(
 );
 
 //ver2 Create and export MongoDB CampGround Model (which will now have Schema methods such as .find or .create etc)
-let campGroundModel = new mongoose.model("Campground", campGroundSchema);
+let Campground = new mongoose.model("Campground", campGroundSchema);
 
-module.exports = campGroundModel;
+module.exports = Campground;

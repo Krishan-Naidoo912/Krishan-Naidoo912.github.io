@@ -71,20 +71,17 @@ router.get("/campgrounds/:id", isLoggedIn, function(req, res) {
 });
 
 //REST ROUTE 5 = EDIT
-//First find Campground ID in mongo db, if found pass campground as object to Edit form
-router.get("/campgrounds/:id/edit",isLoggedIn, function(req, res) {
+//First check if logged in user has permission to view this campground edit form
+//Second find Campground ID in mongo db, if found pass campground as object to Edit form
+router.get("/campgrounds/:id/edit",checkCampGroundOwnership, function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
-		if(err) {
-			console("Cannot find campground with id " + req.params.id);
-			res.redirect("/campgrounds");
-		} else {
-			res.render("editCampGround.ejs", {campground: foundCampGround});
-		}
+		res.render("editCampGround.ejs", {campground: foundCampGround});
 	});
 });
 
 //REST ROUTE 6 = UPDATE
-router.put("/campgrounds/:id", isLoggedIn, function(req, res) {
+//First check if logged in user has permission to edit this campground
+router.put("/campgrounds/:id",checkCampGroundOwnership, function(req, res) {
 	//Find and update the correct Campground
 	//1.ID to find 2.Data to update 3.Call back function
 	Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, updatedCampGround) {
@@ -96,11 +93,11 @@ router.put("/campgrounds/:id", isLoggedIn, function(req, res) {
 		}
 	})
 	//Redirect to show page
-
 });
 
 //REST ROUTE 7 - DELETE
-router.delete("/campgrounds/:id", isLoggedIn, function(req, res) {
+//First check if logged in user has permission to delete this campground
+router.delete("/campgrounds/:id", checkCampGroundOwnership, function(req, res) {
 	Campground.findByIdAndRemove(req.params.id, function(err) {
 		if(err) {
 			console.log("Cound not delete campground with id " + req.params.id);
@@ -112,12 +109,31 @@ router.delete("/campgrounds/:id", isLoggedIn, function(req, res) {
 	});
 });
 
-//Check if user is logged in to view or add CampGrounds
+//Middleware to Check if user is logged in to view or add CampGrounds
 function isLoggedIn(req, res, next) {
 	if(req.isAuthenticated()) {
 		return next();
 	}
 	res.redirect("/login");
 };
+
+//Middleware toCheck if logged in user has permission to Edit or delete Campground
+function checkCampGroundOwnership(req, res, next) {
+	if(req.isAuthenticated()) {
+		Campground.findById(req.params.id, function(err, foundCampGround) {
+			if(err) {
+				res.redirect("back");
+			} else {
+				//Does user own Campground?
+				//If Yes, then move on to the rest of the code in Edit or delete
+				if(foundCampGround.author.id.equals(req.user._id)) {
+					next();
+				} else {
+					res.redirect("back");
+				}
+			}
+		});
+	}
+}
 
 module.exports = router;

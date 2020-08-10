@@ -7,7 +7,7 @@ let router = express.Router();
 let Campground = require("../models/Campground.js");
 let Comment = require("../models/Comment.js");
 
-//REST ROUTE 4 NEW = SHOW COMMENTS FORM
+//REST ROUTE 2 NEW = SHOW COMMENTS FORM
 router.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
@@ -20,7 +20,7 @@ router.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
 });
 
 //REST ROUTE 3 CREATE = ADD COMMENTS TO CAMPGROUND
-router.post("/campgrounds/:id/comments", isLoggedIn,function(req, res) {
+router.post("/campgrounds/:id/comments",isLoggedIn ,function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
 			console.log("Could not load Campground to add comments")
@@ -44,6 +44,52 @@ router.post("/campgrounds/:id/comments", isLoggedIn,function(req, res) {
 	});
 });
 
+//REST ROUTE 5 EDIT = SHOW EDIT COMMENTS FORM
+router.get("/campgrounds/:id/comments/:comment_id/edit", function(req, res) {
+	Comment.findById(req.params.comment_id, function(err, foundCampGroundComment){
+		if(err) {
+			console.log("Could not find comments with id " + req.params.comment_id)
+			res.redirect("back");
+		} else {
+			//render edit comment form but pass campground and comment objects
+			res.render("editCampGroundComment", {campground_id: req.params.id, comment: foundCampGroundComment});
+		}	
+	});
+});
+
+//REST ROUTE 6 UPDATE = UPDATE COMMENTS
+//First check if logged in user has permission to edit this campground
+router.put("/campgrounds/:id/comments/:comment_id",checkCampGroundCommentOwnership, function(req, res) {
+	//Find and update the correct Comment
+	//1.ID to find 2.Data to update 3.Call back function
+	Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, function(err, updatedCampGroundComment) {
+		if(err) {
+			console.log("Cound not update campground comment with id " + req.params.comment_id);
+			res.redirect("back");
+		} else {
+			res.redirect("/campgrounds/" + req.params.id);
+		}
+	})
+	//Redirect to show page
+});
+
+//REST ROUTE 7 DELETE = DELETE COMMENT
+router.delete("/campgrounds/:id/comments/:comment_id", checkCampGroundCommentOwnership, function(req, res) {
+	Comment.findByIdAndRemove(req.params.comment_id, function(err) {
+		if(err) {
+			res.redirect("back");
+		} else {
+			res.redirect("/campgrounds/" + req.params.id);
+		}
+	});
+});
+
+
+
+//============
+// Middleware
+//============
+
 //Check if user is logged in to view or add CampGround comments
 function isLoggedIn(req, res, next) {
 	if(req.isAuthenticated()) {
@@ -51,5 +97,24 @@ function isLoggedIn(req, res, next) {
 	}
 	res.redirect("/login");
 };
+
+//Middleware toCheck if logged in user has permission to Edit or delete Campground Comment
+function checkCampGroundCommentOwnership(req, res, next) {
+	if(req.isAuthenticated()) {
+		Comment.findById(req.params.comment_id, function(err, foundCampGroundComment) {
+			if(err) {
+				res.redirect("back");
+			} else {
+				//Does user own Comment?
+				//If Yes, then move on to the rest of the code in Edit or delete
+				if(foundCampGroundComment.author.id.equals(req.user._id)) {
+					next();
+				} else {
+					res.redirect("back");
+				}
+			}
+		});
+	}
+}
 
 module.exports = router;

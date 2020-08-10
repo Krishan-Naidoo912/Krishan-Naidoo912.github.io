@@ -6,6 +6,7 @@ let express = require("express");
 let router = express.Router();
 let passport = require("passport");
 let User = require("../models/User.js")
+let Campground = require("../models/Campground.js");
 
 //REST ROUTE 1 = Show Register Form
 router.get("/register", function(req, res) {
@@ -48,7 +49,7 @@ router.post("/login", passport.authenticate("local",
 router.get("/logout", function(req, res) {
 	//user passport methods
 	req.logout();
-	res.redirect("/campgrounds");
+	res.redirect("./campgrounds");
 });
 
 //Check if user is logged in to view or add CampGround comments
