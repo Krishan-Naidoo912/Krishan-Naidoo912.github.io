@@ -21,8 +21,14 @@ let LocalStrategy 	= require("passport-local");
 let campgroundRoutes= require("./routes/campgrounds.js");
 let commentRoutes	= require("./routes/comments.js");
 let indexRoutes		= require("./routes/index.js");
+//Import Connect Flash for Flash messages
+//to use flash messages, pass req.flash(key,value) example req.flash("flashError","Log in First!")
+//Then handle it in the route that you want to show the message, example get Login or Post Register
+let flash = require("connect-flash");
 
-seedDB();
+
+//Start app by inserting 3 campgrounds with some comments
+//seedDB();
 
 //Set up MongoDB for CampGrounds - Mongo "mongodb+srv://krishannaidoo.gny8h.mongodb.net/test" --username Krishan (password = Naidoo)
 mongoose.set('useUnifiedTopology', true);
@@ -46,14 +52,16 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 //use methodOveride to resplace GET method with PUT method to edit campgrounds
 app.use(methodOverride("_method"))
+//Activate Flash messages
+app.use(flash());
 
-
-//ROUTE MIDDLEWARE
-
-//Get and pass logged in user to all routes so that the nav bar displays Login + Logout + SignUp correctly
-//req.user will be empty if not signed in or contains the current username and id
 app.use(function(req, res, next) {
+	//Get and pass logged in user to all routes and ejs templates so that the nav bar displays Login + Logout + SignUp correctly
+	//req.user will be empty if not signed in or contains the current username and id
 	res.locals.currentUser = req.user;
+	//make flash message available to every route and ejs template
+	res.locals.flashMessageError = req.flash("flashMessageError")
+	res.locals.flashMessageSuccess = req.flash("flashMessageSuccess")
 	next();
 });
 

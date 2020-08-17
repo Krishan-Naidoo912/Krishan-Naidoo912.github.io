@@ -1,0 +1,88 @@
+body {
+	background-color: black;
+}
+
+#landing-header {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	padding-top: 40vh; /*40 vertical height*/
+}
+
+#landing-header h1 {
+	color: white;
+}
+
+/*Style 5 list items for 5 different background images*/
+.slideshow {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	z-index: 0;
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+.slideshow li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 50s linear infinite;
+}
+
+/*Now slide through 5 different backgrounds with animation effects*/
+.slideshow li:nth-child(1) {
+	background-image: url(../images/Camp-Ground-A.jpg);
+}
+
+.slideshow li:nth-child(2) {
+	background-image: url(../images/Camp-Ground-B.jpg);
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(3) {
+	background-image: url(../images/Camp-Ground-B.jpg);
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(4) {
+	background-image: url(../images/Camp-Ground-B.jpg);
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(5) {
+	background-image: url(../images/Camp-Ground-B.jpg);
+	animation-delay: 10s;
+}
+
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	10% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+}
+
+/*No animation support on old browsers*/
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

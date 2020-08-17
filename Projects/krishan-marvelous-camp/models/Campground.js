@@ -6,6 +6,7 @@ let campGroundSchema = new mongoose.Schema(
 	{
 	 	image: String,
 	 	name: String,
+	 	price: String,
 	 	description: String,
 	 	author: {
 	 		id: {

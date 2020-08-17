@@ -6,9 +6,11 @@ let express = require("express");
 let router = express.Router();
 let Campground = require("../models/Campground.js");
 let Comment = require("../models/Comment.js");
+//Import middleware
+let middlewareObj = require("./middleware.js")
 
 //REST ROUTE 2 NEW = SHOW COMMENTS FORM
-router.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
+router.get("/campgrounds/:id/comments/new", middlewareObj.isLoggedIn, function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
 			console.log("Could not load Campground to add comments")
@@ -20,7 +22,7 @@ router.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
 });
 
 //REST ROUTE 3 CREATE = ADD COMMENTS TO CAMPGROUND
-router.post("/campgrounds/:id/comments",isLoggedIn ,function(req, res) {
+router.post("/campgrounds/:id/comments", middlewareObj.isLoggedIn, function(req, res) {
 	Campground.findById(req.params.id, function(err, foundCampGround) {
 		if(err) {
 			console.log("Could not load Campground to add comments")
@@ -28,6 +30,8 @@ router.post("/campgrounds/:id/comments",isLoggedIn ,function(req, res) {
 		} else {
 			Comment.create(req.body.comment, function(err, newComment) {
 				if(err) {
+					//Flash message if use is not logged in
+					req.flash("flashMessageError", "Cannot Create Comment");
 					console.log("Could not add comment to campground")
 				} else {
 					//add username and id to comment
@@ -37,6 +41,8 @@ router.post("/campgrounds/:id/comments",isLoggedIn ,function(req, res) {
 					newComment.save();
 					foundCampGround.comments.push(newComment);
 					foundCampGround.save();
+					//Flash message if use is not logged in
+					req.flash("flashMessageSuccess", "Succesfully Added Comment!");
 					res.redirect("/campgrounds/"+ foundCampGround._id);
 				}
 			});
@@ -45,13 +51,12 @@ router.post("/campgrounds/:id/comments",isLoggedIn ,function(req, res) {
 });
 
 //REST ROUTE 5 EDIT = SHOW EDIT COMMENTS FORM
-router.get("/campgrounds/:id/comments/:comment_id/edit", function(req, res) {
+router.get("/campgrounds/:id/comments/:comment_id/edit",middlewareObj.checkCampGroundCommentOwnership, function(req, res) {
 	Comment.findById(req.params.comment_id, function(err, foundCampGroundComment){
 		if(err) {
 			console.log("Could not find comments with id " + req.params.comment_id)
 			res.redirect("back");
 		} else {
-			//render edit comment form but pass campground and comment objects
 			res.render("editCampGroundComment", {campground_id: req.params.id, comment: foundCampGroundComment});
 		}	
 	});
@@ -59,7 +64,7 @@ router.get("/campgrounds/:id/comments/:comment_id/edit", function(req, res) {
 
 //REST ROUTE 6 UPDATE = UPDATE COMMENTS
 //First check if logged in user has permission to edit this campground
-router.put("/campgrounds/:id/comments/:comment_id",checkCampGroundCommentOwnership, function(req, res) {
+router.put("/campgrounds/:id/comments/:comment_id", middlewareObj.checkCampGroundCommentOwnership, function(req, res) {
 	//Find and update the correct Comment
 	//1.ID to find 2.Data to update 3.Call back function
 	Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, function(err, updatedCampGroundComment) {
@@ -67,6 +72,7 @@ router.put("/campgrounds/:id/comments/:comment_id",checkCampGroundCommentOwnersh
 			console.log("Cound not update campground comment with id " + req.params.comment_id);
 			res.redirect("back");
 		} else {
+			req.flash("flashMessageSuccess","Succesfully Edited Comment")
 			res.redirect("/campgrounds/" + req.params.id);
 		}
 	})
@@ -74,47 +80,53 @@ router.put("/campgrounds/:id/comments/:comment_id",checkCampGroundCommentOwnersh
 });
 
 //REST ROUTE 7 DELETE = DELETE COMMENT
-router.delete("/campgrounds/:id/comments/:comment_id", checkCampGroundCommentOwnership, function(req, res) {
+router.delete("/campgrounds/:id/comments/:comment_id", middlewareObj.checkCampGroundCommentOwnership, function(req, res) {
 	Comment.findByIdAndRemove(req.params.comment_id, function(err) {
 		if(err) {
 			res.redirect("back");
 		} else {
+			req.flash("flashMessageSuccess","Succesfully deleted Comment");
 			res.redirect("/campgrounds/" + req.params.id);
 		}
 	});
 });
 
+module.exports = router;
+
+
+//==========
+// OLD CODE
+//==========
 
 
 //============
 // Middleware
 //============
 
-//Check if user is logged in to view or add CampGround comments
-function isLoggedIn(req, res, next) {
-	if(req.isAuthenticated()) {
-		return next();
-	}
-	res.redirect("/login");
-};
+// //Check if user is logged in to view or add CampGround comments
+// function isLoggedIn(req, res, next) {
+// 	if(req.isAuthenticated()) {
+// 		return next();
+// 	}
+// 	res.redirect("/login");
+// };
 
-//Middleware toCheck if logged in user has permission to Edit or delete Campground Comment
-function checkCampGroundCommentOwnership(req, res, next) {
-	if(req.isAuthenticated()) {
-		Comment.findById(req.params.comment_id, function(err, foundCampGroundComment) {
-			if(err) {
-				res.redirect("back");
-			} else {
-				//Does user own Comment?
-				//If Yes, then move on to the rest of the code in Edit or delete
-				if(foundCampGroundComment.author.id.equals(req.user._id)) {
-					next();
-				} else {
-					res.redirect("back");
-				}
-			}
-		});
-	}
-}
 
-module.exports = router;
+// //Middleware toCheck if logged in user has permission to Edit or delete Campground Comment
+// function checkCampGroundCommentOwnership(req, res, next) {
+// 	if(req.isAuthenticated()) {
+// 		Comment.findById(req.params.comment_id, function(err, foundCampGroundComment) {
+// 			if(err) {
+// 				res.redirect("back");
+// 			} else {
+// 				//Does user own Comment?
+// 				//If Yes, then move on to the rest of the code in Edit or delete
+// 				if(foundCampGroundComment.author.id.equals(req.user._id)) {
+// 					next();
+// 				} else {
+// 					res.redirect("back");
+// 				}
+// 			}
+// 		});
+// 	}
+// }

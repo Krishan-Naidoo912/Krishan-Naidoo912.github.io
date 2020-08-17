@@ -76,6 +76,23 @@
 				<a class="btn btn-info btn-large" href="/campgrounds">View All Camp Grounds</a>
 			</div>
 		</header>
+
+		<!-- Display Flash message passed by routes when rendering this page -->
+		<!-- Check if flash message exist, if so diplay success or error message  -->
+		<div class="container">
+			<% if(flashMessageError && flashMessageError.length > 0) { %>
+				<div class="alert alert-danger" role="alert">
+					<%= flashMessageError %>
+				</div>
+			<% } %> 
+			
+			<% if(flashMessageSuccess && flashMessageSuccess.length > 0) { %>
+				<div class="alert alert-success" role="alert">
+					<%= flashMessageSuccess %>
+				</div>
+			<% } %>
+		</div>
+
 		<!-- Receive campground and use id to send to edit form as a put request using method override _method	 -->
 		<form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
 			<div style="width: 30%; margin:20px auto">
@@ -84,6 +101,9 @@
 				</div>
 				<div class="form-group">
 					<input class="form-control" type="text" name="campground[image]" value="<%= campground.image %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="number" name="campground[price]" value="<%= campground.price %>" min="0.01" step="0.01">
 				</div>
 				<div class="form-group">
 					<input class="form-control" type="text" name="campground[description]" value="<%= campground.description %>">

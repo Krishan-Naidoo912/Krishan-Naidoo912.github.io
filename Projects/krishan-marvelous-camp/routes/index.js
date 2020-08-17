@@ -13,7 +13,7 @@ router.get("/register", function(req, res) {
 	res.render("register");
 });
 
-//REST ROUTE 3 = Handle Sign Up Logic
+//REST ROUTE 3 = Handle Register Logic
 router.post("/register", function(req, res) {
 	//Store User Name
 	let express = require("express");
@@ -22,16 +22,20 @@ router.post("/register", function(req, res) {
 	User.register(newUser, req.body.password, function(err, user) {
 		if(err) {
 			console.log(err);
+			//Flash message from err response to use if user already exist
+			req.flash("flashMessageError", err.message);
 			res.render("register");
 		} else {
 			passport.authenticate("local")(req, res, function() {
+				//If logged in, flash message
+				req.flash("flashMessageSuccess", "Welcome to YelpCamp " + user.username)
 				res.redirect("/campgrounds");	
 		});
 		}
 	});
 });
 
-//REST ROUTE 1 = Show Login Form
+//REST ROUTE 1 = Show Login Form and handle login flash message
 router.get("/login", function(req, res) {
 	res.render("login");
 });
@@ -49,15 +53,20 @@ router.post("/login", passport.authenticate("local",
 router.get("/logout", function(req, res) {
 	//user passport methods
 	req.logout();
+	req.flash("flashMessageSuccess", "Succesfully Logged You Out!")
 	res.redirect("./campgrounds");
 });
 
-//Check if user is logged in to view or add CampGround comments
-function isLoggedIn(req, res, next) {
-	if(req.isAuthenticated()) {
-		return next();
-	}
-	res.redirect("/login");
-};
-
 module.exports = router;
+
+//=========
+// OLD CODE
+//=========
+
+// //Check if user is logged in to view or add CampGround comments
+// function isLoggedIn(req, res, next) {
+// 	if(req.isAuthenticated()) {
+// 		return next();
+// 	}
+// 	res.redirect("/login");
+// };

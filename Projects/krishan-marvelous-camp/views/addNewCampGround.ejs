@@ -78,6 +78,22 @@
 			</div>
 		</header>
 
+		<!-- Display Flash message passed by routes when rendering this page -->
+		<!-- Check if flash message exist, if so diplay success or error message  -->
+		<div class="container">
+			<% if(flashMessageError && flashMessageError.length > 0) { %>
+				<div class="alert alert-danger" role="alert">
+					<%= flashMessageError %>
+				</div>
+			<% } %> 
+			
+			<% if(flashMessageSuccess && flashMessageSuccess.length > 0) { %>
+				<div class="alert alert-success" role="alert">
+					<%= flashMessageSuccess %>
+				</div>
+			<% } %>
+		</div>
+
 		<form action="/campgrounds" method="POST">
 			<div style="width: 30%; margin:20px auto">
 				<div class="form-group">
@@ -85,6 +101,9 @@
 				</div>
 				<div class="form-group">
 					<input class="form-control" type="text" name="image" placeholder="Camp Ground Image">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="number" name="price" placeholder="Camp Ground Price" min="0.01" step="0.01">
 				</div>
 				<div class="form-group">
 					<input class="form-control" type="text" name="description" placeholder="Camp Ground Description">

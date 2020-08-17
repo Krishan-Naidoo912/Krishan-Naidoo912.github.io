@@ -78,6 +78,23 @@
 			</div>
 		</header>
 	</div>
+
+	<!-- Display Flash message passed by routes when rendering this page -->
+	<!-- Check if flash message exist, if so diplay success or error message  -->
+	<div class="container">
+		<% if(flashMessageError && flashMessageError.length > 0) { %>
+			<div class="alert alert-danger" role="alert">
+				<%= flashMessageError %>
+			</div>
+		<% } %> 
+		
+		<% if(flashMessageSuccess && flashMessageSuccess.length > 0) { %>
+			<div class="alert alert-success" role="alert">
+				<%= flashMessageSuccess %>
+			</div>
+		<% } %>
+	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -92,7 +109,7 @@
 				<div class="thumbnail">
 					<img class="img-responsive img-fluid" src="<%= campground.image %>">
 					<div class="caption-full">
-						<h4 class="text-right">R 120/night</h4>
+						<h4 class="text-right">R <%= campground.price %>/night</h4>
 						<h4><a><%= campground.name %></a></h4>
 						<p>
 							<em>

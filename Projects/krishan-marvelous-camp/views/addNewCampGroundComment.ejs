@@ -78,6 +78,22 @@
 			</div>
 		</header>
 
+		<!-- Display Flash message passed by routes when rendering this page -->
+		<!-- Check if flash message exist, if so diplay success or error message  -->
+		<div class="container">
+			<% if(flashMessageError && flashMessageError.length > 0) { %>
+				<div class="alert alert-danger" role="alert">
+					<%= flashMessageError %>
+				</div>
+			<% } %> 
+			
+			<% if(flashMessageSuccess && flashMessageSuccess.length > 0) { %>
+				<div class="alert alert-success" role="alert">
+					<%= flashMessageSuccess %>
+				</div>
+			<% } %>
+		</div>
+
 		<form action="/campgrounds/<%= campground._id %>/comments" method="POST">
 			<div style="width: 30%; margin:20px auto">
 				<div class="form-group">

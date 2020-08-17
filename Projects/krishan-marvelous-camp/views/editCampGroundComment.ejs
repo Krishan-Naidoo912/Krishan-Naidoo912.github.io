@@ -77,6 +77,23 @@
 				<a class="btn btn-info btn-large" href="/campgrounds">View All Camp Grounds</a>
 			</div>
 		</header>
+
+		<!-- Display Flash message passed by routes when rendering this page -->
+		<!-- Check if flash message exist, if so diplay success or error message  -->
+		<div class="container">
+			<% if(flashMessageError && flashMessageError.length > 0) { %>
+				<div class="alert alert-danger" role="alert">
+					<%= flashMessageError %>
+				</div>
+			<% } %> 
+			
+			<% if(flashMessageSuccess && flashMessageSuccess.length > 0) { %>
+				<div class="alert alert-success" role="alert">
+					<%= flashMessageSuccess %>
+				</div>
+			<% } %>
+		</div>
+		
 		<!-- using campground.id instead of campground._id as we dont need all the campground model features, we just need to campground id to complete the form route -->
 		<form action="/campgrounds/<%= campground_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
 			<div style="width: 30%; margin:20px auto">
