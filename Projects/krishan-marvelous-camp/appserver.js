@@ -73,9 +73,21 @@ app.get("/", function(req, res) {
 	res.render("landingPage");
 });
 
-app.listen(3001, function() {
-	console.log("Krishan Marvelous Camp AppServer is running on port 3001");
-});
+// app.listen(process.env.PORT, process.env.IP, function() {
+// 	console.log("Krishan Marvelous Camp AppServer is running on heroku port");
+// });
+
+app.listen(process.env.PORT, () => {
+	console.log(`Krishan Marvelous Camp AppServer is running on port ${process.env.PORT}.`);
+})
+// app.listen(process.env.PORT || 3001, () => {
+// 	console.log(`Krishan Marvelous Camp AppServer is running on port ${process.env.PORT}.`);
+// })
+
+
+// app.listen(3001, function() {
+// 	console.log("Krishan Marvelous Camp AppServer is running on port 3001");
+// });
 
 
 
