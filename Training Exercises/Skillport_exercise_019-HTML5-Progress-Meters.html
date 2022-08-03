@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Progress Meters</title>
+</head>
+<style>
+	#container {
+		width: 500px;
+		height: 500px;
+		margin:0 auto;
+		border: 1px solid blue;
+		padding: 50px;
+	}
+
+	#meter, #progress {
+		width: 300px;
+		height: 50px;
+	}
+
+	#meterOutput, #progressOutput {
+		color: blue;
+		font-size: 50px;
+	}
+</style>
+
+<script>
+	window.onload = function() {
+		document.getElementById("range").addEventListener("change",startMeter,false);
+		document.getElementById("start").addEventListener("click", startProgress, false);
+		
+		function startMeter(){
+			document.getElementById("meterOutput").innerHTML = document.getElementById("range").value;
+			document.getElementById("meter").value = document.getElementById("range").value;
+		}
+
+		function startProgress() {
+			var inc = 0;
+			setInterval(calculate,50);
+			function calculate(){
+				inc ++;
+				if(inc>100) {
+					document.getElementById("progressOutput").innerHTML = "Done";
+				} else {
+					document.getElementById("progressOutput").innerHTML = inc + "%";	
+					document.getElementById("progress").value = inc;
+				}
+			}
+		}
+	}
+</script>
+<body>
+	<div id="container">
+		<meter id="meter" min="0" max="10" value="1"></meter>
+		<br>
+		<input type="range" id="range" value="0" min="0" max="10">
+		<br>
+		<output id="meterOutput"></output>
+		<br>
+		<br>
+		<progress id="progress" min="0" max="100" value="0"></progress>
+		<br>
+		<button id="start">Start</button>
+		<output id="progressOutput"></output>
+	</div>
+</body>
+</html>

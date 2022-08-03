@@ -1,0 +1,8 @@
+2021-06-14 10:41:56.974 CAT [6908] LOG:  database system was interrupted; last known up at 2021-06-13 08:55:31 CAT
+2021-06-14 10:52:46.969 CAT [6908] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-06-14 10:52:47.119 CAT [6908] LOG:  redo starts at 0/16F33C0
+2021-06-14 10:52:47.121 CAT [6908] LOG:  invalid record length at 0/16F33F8: wanted 24, got 0
+2021-06-14 10:52:47.122 CAT [6908] LOG:  redo done at 0/16F33C0
+2021-06-14 10:52:48.976 CAT [6456] LOG:  database system is ready to accept connections
+2021-06-15 00:58:41.299 CAT [11664] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-06-15 01:01:59.439 CAT [11664] LOG:  using stale statistics instead of current ones because stats collector is not responding

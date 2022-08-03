@@ -1,0 +1,13 @@
+2020-10-14 20:14:05.134 CAT [3264] LOG:  database system was interrupted; last known up at 2020-10-14 14:41:28 CAT
+2020-10-14 20:16:28.459 CAT [3264] LOG:  database system was not properly shut down; automatic recovery in progress
+2020-10-14 20:16:28.531 CAT [3264] LOG:  redo starts at 0/16F0E30
+2020-10-14 20:16:28.535 CAT [3264] LOG:  invalid record length at 0/16F0E68: wanted 24, got 0
+2020-10-14 20:16:28.538 CAT [3264] LOG:  redo done at 0/16F0E30
+2020-10-14 20:16:29.233 CAT [7120] LOG:  database system is ready to accept connections
+2020-10-14 20:17:32.630 CAT [7120] LOG:  received fast shutdown request
+2020-10-14 20:17:32.797 CAT [7120] LOG:  aborting any active transactions
+2020-10-14 20:17:33.498 CAT [4940] ERROR:  canceling statement due to user request
+2020-10-14 20:17:33.526 CAT [7120] LOG:  background worker "logical replication launcher" (PID 4940) exited with exit code 1
+2020-10-14 20:17:33.626 CAT [5260] ERROR:  canceling statement due to user request
+2020-10-14 20:17:33.696 CAT [2716] LOG:  shutting down
+2020-10-14 20:17:36.721 CAT [7120] LOG:  database system is shut down

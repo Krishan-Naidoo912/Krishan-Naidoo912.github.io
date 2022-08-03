@@ -1,0 +1,2 @@
+2021-08-03 08:58:20.390 CAT [7716] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-08-03 09:47:45.534 CAT [7716] LOG:  using stale statistics instead of current ones because stats collector is not responding

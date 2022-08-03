@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>HTML CSS Tabs and Panels</title>
+
+	<!-- EXTERNAL ELEMENTS -->
+	<!-- font awesome cdn link: https://cdnjs.com/libraries/font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="HTML CSS Tabs and Panels.css">
+
+</head>
+<body>
+
+	<!-- START SECTION 1 - HEADER -->
+	<!-- START STICKY TOP NAV BAR -->
+	<header class="header">
+		<nav class="navbar">
+
+			<input type="checkbox" name="check-nav" id="check-nav" checked>
+			<label for="check-nav" class="menu-icon"><span class="navicon"></span></label>
+
+			<div class="nav-logo">
+				<a href="index.html"></a>
+			</div>
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link active">HOME</a>
+				</li>
+				<li class="nav-item">
+
+					<input type="checkbox" name="check-nav-services" id="check-nav-services" notchecked>
+
+					<a href="#" class="nav-link" id="nav-link-services"><label for="check-nav-services">SERVICES<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+		
+
+
+					
+					<!-- START DROP DOWN MENU CARDS - SERVICES -->
+					<div class="nav-dropdown-services">
+						<h3>UON Services</h3>
+						<ul class="container-cards">
+							<li>
+								<a href="UON-Services-Software-Development.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Development_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Development</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Consulting.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Consulting_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Consulting</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Data-Analytics.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Data Analytics_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Data Analytics</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Intelligence.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Intelligence _Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Intelligence</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Software-Solutions.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Solutions_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Solutions</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SERVICES -->
+	
+				<li class="nav-item">
+					<input type="checkbox" name="check-nav-solutions" id="check-nav-solutions">
+					<a href="UON-Services-Software-Solutions.html" class="nav-link"><label for="check-nav-solutions">SOLUTIONS<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+
+					<!-- START DROP DOWN MENU CARDS - SOLUTIONS -->
+					<div class="nav-dropdown-solutions">
+						<div class="tabs-panels-container">
+							<input class="radio-nav" id="radio-nav-1" name="radio-nav-group" type="radio" checked>
+					  		<input class="radio-nav" id="radio-nav-2" name="radio-nav-group" type="radio">
+					  		<input class="radio-nav" id="radio-nav-3" name="radio-nav-group" type="radio">
+					  		<input class="radio-nav" id="radio-nav-4" name="radio-nav-group" type="radio">
+
+				  			<div class="tabs-nav">
+							    <label class="tab-nav-lbl" id="lbl-nav-tab-1" for="radio-nav-1">
+						    	<div class="tab">
+						    		<img src="c:\gundam.jpg">
+						    		<h1>Customer</h1>
+						    		<h2>Management</h2>
+						    	</div>
+							    </label>
+							    <label class="tab-nav-lbl" id="lbl-nav-tab-2" for="radio-nav-2">
+						    	<div class="tab">
+						    		<img src="c:\gundam.jpg">
+						    		<h1>Dealer</h1>
+						    		<h2>Management</h2>
+						    	</div>
+							    </label>
+							    <label class="tab-nav-lbl" id="lbl-nav-tab-3" for="radio-nav-3">
+						    	<div class="tab">
+						    		<img src="c:\gundam.jpg">
+						    		<h1>Maketing</h1>
+						    		<h2>Management</h2>
+						    	</div>
+							    </label>
+							    <label class="tab-nav-lbl" id="lbl-nav-tab-4" for="radio-nav-4">
+						    	<div class="tab">
+						    		<img src="c:\gundam.jpg">
+						    		<h1>Sales</h1>
+						    		<h2>Management</h2>
+						    	</div>
+							    </label>
+							</div>
+
+
+							<div class="panels">
+								<div class="panel-nav" id="panel-nav-1">
+									<h1>Improving <span id="highlight">Customer Management</span> Customer Management Customer Management</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+									<div class="contents">
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-2">
+									<h1>Improving <span id="highlight">Dealer Management</span> Dealer Management Dealer Management</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+									<div class="contents">
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-3">
+									<h1>Improving <span id="highlight">Maketing Management</span> Maketing Management Maketing Management</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+									<div class="contents">
+										<div class="content row">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management Customer Management Customer Management</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-4">
+									<h1>Improving <span id="highlight">Sales Management</span> Sales Management Sales Management</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+									<div class="contents">
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+										<div class="content">
+											<div class="image-container">
+												<img src="c:\Gundam.jpg">	
+											</div>
+											<div class="text">
+												<h2>01</h2>
+												<h3>Customer Management Customer Management</h3>																	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SOLUTIONS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!-- <h3>Modular Software Solutions</h3>
+						<ul class="container-cards">
+							<li>
+								<a href="UON-Solutions-Location-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Location View.svg">
+										</div>							
+										<h4>Location View</h4>
+										<p>Dealer Location Optimisation (GIS)</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Dealer-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">
+										</div>							
+										<h4>Dealer View</h4>
+										<p>Integrated Franchise Management</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Fleet-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Fleet View.svg">
+										</div>							
+										<h4>Fleet View</h4>
+										<p>Corporate Client Management</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Market-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Market View.svg">
+										</div>							
+										<h4>Market View</h4>
+										<p>Comprehensive Marketing Toolkit</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Nurture-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Nurture View.svg">
+										</div>							
+										<h4>Nurture View</h4>
+										<p>Lead Nurturing to Optimise Closing Ratios</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Sales-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Sales View.svg">
+										</div>							
+										<h4>Sales View</h4>
+										<p>Linking the Customer, Vehicle and Competitor</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Training-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Training View.svg">
+										</div>							
+										<h4>Training View</h4>
+										<p>Training and Capacity Managment</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Inventory-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Inventory View.svg">
+										</div>							
+										<h4>Inventory View</h4>
+										<p>Inventory Optimisation</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Financial-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Financial View.svg">
+										</div>							
+										<h4>Financial View</h4>
+										<p>Financial Reporting</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Solutions-Behaviour-View.html">
+									<div class="nav-card">
+										<i class="fas fa-arrow-right"></i>
+										<div>
+											<img src="elements\Top Nav Bar\Drop Down Menu\Behaviour View.svg">
+										</div>							
+										<h4>Behaviour View</h4>
+										<p>Behavioural Change Managment</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div> -->
+
+				
+
+				<li class="nav-item">
+					<a href="UON-About.html" class="nav-link">ABOUT UON</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Insights.html" class="nav-link">INSIGHTS</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Contact.html" class="nav-link">CONTACT</a>
+				</li>
+				
+			</ul>
+
+			<!-- ARRANGE A DEMO BUTTON -->
+    		<a href="UON-Contact.html">
+    			<button id="btn-demo"><span class="btn-demo-text">Arrange a Demo</span> <i class="fas fa-arrow-right"></i></button>
+    		</a>
+		</nav>
+		<!-- END STICKY TOP NAV BAR -->
+	</header>
+	<!-- END SECTION 1 - HEADER -->
+	
+	<!-- START MAIN SECTIONS -->
+	<main>
+		
+		<!-- START SECTION 5 - MODULAR SOFTWARE SOLUTIONS -->
+		<section class="solutions">
+			<h1>UON View: Modular Software Solutions</h1>
+			<div class="tabs-panels-container">
+				<input class="radio" id="radio-1" name="radio-group" type="radio" checked>
+	  			<input class="radio" id="radio-2" name="radio-group" type="radio">
+	  			<input class="radio" id="radio-3" name="radio-group" type="radio">
+	  			<input class="radio" id="radio-4" name="radio-group" type="radio">
+
+	  			<div class="tabs">
+				    <label class="tab-lbl" id="lbl-tab-1" for="radio-1">
+			    	<div class="tab">
+			    		<img src="c:\gundam.jpg">
+			    		<h1>Customer</h1>
+			    		<h2>Management</h2>
+			    	</div>
+				    </label>
+				    <label class="tab-lbl" id="lbl-tab-2" for="radio-2">
+			    	<div class="tab">
+			    		<img src="c:\gundam.jpg">
+			    		<h1>Dealer</h1>
+			    		<h2>Management</h2>
+			    	</div>
+				    </label>
+				    <label class="tab-lbl" id="lbl-tab-3" for="radio-3">
+			    	<div class="tab">
+			    		<img src="c:\gundam.jpg">
+			    		<h1>Maketing</h1>
+			    		<h2>Management</h2>
+			    	</div>
+				    </label>
+				    <label class="tab-lbl" id="lbl-tab-4" for="radio-4">
+			    	<div class="tab">
+			    		<img src="c:\gundam.jpg">
+			    		<h1>Sales</h1>
+			    		<h2>Management</h2>
+			    	</div>
+				    </label>
+				</div>
+
+
+				<div class="panels">
+					<div class="panel" id="panel-1">
+						<h1>Improving <span id="highlight">Customer Management</span> Customer Management Customer Management</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="contents">
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-2">
+						<h1>Improving <span id="highlight">Dealer Management</span> Dealer Management Dealer Management</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="contents">
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-3">
+						<h1>Improving <span id="highlight">Maketing Management</span> Maketing Management Maketing Management</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="contents">
+							<div class="content row">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-4">
+						<h1>Improving <span id="highlight">Sales Management</span> Sales Management Sales Management</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.	cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="contents">
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+							<div class="content">
+								<div class="image-container">
+									<img src="c:\Gundam.jpg">	
+								</div>
+								<div class="text">
+									<h2>01</h2>
+									<h3>Customer Management Customer Management</h3>																	
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>		
+		</section>
+	</main>
+</body>
+</html>

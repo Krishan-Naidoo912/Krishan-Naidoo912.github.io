@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Validations</title>
+</head>
+<body>
+	<div>
+		<form id="dataSheet">
+			First: <input type="text" name="first" id="first" placeholder="hexdecimal" pattern="^([A-F\d]*$)" required>
+			Second: <input type="number" name="second" id="second" min="0" max="100" step="5" placeholder="number" required>
+			Third: <input type="password" name="third" id="third" placeholder="password" required min="5">
+			<input type="submit" name="submit" id="onSubmit">
+		</form>
+	</div>
+</body>
+</html>

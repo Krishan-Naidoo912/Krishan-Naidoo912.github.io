@@ -1,0 +1,9 @@
+2020-09-30 20:54:31.148 CAT [7084] LOG:  database system was shut down at 2020-09-30 20:50:45 CAT
+2020-09-30 20:54:32.739 CAT [6476] LOG:  database system is ready to accept connections
+2020-09-30 21:06:21.181 CAT [6476] LOG:  received fast shutdown request
+2020-09-30 21:06:21.458 CAT [6476] LOG:  aborting any active transactions
+2020-09-30 21:06:22.506 CAT [6220] ERROR:  canceling statement due to user request
+2020-09-30 21:06:22.515 CAT [6476] LOG:  background worker "logical replication launcher" (PID 6220) exited with exit code 1
+2020-09-30 21:06:22.610 CAT [5948] ERROR:  canceling statement due to user request
+2020-09-30 21:06:22.645 CAT [7124] LOG:  shutting down
+2020-09-30 21:06:25.879 CAT [6476] LOG:  database system is shut down

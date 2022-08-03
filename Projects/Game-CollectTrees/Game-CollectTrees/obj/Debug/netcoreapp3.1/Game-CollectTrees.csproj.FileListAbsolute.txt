@@ -1,0 +1,16 @@
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.csprojAssemblyReference.cache
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game_CollectTrees.Form1.resources
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game_CollectTrees.Properties.Resources.resources
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.csproj.GenerateResource.cache
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.AssemblyInfoInputs.cache
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.AssemblyInfo.cs
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.csproj.CoreCompileInputs.cache
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.exe
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.deps.json
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.runtimeconfig.json
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.runtimeconfig.dev.json
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.dll
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\bin\Debug\netcoreapp3.1\Game-CollectTrees.pdb
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.dll
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.pdb
+C:\Krishan-Naidoo-Developer\Krishan-Naidoo912.github.io\Projects\Game-CollectTrees\Game-CollectTrees\obj\Debug\netcoreapp3.1\Game-CollectTrees.genruntimeconfig.cache

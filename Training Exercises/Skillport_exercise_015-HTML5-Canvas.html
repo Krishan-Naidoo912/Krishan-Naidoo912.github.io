@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Canvas</title>
+	<style>
+		html, body {
+			margin: 0px;
+			height: 100%;
+			width: 100%;
+		}
+
+		#myCanvas {
+			border: 1px solid blue;
+		}
+	</style>
+
+	<script>
+		window.onload = function () {
+			var canvas = document.getElementById("myCanvas");
+			var context = canvas.getContext("2d");
+			context.canvas.height = window.innerHeight;
+			context.canvas.width = window.innerWidth;
+			context.fillStyle = "yellow";
+			context.fillRect(100,100,600,600);
+
+			context.beginPath();
+			context.moveTo(200,200);
+			context.lineTo(200,400);
+
+			context.moveTo(200,300);
+			context.lineTo(300,200);
+
+			context.moveTo(200,300);
+			context.lineTo(300,400);
+
+			context.lineWidth = 5;
+			context.strokeStyle = "rgb(0,0,255)";
+			context.stroke();
+		}
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas"></canvas>
+</body>
+</html>

@@ -1,0 +1,7 @@
+2020-12-10 10:43:56.580 CAT [3180] LOG:  received fast shutdown request
+2020-12-10 10:43:57.311 CAT [3180] LOG:  aborting any active transactions
+2020-12-10 10:43:57.353 CAT [2020] ERROR:  canceling statement due to user request
+2020-12-10 10:43:57.354 CAT [1492] ERROR:  canceling statement due to user request
+2020-12-10 10:43:57.475 CAT [3180] LOG:  background worker "logical replication launcher" (PID 2020) exited with exit code 1
+2020-12-10 10:43:57.704 CAT [2376] LOG:  shutting down
+2020-12-10 10:44:00.234 CAT [3180] LOG:  database system is shut down

@@ -1,0 +1,17 @@
+.main {
+	background: blue;
+	font-size: clamp(1rem, 1rem + 2vw, 4rem);
+	line-height: calc(1 + 4vw);
+	color: white;
+	padding: 0.125em 0.5em;
+	width: fit-content;
+	text-align: center;
+}
+
+img {
+	width: 30%;
+	height: 30%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}

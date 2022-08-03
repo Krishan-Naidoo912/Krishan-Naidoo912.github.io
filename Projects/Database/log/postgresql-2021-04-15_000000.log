@@ -1,0 +1,8 @@
+2021-04-15 17:10:26.738 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-15 20:21:34.775 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 08:55:45.930 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 10:56:28.953 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 12:59:16.664 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 14:26:52.800 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 14:41:18.837 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-04-16 17:01:07.227 CAT [4560] LOG:  using stale statistics instead of current ones because stats collector is not responding

@@ -1,0 +1,6 @@
+2021-06-18 16:22:19.446 CAT [6520] LOG:  database system was interrupted; last known up at 2021-06-14 10:52:47 CAT
+2021-06-18 16:36:47.640 CAT [6520] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-06-18 16:36:47.743 CAT [6520] LOG:  redo starts at 0/16F3470
+2021-06-18 16:36:47.746 CAT [6520] LOG:  invalid record length at 0/16F34A8: wanted 24, got 0
+2021-06-18 16:36:47.749 CAT [6520] LOG:  redo done at 0/16F3470
+2021-06-18 16:36:49.437 CAT [6256] LOG:  database system is ready to accept connections

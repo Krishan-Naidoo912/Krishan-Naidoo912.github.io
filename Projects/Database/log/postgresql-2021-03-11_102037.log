@@ -1,0 +1,6 @@
+2021-03-11 10:20:39.895 CAT [7840] LOG:  database system was interrupted; last known up at 2021-03-11 09:41:28 CAT
+2021-03-11 10:30:50.437 CAT [7840] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-03-11 10:30:50.520 CAT [7840] LOG:  redo starts at 0/16F2298
+2021-03-11 10:30:50.527 CAT [7840] LOG:  invalid record length at 0/16F22D0: wanted 24, got 0
+2021-03-11 10:30:50.537 CAT [7840] LOG:  redo done at 0/16F2298
+2021-03-11 10:30:51.731 CAT [7200] LOG:  database system is ready to accept connections

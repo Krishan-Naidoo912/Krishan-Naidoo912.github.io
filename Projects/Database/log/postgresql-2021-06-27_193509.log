@@ -1,0 +1,9 @@
+2021-06-27 19:35:09.983 CAT [6252] LOG:  database system was shut down at 2021-06-27 19:32:00 CAT
+2021-06-27 19:35:11.510 CAT [6340] LOG:  database system is ready to accept connections
+2021-06-27 19:45:33.587 CAT [6340] LOG:  received fast shutdown request
+2021-06-27 19:45:33.702 CAT [6340] LOG:  aborting any active transactions
+2021-06-27 19:45:33.770 CAT [1780] ERROR:  canceling statement due to user request
+2021-06-27 19:45:33.775 CAT [1612] ERROR:  canceling statement due to user request
+2021-06-27 19:45:33.801 CAT [6340] LOG:  background worker "logical replication launcher" (PID 1780) exited with exit code 1
+2021-06-27 19:45:33.811 CAT [5476] LOG:  shutting down
+2021-06-27 19:45:34.191 CAT [6340] LOG:  database system is shut down

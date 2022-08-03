@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<style>
+		div {
+			margin: 20px;
+			border: solid blue 1px;
+			padding: 10px;
+			float: left;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("div[align='right']").css("background-color", "blue");	
+			$("div[align=center]").css("background-color", "yellow");
+			$("div.type1").css("background", "linear-gradient(to right,red,blue,yellow)");
+		})
+	</script>
+</head>
+<body>
+	<div class="type1">DIV A</div>
+	<div class="type1">DIV B</div>
+	<div class="div-c" align="center">DIV C</div>
+	<div class="div-d" align="right">DIV D</div>
+	<div class="div-e" style="border-radius: 50px">DIV E</div>
+</body>
+</html>

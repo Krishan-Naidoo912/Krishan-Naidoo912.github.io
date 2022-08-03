@@ -1,0 +1,2 @@
+2021-02-21 20:30:30.897 CAT [8968] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-22 22:59:54.730 CAT [8968] LOG:  using stale statistics instead of current ones because stats collector is not responding

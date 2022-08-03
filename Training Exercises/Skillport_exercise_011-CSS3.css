@@ -1,0 +1,61 @@
+/*Skillport_exercise_011-HTML5-CSS3.css*/
+
+#introduction {
+	background-color: orange;
+	color: white;
+	font-family: Calibri;
+}
+
+p {
+	font-family: 'Courier New';
+	color: blue;
+}
+
+.variation {
+	font-style: italic;
+}
+
+.tableVariation {
+	background-color: skyblue;
+	width: 500px;
+	height: auto;
+}
+
+tr {
+	background-color: purple;
+}
+
+tr:nth-child(even) {
+	background-color: skyblue;
+}
+
+th {
+	background-color: pink;
+}
+
+#booksDescriptions > div {
+	font-family: Arial;
+	background-color: orange;
+	width: 900px;
+	height: 300px;
+}
+
+#booksDescriptions > div > h1 {
+	color: green;
+}
+
+.bookName {
+	font-family: Helvetica;
+	color: #ff0099;
+	font-weight: bold;	
+}
+
+li {
+	list-style: square;
+	font-size: 20px;
+	font-family: Calibri;
+}
+
+#clickHere:hover {
+	color: green;
+}

@@ -1,0 +1,4 @@
+2021-06-02 19:13:14.208 CAT [9032] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-06-02 19:17:32.771 CAT [9032] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-06-02 19:19:44.079 CAT [9032] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-06-03 08:56:45.723 CAT [9032] LOG:  using stale statistics instead of current ones because stats collector is not responding

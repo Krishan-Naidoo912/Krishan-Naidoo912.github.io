@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Audio</title>
+
+	<style>
+	
+		.container {
+			width: 600px;
+			height: 300px;
+			background-color: purple;
+			margin: 0 auto;
+			border: 2px solid blue;
+			text-align: center;
+			border-radius: 25px;
+		}
+
+		button {
+			margin: 20px;
+		}
+
+	</style>
+	
+	<script>
+		window.onload = function() {
+			document.getElementById("btnPlay").addEventListener("click",play,false);
+			document.getElementById("btnStop").addEventListener("click",stop,false);
+			play = document.getElementById("myAudio");
+		}
+
+		function play() {
+			play.play();
+			document.getElementById("duration").innerHTML = play.duration;
+			setInterval(elapse,500);
+		}
+
+		function elapse() {
+			document.getElementById("elapse").innerHTML = play.currentTime;
+		}
+
+		function stop() {
+			play.pause();
+		}
+
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Hot-Chocolate-So-You-Win-Again.mp3</h1>
+		<audio id="myAudio">
+			<source src="Hot-Chocolate-So-You-Win-Again.mp3" type="audio/mp3" />
+		</audio>
+		<br>
+		<div id="controls">
+			<button id="btnPlay">Play</button>
+			<button id="btnStop">Stop</button><br>
+			<h3>Duration: <output id="duration"></output></h3>
+			<h3>Time Elapse: <output id="elapse"></output></h3>
+		</div>
+	</div>
+
+</body>
+</html>

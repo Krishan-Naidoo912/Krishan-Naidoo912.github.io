@@ -1,0 +1,11 @@
+2021-02-09 17:56:24.299 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-09 17:57:39.607 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-09 17:58:52.512 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-09 18:00:16.960 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 00:53:22.254 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 00:54:39.494 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 00:55:56.131 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 10:02:23.523 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 10:03:36.326 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 10:04:47.370 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-10 10:05:58.432 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding

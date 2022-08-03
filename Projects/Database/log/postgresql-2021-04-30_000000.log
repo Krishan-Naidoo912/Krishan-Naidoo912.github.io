@@ -1,0 +1,6 @@
+2021-05-01 18:52:47.917 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-03 13:05:44.718 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-03 14:12:01.121 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-03 14:31:29.945 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-03 16:28:27.104 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-03 16:47:55.601 CAT [916] LOG:  using stale statistics instead of current ones because stats collector is not responding

@@ -1,0 +1,726 @@
+2021-09-11 19:55:03.345 GMT [576] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:55:03.352 GMT [576] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:55:03.364 GMT [576] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 19:55:03.364 GMT [576] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 21:55:03.398 CAT [6980] LOG:  statistics collector process (PID 576) exited with exit code 1
+2021-09-11 21:55:50.400 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 19:56:03.632 GMT [10212] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:56:03.639 GMT [10212] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:56:03.649 GMT [10212] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 19:56:03.649 GMT [10212] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 21:56:03.676 CAT [6980] LOG:  statistics collector process (PID 10212) exited with exit code 1
+2021-09-11 21:57:03.584 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 19:57:03.924 GMT [3624] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:57:03.930 GMT [3624] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:57:03.943 GMT [3624] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 19:57:03.943 GMT [3624] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 21:57:03.969 CAT [6980] LOG:  statistics collector process (PID 3624) exited with exit code 1
+2021-09-11 19:58:04.123 GMT [12944] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:58:04.131 GMT [12944] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:58:04.144 GMT [12944] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 19:58:04.144 GMT [12944] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 21:58:04.171 CAT [6980] LOG:  statistics collector process (PID 12944) exited with exit code 1
+2021-09-11 21:58:16.740 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 19:59:04.299 GMT [13784] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:59:04.304 GMT [13784] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 19:59:04.312 GMT [13784] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 19:59:04.312 GMT [13784] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 21:59:04.334 CAT [6980] LOG:  statistics collector process (PID 13784) exited with exit code 1
+2021-09-11 21:59:35.783 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:00:04.499 GMT [12056] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:00:04.505 GMT [12056] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:00:04.516 GMT [12056] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:00:04.516 GMT [12056] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:00:04.556 CAT [6980] LOG:  statistics collector process (PID 12056) exited with exit code 1
+2021-09-11 22:00:52.804 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:01:04.691 GMT [12324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:01:04.695 GMT [12324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:01:04.704 GMT [12324] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:01:04.704 GMT [12324] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:01:04.752 CAT [6980] LOG:  statistics collector process (PID 12324) exited with exit code 1
+2021-09-11 20:02:05.142 GMT [1360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:02:05.150 GMT [1360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:02:05.165 GMT [1360] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:02:05.165 GMT [1360] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:02:05.208 CAT [6980] LOG:  statistics collector process (PID 1360) exited with exit code 1
+2021-09-11 22:02:06.473 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:03:05.494 GMT [13840] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:03:05.500 GMT [13840] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:03:05.512 GMT [13840] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:03:05.512 GMT [13840] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:03:05.546 CAT [6980] LOG:  statistics collector process (PID 13840) exited with exit code 1
+2021-09-11 22:03:19.451 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:04:05.787 GMT [13324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:04:05.793 GMT [13324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:04:05.806 GMT [13324] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:04:05.806 GMT [13324] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:04:05.839 CAT [6980] LOG:  statistics collector process (PID 13324) exited with exit code 1
+2021-09-11 22:04:36.688 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:05:06.075 GMT [11140] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:05:06.080 GMT [11140] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:05:06.089 GMT [11140] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:05:06.089 GMT [11140] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:05:06.120 CAT [6980] LOG:  statistics collector process (PID 11140) exited with exit code 1
+2021-09-11 22:05:49.575 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:06:06.241 GMT [14176] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:06:06.245 GMT [14176] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:06:06.255 GMT [14176] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:06:06.255 GMT [14176] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:06:06.290 CAT [6980] LOG:  statistics collector process (PID 14176) exited with exit code 1
+2021-09-11 22:07:02.600 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:07:06.454 GMT [2156] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:07:06.461 GMT [2156] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:07:06.471 GMT [2156] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:07:06.471 GMT [2156] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:07:06.503 CAT [6980] LOG:  statistics collector process (PID 2156) exited with exit code 1
+2021-09-11 20:08:06.728 GMT [1236] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:08:06.735 GMT [1236] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:08:06.747 GMT [1236] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:08:06.747 GMT [1236] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:08:06.780 CAT [6980] LOG:  statistics collector process (PID 1236) exited with exit code 1
+2021-09-11 22:08:15.816 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:09:06.940 GMT [14116] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:09:06.946 GMT [14116] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:09:06.959 GMT [14116] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:09:06.959 GMT [14116] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:09:06.990 CAT [6980] LOG:  statistics collector process (PID 14116) exited with exit code 1
+2021-09-11 22:09:28.966 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:10:07.139 GMT [3432] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:10:07.144 GMT [3432] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:10:07.154 GMT [3432] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:10:07.154 GMT [3432] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:10:07.186 CAT [6980] LOG:  statistics collector process (PID 3432) exited with exit code 1
+2021-09-11 22:10:42.119 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:11:07.338 GMT [6460] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:11:07.344 GMT [6460] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:11:07.356 GMT [6460] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:11:07.356 GMT [6460] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:11:07.391 CAT [6980] LOG:  statistics collector process (PID 6460) exited with exit code 1
+2021-09-11 22:11:55.291 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:12:07.674 GMT [10744] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:12:07.681 GMT [10744] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:12:07.694 GMT [10744] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:12:07.694 GMT [10744] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:12:07.727 CAT [6980] LOG:  statistics collector process (PID 10744) exited with exit code 1
+2021-09-11 20:13:07.879 GMT [8088] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:13:07.886 GMT [8088] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:13:07.899 GMT [8088] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:13:07.899 GMT [8088] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:13:07.925 CAT [6980] LOG:  statistics collector process (PID 8088) exited with exit code 1
+2021-09-11 22:13:08.505 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:14:08.091 GMT [13608] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:14:08.098 GMT [13608] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:14:08.111 GMT [13608] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:14:08.111 GMT [13608] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:14:08.147 CAT [6980] LOG:  statistics collector process (PID 13608) exited with exit code 1
+2021-09-11 22:14:21.581 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:15:08.472 GMT [6680] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:15:08.477 GMT [6680] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:15:08.486 GMT [6680] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:15:08.486 GMT [6680] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:15:08.519 CAT [6980] LOG:  statistics collector process (PID 6680) exited with exit code 1
+2021-09-11 22:15:34.707 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:16:08.644 GMT [1960] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:16:08.649 GMT [1960] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:16:08.657 GMT [1960] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:16:08.657 GMT [1960] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:16:08.687 CAT [6980] LOG:  statistics collector process (PID 1960) exited with exit code 1
+2021-09-11 22:16:47.790 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:17:09.119 GMT [14224] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:17:09.127 GMT [14224] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:17:09.142 GMT [14224] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:17:09.142 GMT [14224] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:17:09.175 CAT [6980] LOG:  statistics collector process (PID 14224) exited with exit code 1
+2021-09-11 22:18:02.111 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-11 20:18:09.313 GMT [13560] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:18:09.318 GMT [13560] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:18:09.327 GMT [13560] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:18:09.327 GMT [13560] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:18:09.353 CAT [6980] LOG:  statistics collector process (PID 13560) exited with exit code 1
+2021-09-11 20:19:09.490 GMT [4236] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:19:09.495 GMT [4236] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-11 20:19:09.505 GMT [4236] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-11 20:19:09.505 GMT [4236] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-11 22:19:09.537 CAT [6980] LOG:  statistics collector process (PID 4236) exited with exit code 1
+2021-09-11 22:19:15.376 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:41:25.806 GMT [13136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:41:25.812 GMT [13136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:41:25.822 GMT [13136] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:41:25.822 GMT [13136] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:41:25.845 CAT [6980] LOG:  statistics collector process (PID 13136) exited with exit code 1
+2021-09-14 20:41:38.477 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:42:25.979 GMT [9992] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:42:25.986 GMT [9992] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:42:25.996 GMT [9992] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:42:25.996 GMT [9992] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:42:26.026 CAT [6980] LOG:  statistics collector process (PID 9992) exited with exit code 1
+2021-09-14 20:42:51.847 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:43:26.179 GMT [704] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:43:26.186 GMT [704] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:43:26.200 GMT [704] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:43:26.200 GMT [704] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:43:26.232 CAT [6980] LOG:  statistics collector process (PID 704) exited with exit code 1
+2021-09-14 20:44:05.132 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:44:26.379 GMT [1360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:44:26.385 GMT [1360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:44:26.397 GMT [1360] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:44:26.397 GMT [1360] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:44:26.433 CAT [6980] LOG:  statistics collector process (PID 1360) exited with exit code 1
+2021-09-14 20:45:18.369 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:45:26.717 GMT [3328] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:45:26.722 GMT [3328] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:45:26.733 GMT [3328] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:45:26.733 GMT [3328] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:45:26.753 CAT [6980] LOG:  statistics collector process (PID 3328) exited with exit code 1
+2021-09-14 18:46:26.982 GMT [7492] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:46:26.989 GMT [7492] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:46:27.001 GMT [7492] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:46:27.001 GMT [7492] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:46:27.026 CAT [6980] LOG:  statistics collector process (PID 7492) exited with exit code 1
+2021-09-14 20:46:31.512 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:47:27.166 GMT [13668] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:47:27.171 GMT [13668] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:47:27.180 GMT [13668] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:47:27.180 GMT [13668] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:47:27.204 CAT [6980] LOG:  statistics collector process (PID 13668) exited with exit code 1
+2021-09-14 20:47:44.795 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:48:27.334 GMT [13500] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:48:27.339 GMT [13500] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:48:27.348 GMT [13500] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:48:27.348 GMT [13500] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:48:27.369 CAT [6980] LOG:  statistics collector process (PID 13500) exited with exit code 1
+2021-09-14 20:48:58.103 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:49:27.492 GMT [10136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:49:27.497 GMT [10136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:49:27.506 GMT [10136] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:49:27.506 GMT [10136] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:49:27.536 CAT [6980] LOG:  statistics collector process (PID 10136) exited with exit code 1
+2021-09-14 20:50:11.435 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:50:27.658 GMT [1852] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:50:27.663 GMT [1852] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:50:27.672 GMT [1852] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:50:27.672 GMT [1852] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:50:27.692 CAT [6980] LOG:  statistics collector process (PID 1852) exited with exit code 1
+2021-09-14 20:51:24.671 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:51:27.829 GMT [8280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:51:27.834 GMT [8280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:51:27.843 GMT [8280] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:51:27.843 GMT [8280] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:51:27.864 CAT [6980] LOG:  statistics collector process (PID 8280) exited with exit code 1
+2021-09-14 18:52:28.000 GMT [5064] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:52:28.005 GMT [5064] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:52:28.014 GMT [5064] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:52:28.014 GMT [5064] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:52:28.047 CAT [6980] LOG:  statistics collector process (PID 5064) exited with exit code 1
+2021-09-14 20:52:37.904 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:53:28.178 GMT [464] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:53:28.183 GMT [464] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:53:28.194 GMT [464] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:53:28.194 GMT [464] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:53:28.213 CAT [6980] LOG:  statistics collector process (PID 464) exited with exit code 1
+2021-09-14 20:53:51.109 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:54:28.349 GMT [4516] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:54:28.353 GMT [4516] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:54:28.363 GMT [4516] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:54:28.363 GMT [4516] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:54:28.382 CAT [6980] LOG:  statistics collector process (PID 4516) exited with exit code 1
+2021-09-14 20:55:04.317 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:55:28.514 GMT [11896] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:55:28.519 GMT [11896] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:55:28.531 GMT [11896] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:55:28.531 GMT [11896] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:55:28.552 CAT [6980] LOG:  statistics collector process (PID 11896) exited with exit code 1
+2021-09-14 20:56:17.630 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:56:28.688 GMT [8168] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:56:28.693 GMT [8168] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:56:28.704 GMT [8168] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:56:28.704 GMT [8168] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:56:28.725 CAT [6980] LOG:  statistics collector process (PID 8168) exited with exit code 1
+2021-09-14 18:57:28.859 GMT [10132] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:57:28.864 GMT [10132] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:57:28.873 GMT [10132] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:57:28.873 GMT [10132] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:57:28.907 CAT [6980] LOG:  statistics collector process (PID 10132) exited with exit code 1
+2021-09-14 20:57:30.995 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:58:29.038 GMT [10576] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:58:29.046 GMT [10576] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:58:29.055 GMT [10576] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:58:29.055 GMT [10576] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:58:29.086 CAT [6980] LOG:  statistics collector process (PID 10576) exited with exit code 1
+2021-09-14 20:58:44.127 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 18:59:29.236 GMT [4824] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:59:29.242 GMT [4824] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 18:59:29.251 GMT [4824] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 18:59:29.251 GMT [4824] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 20:59:29.281 CAT [6980] LOG:  statistics collector process (PID 4824) exited with exit code 1
+2021-09-14 20:59:57.258 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:00:29.415 GMT [8076] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:00:29.420 GMT [8076] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:00:29.429 GMT [8076] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:00:29.429 GMT [8076] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:00:29.458 CAT [6980] LOG:  statistics collector process (PID 8076) exited with exit code 1
+2021-09-14 21:01:10.535 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:01:29.604 GMT [1208] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:01:29.610 GMT [1208] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:01:29.622 GMT [1208] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:01:29.622 GMT [1208] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:01:29.657 CAT [6980] LOG:  statistics collector process (PID 1208) exited with exit code 1
+2021-09-14 21:02:23.723 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:02:29.802 GMT [1120] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:02:29.809 GMT [1120] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:02:29.821 GMT [1120] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:02:29.821 GMT [1120] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:02:29.852 CAT [6980] LOG:  statistics collector process (PID 1120) exited with exit code 1
+2021-09-14 19:03:29.998 GMT [12916] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:03:30.003 GMT [12916] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:03:30.012 GMT [12916] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:03:30.012 GMT [12916] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:03:30.045 CAT [6980] LOG:  statistics collector process (PID 12916) exited with exit code 1
+2021-09-14 21:03:37.150 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:04:30.192 GMT [8404] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:04:30.198 GMT [8404] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:04:30.208 GMT [8404] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:04:30.208 GMT [8404] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:04:30.238 CAT [6980] LOG:  statistics collector process (PID 8404) exited with exit code 1
+2021-09-14 21:04:55.638 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:05:31.134 GMT [5132] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:05:31.141 GMT [5132] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:05:31.154 GMT [5132] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:05:31.154 GMT [5132] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:05:31.178 CAT [6980] LOG:  statistics collector process (PID 5132) exited with exit code 1
+2021-09-14 21:06:11.887 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:06:31.952 GMT [13820] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:06:31.958 GMT [13820] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:06:31.969 GMT [13820] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:06:31.969 GMT [13820] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:06:31.998 CAT [6980] LOG:  statistics collector process (PID 13820) exited with exit code 1
+2021-09-14 21:07:28.184 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:07:32.142 GMT [7332] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:07:32.146 GMT [7332] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:07:32.155 GMT [7332] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:07:32.155 GMT [7332] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:07:32.176 CAT [6980] LOG:  statistics collector process (PID 7332) exited with exit code 1
+2021-09-14 19:08:32.296 GMT [7496] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:08:32.301 GMT [7496] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:08:32.312 GMT [7496] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:08:32.312 GMT [7496] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:08:32.335 CAT [6980] LOG:  statistics collector process (PID 7496) exited with exit code 1
+2021-09-14 21:08:44.457 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:09:32.510 GMT [3848] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:09:32.518 GMT [3848] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:09:32.529 GMT [3848] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:09:32.529 GMT [3848] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:09:32.560 CAT [6980] LOG:  statistics collector process (PID 3848) exited with exit code 1
+2021-09-14 21:10:02.895 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:10:32.696 GMT [9928] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:10:32.701 GMT [9928] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:10:32.710 GMT [9928] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:10:32.710 GMT [9928] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:10:32.729 CAT [6980] LOG:  statistics collector process (PID 9928) exited with exit code 1
+2021-09-14 21:11:20.006 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:11:32.886 GMT [7836] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:11:32.892 GMT [7836] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:11:32.905 GMT [7836] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:11:32.905 GMT [7836] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:11:32.931 CAT [6980] LOG:  statistics collector process (PID 7836) exited with exit code 1
+2021-09-14 19:12:33.060 GMT [704] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:12:33.065 GMT [704] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:12:33.075 GMT [704] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:12:33.075 GMT [704] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:12:33.104 CAT [6980] LOG:  statistics collector process (PID 704) exited with exit code 1
+2021-09-14 21:12:39.427 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:13:33.242 GMT [14084] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:13:33.247 GMT [14084] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:13:33.256 GMT [14084] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:13:33.256 GMT [14084] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:13:33.282 CAT [6980] LOG:  statistics collector process (PID 14084) exited with exit code 1
+2021-09-14 21:13:57.461 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:14:33.401 GMT [3216] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:14:33.406 GMT [3216] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:14:33.416 GMT [3216] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:14:33.416 GMT [3216] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:14:33.436 CAT [6980] LOG:  statistics collector process (PID 3216) exited with exit code 1
+2021-09-14 21:15:13.412 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:15:33.550 GMT [10024] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:15:33.556 GMT [10024] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:15:33.565 GMT [10024] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:15:33.565 GMT [10024] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:15:33.597 CAT [6980] LOG:  statistics collector process (PID 10024) exited with exit code 1
+2021-09-14 21:16:28.693 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:16:33.737 GMT [10056] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:16:33.742 GMT [10056] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:16:33.751 GMT [10056] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:16:33.751 GMT [10056] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:16:33.785 CAT [6980] LOG:  statistics collector process (PID 10056) exited with exit code 1
+2021-09-14 19:17:33.927 GMT [2716] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:17:33.933 GMT [2716] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:17:33.943 GMT [2716] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:17:33.943 GMT [2716] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:17:33.974 CAT [6980] LOG:  statistics collector process (PID 2716) exited with exit code 1
+2021-09-14 21:17:45.675 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:18:34.120 GMT [4640] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:18:34.124 GMT [4640] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:18:34.136 GMT [4640] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:18:34.136 GMT [4640] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:18:34.169 CAT [6980] LOG:  statistics collector process (PID 4640) exited with exit code 1
+2021-09-14 21:19:02.057 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:19:34.312 GMT [9764] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:19:34.317 GMT [9764] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:19:34.327 GMT [9764] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:19:34.327 GMT [9764] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:19:34.351 CAT [6980] LOG:  statistics collector process (PID 9764) exited with exit code 1
+2021-09-14 21:20:18.794 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:20:34.991 GMT [7568] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:20:34.997 GMT [7568] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:20:35.007 GMT [7568] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:20:35.007 GMT [7568] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:20:35.029 CAT [6980] LOG:  statistics collector process (PID 7568) exited with exit code 1
+2021-09-14 19:21:35.170 GMT [5216] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:21:35.174 GMT [5216] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:21:35.186 GMT [5216] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:21:35.186 GMT [5216] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:21:35.208 CAT [6980] LOG:  statistics collector process (PID 5216) exited with exit code 1
+2021-09-14 21:21:35.564 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:22:35.353 GMT [12008] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:22:35.359 GMT [12008] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:22:35.368 GMT [12008] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:22:35.368 GMT [12008] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:22:35.397 CAT [6980] LOG:  statistics collector process (PID 12008) exited with exit code 1
+2021-09-14 21:22:52.214 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:23:35.780 GMT [13384] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:23:35.787 GMT [13384] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:23:35.799 GMT [13384] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:23:35.799 GMT [13384] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:23:35.831 CAT [6980] LOG:  statistics collector process (PID 13384) exited with exit code 1
+2021-09-14 21:24:05.295 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:24:36.124 GMT [3844] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:24:36.131 GMT [3844] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:24:36.144 GMT [3844] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:24:36.144 GMT [3844] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:24:36.175 CAT [6980] LOG:  statistics collector process (PID 3844) exited with exit code 1
+2021-09-14 21:25:18.305 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:25:36.435 GMT [1612] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:25:36.442 GMT [1612] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:25:36.454 GMT [1612] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:25:36.454 GMT [1612] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:25:36.489 CAT [6980] LOG:  statistics collector process (PID 1612) exited with exit code 1
+2021-09-14 21:26:32.137 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:26:36.730 GMT [12900] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:26:36.736 GMT [12900] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:26:36.749 GMT [12900] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:26:36.749 GMT [12900] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:26:36.773 CAT [6980] LOG:  statistics collector process (PID 12900) exited with exit code 1
+2021-09-14 19:27:36.932 GMT [9160] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:27:36.940 GMT [9160] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:27:36.951 GMT [9160] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:27:36.951 GMT [9160] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:27:36.986 CAT [6980] LOG:  statistics collector process (PID 9160) exited with exit code 1
+2021-09-14 21:27:44.992 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:28:37.169 GMT [12772] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:28:37.180 GMT [12772] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:28:37.195 GMT [12772] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:28:37.195 GMT [12772] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:28:37.233 CAT [6980] LOG:  statistics collector process (PID 12772) exited with exit code 1
+2021-09-14 21:28:58.051 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:29:37.513 GMT [12280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:29:37.519 GMT [12280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:29:37.530 GMT [12280] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:29:37.530 GMT [12280] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:29:37.565 CAT [6980] LOG:  statistics collector process (PID 12280) exited with exit code 1
+2021-09-14 21:30:11.183 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:30:37.861 GMT [11668] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:30:37.867 GMT [11668] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:30:37.878 GMT [11668] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:30:37.878 GMT [11668] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:30:37.912 CAT [6980] LOG:  statistics collector process (PID 11668) exited with exit code 1
+2021-09-14 21:31:24.298 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:31:38.334 GMT [12736] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:31:38.341 GMT [12736] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:31:38.353 GMT [12736] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:31:38.353 GMT [12736] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:31:38.388 CAT [6980] LOG:  statistics collector process (PID 12736) exited with exit code 1
+2021-09-14 21:32:37.646 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:32:38.618 GMT [9280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:32:38.623 GMT [9280] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:32:38.632 GMT [9280] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:32:38.632 GMT [9280] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:32:38.655 CAT [6980] LOG:  statistics collector process (PID 9280) exited with exit code 1
+2021-09-14 19:33:38.807 GMT [8360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:33:38.814 GMT [8360] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:33:38.829 GMT [8360] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:33:38.829 GMT [8360] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:33:38.854 CAT [6980] LOG:  statistics collector process (PID 8360) exited with exit code 1
+2021-09-14 21:33:50.910 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:34:39.000 GMT [10220] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:34:39.007 GMT [10220] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:34:39.019 GMT [10220] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:34:39.019 GMT [10220] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:34:39.041 CAT [6980] LOG:  statistics collector process (PID 10220) exited with exit code 1
+2021-09-14 21:35:05.099 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:35:39.286 GMT [14172] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:35:39.293 GMT [14172] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:35:39.305 GMT [14172] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:35:39.305 GMT [14172] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:35:39.330 CAT [6980] LOG:  statistics collector process (PID 14172) exited with exit code 1
+2021-09-14 21:36:22.803 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:36:39.472 GMT [7540] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:36:39.478 GMT [7540] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:36:39.488 GMT [7540] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:36:39.488 GMT [7540] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:36:39.508 CAT [6980] LOG:  statistics collector process (PID 7540) exited with exit code 1
+2021-09-14 21:37:35.858 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:37:39.664 GMT [4196] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:37:39.670 GMT [4196] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:37:39.683 GMT [4196] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:37:39.683 GMT [4196] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:37:39.708 CAT [6980] LOG:  statistics collector process (PID 4196) exited with exit code 1
+2021-09-14 19:38:39.878 GMT [1592] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:38:39.885 GMT [1592] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:38:39.897 GMT [1592] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:38:39.897 GMT [1592] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:38:39.931 CAT [6980] LOG:  statistics collector process (PID 1592) exited with exit code 1
+2021-09-14 21:38:48.885 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:39:40.070 GMT [728] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:39:40.076 GMT [728] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:39:40.088 GMT [728] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:39:40.088 GMT [728] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:39:40.118 CAT [6980] LOG:  statistics collector process (PID 728) exited with exit code 1
+2021-09-14 21:40:02.211 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:40:40.276 GMT [14048] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:40:40.282 GMT [14048] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:40:40.296 GMT [14048] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:40:40.296 GMT [14048] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:40:40.327 CAT [6980] LOG:  statistics collector process (PID 14048) exited with exit code 1
+2021-09-14 21:41:15.553 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:41:40.463 GMT [14052] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:41:40.470 GMT [14052] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:41:40.480 GMT [14052] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:41:40.480 GMT [14052] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:41:40.503 CAT [6980] LOG:  statistics collector process (PID 14052) exited with exit code 1
+2021-09-14 21:42:28.743 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:42:40.664 GMT [8896] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:42:40.671 GMT [8896] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:42:40.684 GMT [8896] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:42:40.684 GMT [8896] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:42:40.717 CAT [6980] LOG:  statistics collector process (PID 8896) exited with exit code 1
+2021-09-14 19:43:40.858 GMT [9688] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:43:40.864 GMT [9688] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:43:40.875 GMT [9688] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:43:40.875 GMT [9688] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:43:40.909 CAT [6980] LOG:  statistics collector process (PID 9688) exited with exit code 1
+2021-09-14 21:43:41.720 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:44:41.068 GMT [12904] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:44:41.075 GMT [12904] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:44:41.088 GMT [12904] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:44:41.088 GMT [12904] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:44:41.120 CAT [6980] LOG:  statistics collector process (PID 12904) exited with exit code 1
+2021-09-14 21:44:54.969 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:45:41.274 GMT [12720] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:45:41.280 GMT [12720] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:45:41.293 GMT [12720] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:45:41.293 GMT [12720] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:45:41.319 CAT [6980] LOG:  statistics collector process (PID 12720) exited with exit code 1
+2021-09-14 21:46:07.974 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:46:41.465 GMT [11952] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:46:41.471 GMT [11952] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:46:41.482 GMT [11952] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:46:41.482 GMT [11952] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:46:41.513 CAT [6980] LOG:  statistics collector process (PID 11952) exited with exit code 1
+2021-09-14 21:47:21.326 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:47:41.640 GMT [1124] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:47:41.647 GMT [1124] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:47:41.658 GMT [1124] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:47:41.658 GMT [1124] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:47:41.681 CAT [6980] LOG:  statistics collector process (PID 1124) exited with exit code 1
+2021-09-14 21:48:34.479 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:48:41.807 GMT [10544] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:48:41.813 GMT [10544] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:48:41.822 GMT [10544] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:48:41.822 GMT [10544] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:48:41.857 CAT [6980] LOG:  statistics collector process (PID 10544) exited with exit code 1
+2021-09-14 19:49:41.978 GMT [5324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:49:41.983 GMT [5324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:49:41.992 GMT [5324] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:49:41.992 GMT [5324] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:49:42.013 CAT [6980] LOG:  statistics collector process (PID 5324) exited with exit code 1
+2021-09-14 21:49:47.459 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:50:42.172 GMT [5992] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:50:42.180 GMT [5992] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:50:42.192 GMT [5992] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:50:42.192 GMT [5992] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:50:42.228 CAT [6980] LOG:  statistics collector process (PID 5992) exited with exit code 1
+2021-09-14 21:51:00.674 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:51:42.359 GMT [3924] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:51:42.363 GMT [3924] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:51:42.373 GMT [3924] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:51:42.373 GMT [3924] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:51:42.401 CAT [6980] LOG:  statistics collector process (PID 3924) exited with exit code 1
+2021-09-14 21:52:13.991 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:52:42.628 GMT [13324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:52:42.632 GMT [13324] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:52:42.643 GMT [13324] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:52:42.643 GMT [13324] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:52:42.674 CAT [6980] LOG:  statistics collector process (PID 13324) exited with exit code 1
+2021-09-14 21:53:27.231 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:53:42.802 GMT [10876] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:53:42.808 GMT [10876] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:53:42.817 GMT [10876] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:53:42.817 GMT [10876] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:53:42.838 CAT [6980] LOG:  statistics collector process (PID 10876) exited with exit code 1
+2021-09-14 21:54:40.685 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:54:42.995 GMT [9864] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:54:43.002 GMT [9864] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:54:43.016 GMT [9864] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:54:43.016 GMT [9864] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:54:43.052 CAT [6980] LOG:  statistics collector process (PID 9864) exited with exit code 1
+2021-09-14 19:55:43.186 GMT [10148] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:55:43.193 GMT [10148] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:55:43.205 GMT [10148] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:55:43.205 GMT [10148] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:55:43.235 CAT [6980] LOG:  statistics collector process (PID 10148) exited with exit code 1
+2021-09-14 21:55:54.042 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:56:43.462 GMT [13436] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:56:43.468 GMT [13436] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:56:43.479 GMT [13436] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:56:43.479 GMT [13436] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:56:43.498 CAT [6980] LOG:  statistics collector process (PID 13436) exited with exit code 1
+2021-09-14 21:57:07.344 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:57:43.620 GMT [13908] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:57:43.626 GMT [13908] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:57:43.635 GMT [13908] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:57:43.635 GMT [13908] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:57:43.665 CAT [6980] LOG:  statistics collector process (PID 13908) exited with exit code 1
+2021-09-14 21:58:20.538 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:58:43.814 GMT [6996] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:58:43.820 GMT [6996] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:58:43.833 GMT [6996] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:58:43.833 GMT [6996] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:58:43.871 CAT [6980] LOG:  statistics collector process (PID 6996) exited with exit code 1
+2021-09-14 21:59:33.676 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 19:59:44.027 GMT [7120] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:59:44.033 GMT [7120] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 19:59:44.046 GMT [7120] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 19:59:44.046 GMT [7120] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 21:59:44.081 CAT [6980] LOG:  statistics collector process (PID 7120) exited with exit code 1
+2021-09-14 20:00:44.215 GMT [11660] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:00:44.222 GMT [11660] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:00:44.232 GMT [11660] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:00:44.232 GMT [11660] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:00:44.260 CAT [6980] LOG:  statistics collector process (PID 11660) exited with exit code 1
+2021-09-14 22:00:46.931 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:01:44.492 GMT [5064] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:01:44.497 GMT [5064] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:01:44.506 GMT [5064] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:01:44.506 GMT [5064] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:01:44.537 CAT [6980] LOG:  statistics collector process (PID 5064) exited with exit code 1
+2021-09-14 22:02:00.246 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:02:44.670 GMT [12508] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:02:44.675 GMT [12508] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:02:44.688 GMT [12508] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:02:44.688 GMT [12508] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:02:44.711 CAT [6980] LOG:  statistics collector process (PID 12508) exited with exit code 1
+2021-09-14 22:03:13.384 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:03:44.856 GMT [12276] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:03:44.863 GMT [12276] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:03:44.875 GMT [12276] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:03:44.875 GMT [12276] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:03:44.911 CAT [6980] LOG:  statistics collector process (PID 12276) exited with exit code 1
+2021-09-14 22:04:26.678 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:04:45.057 GMT [2872] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:04:45.062 GMT [2872] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:04:45.072 GMT [2872] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:04:45.072 GMT [2872] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:04:45.106 CAT [6980] LOG:  statistics collector process (PID 2872) exited with exit code 1
+2021-09-14 22:05:39.900 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:05:45.250 GMT [14240] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:05:45.256 GMT [14240] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:05:45.269 GMT [14240] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:05:45.269 GMT [14240] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:05:45.299 CAT [6980] LOG:  statistics collector process (PID 14240) exited with exit code 1
+2021-09-14 20:06:45.424 GMT [3212] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:06:45.430 GMT [3212] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:06:45.440 GMT [3212] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:06:45.440 GMT [3212] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:06:45.475 CAT [6980] LOG:  statistics collector process (PID 3212) exited with exit code 1
+2021-09-14 22:06:53.121 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:07:45.640 GMT [13240] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:07:45.646 GMT [13240] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:07:45.660 GMT [13240] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:07:45.660 GMT [13240] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:07:45.694 CAT [6980] LOG:  statistics collector process (PID 13240) exited with exit code 1
+2021-09-14 22:08:06.420 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:08:45.933 GMT [12692] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:08:45.939 GMT [12692] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:08:45.949 GMT [12692] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:08:45.949 GMT [12692] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:08:45.969 CAT [6980] LOG:  statistics collector process (PID 12692) exited with exit code 1
+2021-09-14 22:09:19.715 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:09:46.096 GMT [11136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:09:46.100 GMT [11136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:09:46.110 GMT [11136] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:09:46.110 GMT [11136] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:09:46.143 CAT [6980] LOG:  statistics collector process (PID 11136) exited with exit code 1
+2021-09-14 22:10:32.604 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:10:46.293 GMT [12780] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:10:46.299 GMT [12780] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:10:46.311 GMT [12780] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:10:46.311 GMT [12780] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:10:46.349 CAT [6980] LOG:  statistics collector process (PID 12780) exited with exit code 1
+2021-09-14 22:11:45.774 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:11:46.499 GMT [13136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:11:46.505 GMT [13136] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:11:46.517 GMT [13136] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:11:46.517 GMT [13136] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:11:46.552 CAT [6980] LOG:  statistics collector process (PID 13136) exited with exit code 1
+2021-09-14 20:12:46.701 GMT [7432] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:12:46.708 GMT [7432] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:12:46.719 GMT [7432] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:12:46.719 GMT [7432] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:12:46.754 CAT [6980] LOG:  statistics collector process (PID 7432) exited with exit code 1
+2021-09-14 22:12:58.822 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:13:46.879 GMT [14156] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:13:46.884 GMT [14156] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:13:46.894 GMT [14156] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:13:46.894 GMT [14156] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:13:46.927 CAT [6980] LOG:  statistics collector process (PID 14156) exited with exit code 1
+2021-09-14 22:14:11.064 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:14:47.073 GMT [14196] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:14:47.080 GMT [14196] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:14:47.091 GMT [14196] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:14:47.091 GMT [14196] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:14:47.124 CAT [6980] LOG:  statistics collector process (PID 14196) exited with exit code 1
+2021-09-14 22:15:24.405 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:15:47.238 GMT [2184] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:15:47.243 GMT [2184] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:15:47.253 GMT [2184] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:15:47.253 GMT [2184] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:15:47.284 CAT [6980] LOG:  statistics collector process (PID 2184) exited with exit code 1
+2021-09-14 22:16:37.094 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:16:47.410 GMT [3088] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:16:47.415 GMT [3088] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:16:47.424 GMT [3088] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:16:47.424 GMT [3088] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:16:47.444 CAT [6980] LOG:  statistics collector process (PID 3088) exited with exit code 1
+2021-09-14 20:17:47.596 GMT [12368] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:17:47.602 GMT [12368] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:17:47.614 GMT [12368] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:17:47.614 GMT [12368] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:17:47.650 CAT [6980] LOG:  statistics collector process (PID 12368) exited with exit code 1
+2021-09-14 22:17:49.710 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:18:47.787 GMT [780] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:18:47.793 GMT [780] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:18:47.802 GMT [780] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:18:47.802 GMT [780] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:18:47.830 CAT [6980] LOG:  statistics collector process (PID 780) exited with exit code 1
+2021-09-14 22:19:01.556 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:19:48.150 GMT [10616] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:19:48.157 GMT [10616] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:19:48.166 GMT [10616] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:19:48.166 GMT [10616] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:19:48.185 CAT [6980] LOG:  statistics collector process (PID 10616) exited with exit code 1
+2021-09-14 22:20:14.273 CAT [5920] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-09-14 20:20:48.478 GMT [7880] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:20:48.483 GMT [7880] LOG:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezone": No such file or directory
+2021-09-14 20:20:48.494 GMT [7880] FATAL:  could not open directory "C:/Program Files/PostgreSQL/12/share/timezonesets": No such file or directory
+2021-09-14 20:20:48.494 GMT [7880] HINT:  This may indicate an incomplete PostgreSQL installation, or that the file "C:/Program Files/PostgreSQL/12/bin/postgres.exe" has been moved away from its proper location.
+2021-09-14 22:20:48.533 CAT [6980] LOG:  statistics collector process (PID 7880) exited with exit code 1

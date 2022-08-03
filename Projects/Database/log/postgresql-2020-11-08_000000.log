@@ -1,0 +1,6 @@
+2020-11-10 10:11:53.883 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-11-11 15:58:59.685 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-11-11 17:06:15.859 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-11-11 17:35:30.481 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-11-11 17:43:34.310 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-11-11 17:50:00.613 CAT [7132] LOG:  using stale statistics instead of current ones because stats collector is not responding

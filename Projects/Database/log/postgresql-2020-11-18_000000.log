@@ -1,0 +1,7 @@
+2020-11-18 09:30:47.803 CAT [8716] LOG:  received fast shutdown request
+2020-11-18 09:30:48.212 CAT [8716] LOG:  aborting any active transactions
+2020-11-18 09:30:48.361 CAT [6776] ERROR:  canceling statement due to user request
+2020-11-18 09:30:48.379 CAT [3332] ERROR:  canceling statement due to user request
+2020-11-18 09:30:48.437 CAT [8716] LOG:  background worker "logical replication launcher" (PID 6776) exited with exit code 1
+2020-11-18 09:30:48.498 CAT [3936] LOG:  shutting down
+2020-11-18 09:30:55.923 CAT [8716] LOG:  database system is shut down

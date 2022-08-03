@@ -1,0 +1,2 @@
+2020-08-24 10:24:41.597 CAT [1300] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-08-24 14:39:02.575 CAT [1300] LOG:  using stale statistics instead of current ones because stats collector is not responding

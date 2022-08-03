@@ -1,0 +1,14 @@
+2020-12-20 03:12:08.335 CAT [6964] LOG:  database system was interrupted; last known up at 2020-12-10 10:53:28 CAT
+2020-12-20 03:17:35.849 CAT [6964] LOG:  database system was not properly shut down; automatic recovery in progress
+2020-12-20 03:17:36.053 CAT [6964] LOG:  redo starts at 0/16F18E8
+2020-12-20 03:17:36.058 CAT [6964] LOG:  invalid record length at 0/16F19D0: wanted 24, got 0
+2020-12-20 03:17:36.063 CAT [6964] LOG:  redo done at 0/16F1998
+2020-12-20 03:17:36.864 CAT [6612] LOG:  database system is ready to accept connections
+2020-12-20 08:27:07.587 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 08:28:24.258 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 12:49:44.156 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 20:22:07.580 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 23:33:27.401 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 23:34:43.397 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-20 23:35:59.383 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-22 01:15:56.323 CAT [5928] LOG:  using stale statistics instead of current ones because stats collector is not responding

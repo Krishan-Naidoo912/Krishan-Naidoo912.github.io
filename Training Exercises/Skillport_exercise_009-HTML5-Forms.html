@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Forms</title>
+</head>
+<body>
+	<form>
+		<table width="600px" border="0">
+			<tr>
+				<td width="300px">Name:</td>
+				<td width="300px"><input type="text" value="Enter Name"></td>
+			</tr>
+			<tr>
+				<td>Surname:</td>
+				<td><input type="text" value="Enter Surname"></td>
+			</tr>
+			<tr>
+				<td>email:</td>
+				<td><input type="email" value="Enter email address"></td>
+			</tr>
+			<tr>
+				<td>password:</td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td>Comments:</td>
+				<td><textarea cols="50" rows="10" placeholder="enter comments up to 500 characters"></textarea></td>
+			</tr>
+			<tr>
+				<td>Im Interested in:</td>
+				<td>
+					<input type="checkbox" name="interest" value="Family">Family
+					<input type="checkbox" name="interest" value="HealthyFood">Healthy Food
+					<input type="checkbox" name="interest" value="Sport">Sport
+					<input type="checkbox" name="interest" value="Prayer">Prayer
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="male">Male
+					<input type="radio" name="gender" value="female">Female
+					<input type="radio" name="gender" value="other">Other
+				</td>
+			</tr>
+			<tr>
+				<td>Hobbies:</td>
+				<td>
+					<select multiple name="Hobbies">
+						<option value="Family">Family
+						<option value="HealthyFood">Healthy Food
+						<option value="Sport">Sport
+						<option value="Prayer">Prayer
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Favourite Color</td>
+				<td>
+					<input type="color" name="color" id="myColor" onchange="getColor()">
+				</td>
+			</tr>
+			<tr>
+				<td>Favourite Color Code</td>
+				<td>
+					<output id="colorOut">
+				</td>
+			</tr>
+			<tr>
+				<td>Favourite Number from Drop Down</td>
+				<td>
+					<input type="number" name="numberDropDown" id="numberDropDown" min="1" max="100">
+				</td>
+			</tr>
+			<tr>
+				<td>Favourite Number from Range</td>
+				<td>
+					<input type="range" name="numberRange" id="numberRange" min="1" max="100" onchange="getNumber()">
+					<output id="numberRangeOut">
+				</td>
+			</tr>
+			<tr>
+				<td>Your Birthday</td>
+				<td><input type="date" name="birthday"></td>
+			</tr>
+			<tr>
+				<td>Upload your Profile Photo</td>
+				<td><input type="file" name="file" id="file"></td>
+			</tr>
+			<tr>
+				<td>Favourite Foods Data List</td>
+				<td>
+					<input type="text" name="foods" list="datalistfoods">
+					<datalist name="datalist" id="datalistfoods">
+						<option value="Briyani"></option>
+						<option value="Spagatti"></option>
+						<option value="Chicken"></option>
+					</datalist>
+				</td>
+			</tr>
+
+		</table>
+		<input type="submit" value="submit">
+	</form>
+
+	<script type="text/javascript">
+		function getColor() {
+			document.getElementById("colorOut").innerHTML = document.getElementById("myColor").value
+		}
+
+		function getNumber() {
+			document.getElementById("numberRangeOut").innerHTML = document.getElementById("numberRange").value
+		}
+	</script>
+
+</body>
+</html>

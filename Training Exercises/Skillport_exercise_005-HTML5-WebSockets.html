@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web</title>
+</head>
+<body>
+	<script>
+		var ws;
+		function webSocketOpen(){
+			if("WebSocket" in window) {
+				ws = new WebSocket("ws://localhost:8080/echo/echoWs")
+				ws.onopen = function () {
+					alert("web open")
+				}
+
+				ws.onclose = function () {
+					alert("web close")
+				}
+			}
+			else {
+				alert("Not supported")
+			}
+		}
+		function webSocketSend (){
+			ws.send("Hello World")
+		}
+	
+		function webSocketClose() {
+			ws.close();
+		}
+		
+	</script>
+	<a href="javascript:webSocketOpen()">Open</a>
+	<a href="javascript:webSocketSend()">Send</a>
+	<a href="javascript:webSocketClose()">Close</a>
+</body>
+</html>

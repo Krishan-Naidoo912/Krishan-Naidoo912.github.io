@@ -1,0 +1,2438 @@
+/*CSS STYLES FOR: UON GLOBAL WEBSITE - HOME PAGE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/*CSS RESETS*/
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+	--background-color: #FFFFFF;
+	--text-main-normal: rgb(58, 74, 91); /*Normal Gray*/
+	--text-main-light: rgb(96, 123, 139); /*Light Gray*/
+	--text-nav: #F58C58; /*Orange*/
+	--border-color-1: rgba(96,123,139,.6) ; /*Gray*/
+	--navbar-navlink-size: 1.125rem;
+	--elements-colour-1: rgb(242, 103, 34); /*Orange*/
+	--elements-colour-1-hover: rgb(226, 75, 0); /*Orange*/
+	--elements-colour-shadow: #EDEFF0; /*Gray*/
+	--elements-colour-shadow-2: #FEF2EA; /*Orange*/
+	--transition: all 0.5s ease-in-out;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
+}
+
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/*[1.1] STYLE HEADER STICKY TOP NAV BAR*/
+.header {
+	width: 92vw;
+	min-height: 4.375rem;
+	margin: 0 auto 0;
+	overflow: hidden;
+}
+
+/*[1.2] STYLE TOP NAV BAR */
+.header .navbar-desktop {
+	width: 92vw;
+	display: flex;
+	min-height: 4.375rem;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(256,256,256, .9);
+	border-bottom: 1.6px solid var(--border-color-1);
+}
+
+/*[1.3] STYLE LOGO*/
+.header .navbar-desktop .nav-logo {
+	background-image: url('../elements/Top Nav Bar/UON Logo.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 8rem;
+	max-width: 8rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+/*[1.4] ANIMATE LOGO*/
+.header .navbar-desktop .nav-logo:hover {
+	background-image: url('../elements/Top Nav Bar/UON Logo (Hover State).svg');
+}
+
+/****************************************************************************************START HAMBURGER MENU*/
+/*[1.5] STYLE HAMBURGER MENU*/
+.navbar-desktop .nav-menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*[1.6]*/
+.navbar-desktop .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar-desktop .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navbar-desktop .menu-icon .navicon:before,
+.navbar-desktop .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar-desktop .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navbar-desktop .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.navbar-desktop .navbar .btn-menu {
+  display: none;
+}
+
+
+.navbar-desktop .btn-menu:checked ~ .nav-menu {
+  max-height: 100vh;
+}
+
+
+.navbar-desktop .btn-menu:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navbar-desktop .btn-menu:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navbar-desktop .btn-menu:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar-desktop .btn-menu:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar-desktop .btn-menu:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/****************************************************************************************END HAMBURGER MENU*/
+
+/****************************************************************************************START TOP NAV MENU*/
+/*[1.7] STYLE TOP NAV MENU */
+.header .navbar-desktop .nav-menu {
+	display: flex;
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+
+/*[1.8] STYLE TOP NAV MENU ITEMS */
+.header .navbar-desktop .nav-menu .nav-item {
+	margin-right: 2.3rem;
+}
+
+/*[1.9a] STYLE TOP NAV MENU ITEMS LINKS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link {
+	color: var(--text-main-normal);
+	font-size: .9rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+}
+
+/*[1.9b] STYLE TOP NAV MENU ITEMS LINKS - ACTIVE*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link.active {
+	color: var(--text-nav);
+}
+
+
+/*[1.10] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link:hover {
+	color: var(--text-nav);
+}
+
+/*[1.11] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link:after {
+	content: "";
+	background-color: var(--text-nav);
+	width: 0;
+	height: .125rem;
+	border-radius: 50px;
+	position: absolute;
+	left: 0;
+	bottom: -.2rem;
+	transition: width 200ms ease-in;
+}
+
+/*[1.12] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link:hover:after {
+	width: 100%;
+}
+
+/*[1.13] STYLE TOP NAV MENU ITEMS LINKS ARROWS*/
+.header .navbar .nav-menu .nav-item .nav-link .navlink-arrow {
+	margin-left: 1.125rem;
+	font-size: .5rem; /*.5*/
+	font-weight: 900;
+}
+
+/*[1.14] ANIMATE TOP NAV MENU ITEMS LINKS ARROWS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-link:hover .navlink-arrow {
+	transform: rotate(90deg);
+}
+
+/****************************************************************************************END TOP NAV MENU*/
+
+/****************************************************************************************START TOP NAV BAR DEMO BUTTON*/
+/*[1.15] STYLE TOP NAV BAR DEMO BUTTON */
+.header .navbar-desktop #btn-demo {
+	display: inline-block;
+	width: 9rem;
+	height: 2.188rem;
+	color: white;
+	background-color: var(--elements-colour-1);
+	border-radius: 12px;
+	font-weight: 400;
+	font-size: .9rem;
+	cursor: pointer;
+	padding-left: 1rem;
+	transition: background-color .3s, padding-left .3s;
+}
+
+/*[1.16] HIDE TOP NAV BAR DEMO BUTTON ARROW*/
+.header .navbar-desktop #btn-demo > i {
+	visibility: hidden;
+	margin-left: .5rem;
+	transform: translateX(-.5rem);
+	transition: transform .3s, margin-left .3s;
+}
+
+/*[1.17] ANIMATE TOP NAV BAR DEMO BUTTON ARROW */
+.header .navbar-desktop #btn-demo:hover > i {
+	transform: translateX(.3rem);
+	visibility: visible;
+	margin-left: .6rem;
+}
+
+/*[1.18] ANIMATE TOP NAV BAR DEMO BUTTON */
+.header .navbar-desktop #btn-demo:hover {
+	background-color: var(--elements-colour-1-hover);
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/****************************************************************************************END TOP NAV BAR DEMO BUTTON*/
+
+/****************************************************************************************START TOP NAV BAR DROP DOWN MENU - SERVICES*/
+/*[1.19] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services {
+	position: absolute;
+	left: 0rem;
+	width: 92vw;
+	min-height: 25rem;
+	opacity: 0;
+	visibility: hidden;
+	border-bottom: 1.5px solid var(--border-color-1);
+	padding-bottom: 2.5rem;
+	background: var(--elements-colour-1);
+	padding-right: 4rem;
+	padding-left: 4rem;
+	top: 0rem;
+	transition: visibility .2s, opacity 0s, background 0s, top .4s;
+}
+
+/*[1.20] SHOW TOP NAV BAR DROP DOWN MENU*/
+.header .navbar-desktop .nav-menu .nav-item #check-nav-services {
+	display: none;
+}
+
+.header .navbar-desktop .nav-menu .nav-item #check-nav-services:checked ~ .nav-dropdown-services {
+	visibility: visible;
+	opacity: 1;
+	background: #FFF;
+	top: 4.5rem;
+}
+
+/*[1.21] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .container-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+	gap: 4rem;
+	padding-top: 4rem;
+	justify-items: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/****************************************************************************************START DROP DOWN MENU CARD - SERVICES*/
+/*[1.22] STYLE TOP NAV BAR DROP DOWN MENU CARD*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card {
+	box-shadow: 0 10px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	width: 14rem;
+	min-height: 18rem;
+	cursor: pointer;
+	background: white;
+	transition: transform .3s, box-shadow .3s;
+}
+
+/*[1.23] ANIMATE TOP NAV BAR DROP DOWN MENU CARD*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);
+}
+
+/*[1.24] STYLE TOP NAV BAR DROP DOWN MENU HEADINGS*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services h3 {
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--text-main-normal);
+	margin-top: 2rem;
+}
+
+
+/*[1.25] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	max-height: 6.250rem;
+	margin-bottom: 1rem;
+}
+
+/*[1.26] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card div > img {
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+	width: 40%;
+	height:40%;
+}
+
+/*[1.27] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card div > i {
+	padding-top: 1rem;
+	padding-right: 1.250rem;
+	font-size: 1.250rem;
+	color: var(--text-main-light);
+	visibility: hidden;
+	transition: all .3s;
+}
+
+/*[1.28] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card > h4 {
+	font-size: 1.250rem;
+	font-weight: 600;
+	color: var(--text-main-light);
+	text-align: center;
+	padding-bottom: .9rem;
+}
+
+/*[1.29] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card > p {
+	font-size: .9rem;
+	font-weight: 400;
+	color: var(--text-main-light);
+	text-align: center;
+	line-height: 1.8rem;
+	padding-left: .6rem;
+	padding-right: .6rem;
+}
+
+/*[1.30] SHOW TOP NAV BAR DROP DOWN MENU CARD ARROW ON HOVER*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-services .nav-card:hover div > i {
+	visibility: visible;
+	transform: translateX(.5rem);
+}
+
+/****************************************************************************************END DROP DOWN MENU CARD - SERVICES*/
+/****************************************************************************************END TOP NAV BAR DROP DOWN MENU - SERVICES*/
+
+/****************************************************************************************START TOP NAV BAR DROP DOWN MENU - SOLUTIONS*/
+/*[1.31] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions {
+	position: absolute;
+	left: 0rem;
+	width: 92vw;
+	opacity: 0;
+	visibility: hidden;
+	min-height: 18.128rem;
+	border-bottom: 1.5px solid var(--border-color-1);
+	padding-bottom: 2.5rem;
+	padding-top: 2.5rem;
+	background: var(--elements-colour-1);
+	top: 0rem;
+	transition: visibility .2s, opacity 0s, background 0s, top .4s;
+
+}
+
+/*[1.32] SHOW TOP NAV BAR DROP DOWN MENU*/
+
+.header .navbar-desktop .nav-menu .nav-item #check-nav-solutions {
+	display: none;
+}
+
+.header .navbar-desktop .nav-menu .nav-item #check-nav-solutions:checked ~ .nav-dropdown-solutions {
+	visibility: visible;
+	opacity: 1;
+	background: #FFF;
+	top: 4.5rem;
+}
+
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop {
+	width: 75vw;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 55vh;
+/*	margin-top: 2rem;*/
+}
+
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .radio-nav {
+	display: none;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .lbl-nav-tabs {
+	cursor: pointer;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .lbl-nav-tabs:hover {
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0.5rem 0.8rem #00000080;
+	border-left:  6px solid white;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab {
+	display: grid;
+	grid-template-areas:
+		'lbl-tabs-image lbl-tabs-h1 lbl-tabs-icon'
+		'lbl-tabs-image lbl-tabs-h2 lbl-tabs-icon';
+	padding: .8rem 1.2rem;
+	grid-column-gap: 1rem;
+	justify-content: end;
+	align-items: center;
+
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab img {
+	filter: grayscale(100%);
+	width: 2rem;
+	grid-area: lbl-tabs-image;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab:hover img {
+	filter: grayscale(0%);
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab h1 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-h1;
+}
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab h2 {
+	font-size: .9rem;
+	font-weight: normal;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-h2;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab i {
+	grid-area: lbl-tabs-icon;
+	font-size: .8rem;
+	font-weight: 900;
+	transform: translateX(-1.5rem);
+	visibility: hidden;
+	transition: transform .5s;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .tabs-nav .tab:hover > i {
+	visibility: visible;
+	transform: translateX(0rem);
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav {
+	overflow: hidden;
+	animation: fadein .8s;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	width: 70%;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav {
+	display: none;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav h1 {
+	color: var(--text-main-normal);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav h1 .highlight {
+	color: var(--elements-colour-1);
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav p {
+	color: var(--text-main-normal);
+	font-size: clamp(1rem, 0.9143rem + 0.1786vw, 1.2rem);
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10rem;
+
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .image-container-solutions {
+	position: relative;
+	max-width: 45%;
+	min-height: 45%;
+	margin-top: .9rem;
+	margin-bottom: .9rem;
+
+}
+
+/*[5.14] STYLE SOLUTIONS CARD IMAGE*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .image-container-solutions img {
+	width: 100%;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card {
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	min-width: 7.5rem;
+	max-width: 7.5rem;
+	min-height: 9.5rem;
+	max-height: 10rem;
+	margin-bottom: .9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*[5.15] STYLE SOLUTIONS CARD HEADING*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card h4 {
+	color: var(--text-main-normal);
+	font-weight: 600;
+	font-size: .9rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+/*[5.16] STYLE SOLUTIONS CARD TEXT*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card p {
+	color: var(--text-main-light);
+	font-weight: 400;
+	font-size: .6rem;
+	padding-left: .6rem;
+	padding-right: .6rem;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+/*[5.17] STYLE SOLUTIONS CARD BUTTON*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .btn-learnMore {
+	background: var(--elements-colour-1);
+	color: white;
+	border-radius: 10px;
+	width: 8.128rem;
+	height: 2.188rem;
+	font-size: .8rem;
+	margin-bottom: 2rem;
+}
+
+/*[5.18] HIDE LEARN BUTTON ARROW*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .btn-learnMore > i {
+	visibility: hidden;
+	margin-left: 0;
+	transition: visibility .4s, transform .4s, margin-left .4s;
+}
+
+/*[5.19] ANIMATE LEARN BUTTON*/
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .btn-learnMore:hover {
+	background-color: var(--elements-colour-1-hover);
+}
+
+/*[5.20] SHOW LEARN BUTTON */
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .card .btn-learnMore:hover > i {
+	transform: translateX(11px);
+	visibility: visible;
+	margin-left: 1rem;
+}
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .text {
+	display: grid;
+	grid-template-areas:
+	 'panel-content-text-counter panel-content-text';
+	color: var(--text-main-normal);
+	padding-bottom: 1rem;
+	min-width: 15rem;
+	max-width: 15rem;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .text h1 {
+	grid-area: panel-content-text-counter;
+	font-size: 1.2rem;
+	color: var(--text-main-normal);
+	font-weight: 500;
+	margin-right: 1rem;
+}
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .text h2 {
+	grid-area: panel-content-text;
+	font-size: .9rem;
+	color: var(--text-main-normal);
+	font-weight: normal;
+	line-height: 1.5rem;
+}
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .panels-nav .panel-nav .contents .content .row {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.header .navbar-desktop .nav-menu .nav-item .nav-dropdown-solutions .tabs-panels-container-desktop .text-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+
+#radio-nav-1:checked ~ .tabs-nav #lbl-nav-tab-1,
+#radio-nav-2:checked ~ .tabs-nav #lbl-nav-tab-2,
+#radio-nav-3:checked ~ .tabs-nav #lbl-nav-tab-3,
+#radio-nav-4:checked ~ .tabs-nav #lbl-nav-tab-4 {
+	border-left:  6px solid var(--elements-colour-1);
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+}
+
+#radio-nav-1:checked ~ .tabs-nav #lbl-nav-tab-1 * i,
+#radio-nav-2:checked ~ .tabs-nav #lbl-nav-tab-2 * i,
+#radio-nav-3:checked ~ .tabs-nav #lbl-nav-tab-3 * i,
+#radio-nav-4:checked ~ .tabs-nav #lbl-nav-tab-4 * i{
+	visibility: visible;
+	transform: translateX(0rem);
+}
+
+
+#radio-nav-1:checked ~ * #panel-nav-1,
+#radio-nav-2:checked ~ * #panel-nav-2,
+#radio-nav-3:checked ~ * #panel-nav-3,
+#radio-nav-4:checked ~ * #panel-nav-4 {
+	display: block;
+}
+
+
+
+
+
+
+
+/*[1.33] STYLE TOP NAV BAR DROP DOWN MENU*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .container-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(7.6rem, 1fr));
+	gap: .2rem;
+	padding-top: 3.125rem;
+	justify-items: center;
+}*/
+
+/****************************************************************************************START DROP DOWN MENU CARD - SOLUTIONS*/
+/*[1.34] STYLE TOP NAV BAR DROP DOWN MENU CARD*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card {
+	box-shadow: 0 10px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	width: 7.6rem;
+	height: 10rem;
+	cursor: pointer;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform .3s, box-shadow .4s;
+}*/
+
+/*[1.35] ANIMATE TOP NAV BAR DROP DOWN MENU CARD*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);
+}*/
+
+/*[1.36] STYLE TOP NAV BAR DROP DOWN MENU HEADINGS*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions h3 {
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: var(--text-main-light);
+	margin-top: 2rem;
+}*/
+
+
+/*[1.37] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: .6rem;
+}*/
+
+/*[1.38] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card div > img {
+	width: 3.438rem;
+	height: 4.125rem;
+}*/
+
+/*[1.39] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > i {
+	margin-left: 3.5rem;
+	font-size: .8rem;
+	color: var(--text-main-light);
+	visibility: hidden;
+	transition: all .5s ease-in ease-out;
+	transform: translateY(.5rem);
+}*/
+
+/*[1.40] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > h4 {
+	font-size: .8rem;
+	font-weight: 700;
+	color: var(--text-main-light);
+	text-align: center;
+	padding-bottom: .5rem;
+}*/
+
+/*[1.41] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > p {
+	font-size: .66rem;
+	font-weight: 600;
+	color: var(--text-main-light);
+	text-align: center;
+	line-height: .8rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+}*/
+
+/*[1.42] SHOW TOP NAV BAR DROP DOWN MENU CARD ARROW ON HOVER*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card:hover > i {
+	visibility: visible;
+	transform: translate(1em,.5rem);
+}*/
+
+/****************************************************************************************END DROP DOWN MENU CARD - SOLUTIONS*/
+/****************************************************************************************END TOP NAV BAR DROP DOWN MENU - SOLUTIONS*/
+
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+
+
+
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+
+/*[2.1] CONTENT-1 CONTAINER*/
+main .content-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+/*[2.2] CONTENT-1 IMAGE CONTAINER*/
+main .content-1 .image-container {
+	width: 70%;
+	height: 70%;
+}
+
+/*[2.3] CONTENT-1 ADJUST IMAGE TO CONTAINER*/
+main .content-1 .image-container img {
+	max-width: 100%;
+	max-height: 100%;
+	transform: var(--transition);
+	animation: zoom-in-zoom-out 9s ease infinite;
+}
+
+/*[2.4] CONTENT-1 ANIMATE GLOBE IMAGE*/
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/*[2.5] CONTENT-1 HEADING*/
+main .content-1 .text-container h1 {
+	color: var(--text-main-light);
+	font-weight: 700;
+	font-size: clamp(1.4rem, 1.3143rem + 0.4286vw, 2rem);
+	margin-top: 1rem;
+}
+
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+
+
+
+
+
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+
+/*[3.1] CONTENT-2 CONTAINER*/
+main .content-2 {
+	display: flex;
+	width: 100vw;
+	margin: 0 auto;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*[3.2] CONTENT-2 CONTAINER TO HOLD RESIZED IMAGE*/
+main .content-2 .image-container {
+	width: 55%;
+}
+
+/*[3.3] SHOW CONTENT-2 IMAGE FOR DESKTOP*/
+main .content-2 .image-container #content-2-image-desktop {
+	display: block;
+}
+
+/*[3.4] HIDE CONTENT-2 IMAGE FOR MOBILE*/
+main .content-2 .image-container #content-2-image-mobile {
+	display: none;
+}
+
+/*[3.5] CONTENT-2 RESIZE IMAGE AND MOVE TO LEFT*/
+main .content-2 .image-container img {
+	width: 100%;
+	position: relative;
+	padding-top: 1rem;
+/*	transform: translateX(-13.5rem); *//*MOVE IMAGE OUT OF SCREEN TO THE LEFT*/
+}
+
+/*[3.6] CONTENT-2 TEXT CONTAINER*/
+main .content-2 .text-container  {
+	width: 45%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*[3.7] CONTENT-2 TEXT HEADING*/
+main .content-2 .text-container #heading2 {
+	color: var(--text-main-normal);
+}
+
+/*[3.8] CONTENT-2 TEXT DETAIL*/
+main .content-2 .text-container p {
+	color: var(--text-main-light);
+	font-size: clamp(1rem, 0.9714rem + 0.1429vw, 1.2rem);
+	font-weight: 400;
+	position: absolute;
+	left: 50%;
+	padding-right: 9rem;
+}
+
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+
+
+
+
+
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+
+/*[4.1]*/
+main .services {
+	width: 92vw;
+	color: var(--text-main-normal);
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+/*[4.2]*/
+main .container-services h1 {
+	font-weight: 700;
+	font-size: clamp(2rem, 1.8571rem + 0.7143vw, 3rem);
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+/****************************************************************************************START UON SERVICES CARDS*/
+/*[4.3] STYLE SERVICES CARD BOX*/
+main .container-services .container-services-cards {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	grid-gap: 2.5rem;
+}
+
+/*[4.4] STYLE SERVICES CARD*/
+main .container-services .container-services-cards .services-card {
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	width: 14rem;
+	height: 18rem;
+	cursor: pointer;
+	background: white;
+	transition: transform .6s;
+}
+
+/*[4.5] ANIMAGE SERVICES CARD*/
+main .container-services .container-services-cards .services-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/*[4.6] ANIMAGE SERVICES CARD*/
+main .container-services .container-services-cards .services-card:hover {
+	transform: translateY(-.5rem);
+}
+
+/*[4.7] STYLE SERVICES CARD*/
+main .container-services .container-services-cards .services-card div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+}
+
+/*[4.8] STYLE SERVICES CARD*/
+main .services .container-services-cards .services-card div {
+	max-height: 5.250rem;
+	margin-bottom: 1rem;
+}
+
+/*[4.9] STYLE SERVICES CARD IMG*/
+main .services .container-services-cards .services-card div > img {
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+	width: 40%;
+	height: 40%;
+}
+
+/*[4.10] STYLE SERVICES CARD arrow*/
+main .container-services .container-services-cards .services-card div > i {
+	padding-top: 1rem;
+	padding-right: 2rem;
+	font-size: 1.250rem;
+	color: var(--text-main-light);
+	visibility: hidden;
+	transition: all .3s;
+}
+
+/*[4.11] STYLE SERVICES CARD TEXT*/
+main .container-services .container-services-cards .services-card > h4 {
+	font-size: clamp(0.9rem, 0.8571rem + 0.2143vw, 1.2rem);
+	font-weight: 600;
+	color: var(--text-main-normal);
+	text-align: center;
+	padding-bottom: .9rem;
+}
+
+/*[4.12] STYLE SERVICES CARD TEXT*/
+main .container-services .container-services-cards .services-card > p {
+	font-size: clamp(0.8rem, 0.7714rem + 0.1429vw, 1rem);
+	font-weight: 400;
+	color: var(--text-main-light);
+	text-align: center;
+	line-height: 1.8rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+}
+
+/*[4.13] ANIMATE SERVICES CARD ARROW*/
+main .container-services .container-services-cards .services-card:hover div > i {
+	visibility: visible;
+	transform: translateX(.5em);
+}
+
+/****************************************************************************************END SERVICES CARD*/
+
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+
+
+
+
+
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+
+/*[5.1A] SHOW SOLUTIONS DESKTOP CONTAINER*/
+main .solutions-desktop {
+	width: 75vw;
+	margin: 0 auto;
+	margin-top: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*[5.1B] HIDE SOLUTIONS MOBILE CONTAINER*/
+main .solutions-mobile {
+	display: block;
+}
+
+/*[5.2] SOLUTIONS DESKTOP CONTAINER HEADING*/
+main .solutions-desktop h1 {
+	color: var(--text-main-normal);
+	font-size: clamp(2rem, 1.7857rem + 0.4464vw, 2.5rem);
+	font-weight: 700;
+}
+
+/*[5.3] SOLUTIONS DESKTOP TABS AND PANELS CONTAINER*/
+main .solutions-desktop .tabs-panels-container {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+	width: 75vw;
+	flex-wrap: wrap;
+}
+
+/*[5.4] SOLUTIONS DESKTOP TABS AND PANELS CONTAINER RADIO BUTTON*/
+main .solutions-desktop .tabs-panels-container .radio {
+	display: none;
+}
+
+/*[5.5] SOLUTIONS DESKTOP TABS*/
+main .solutions-desktop .tabs-panels-container .tabs {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+/*[5.6] SOLUTIONS DESKTOP TABS LABELS*/
+main .solutions-desktop .tabs-panels-container .tabs .lbl-tabs {
+	width: 25%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/*[5.7] ANIMATE SOLUTIONS DESKTOP TABS LABELS*/
+main .solutions-desktop .tabs-panels-container .tabs .lbl-tabs:hover {
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+/*[5.8] SOLUTIONS DESKTOP TABS TAB*/
+main .solutions-desktop .tabs-panels-container .tabs .tab {
+	display: grid;
+	grid-template-areas:
+		'lbl-tabs-image lbl-tabs-h1'
+		'lbl-tabs-image lbl-tabs-h2';
+	padding: 1.5rem 1.5rem;
+	grid-column-gap: 0.5rem;
+	align-items: center;
+}
+
+/*[5.9] SOLUTIONS DESKTOP TABS TAB IMAGE*/
+main .solutions-desktop .tabs-panels-container .tabs .tab img {
+	filter: grayscale(100%);
+	min-width: 1.5rem;
+	grid-area: lbl-tabs-image;
+}
+
+/*[5.10] ANIMATE SOLUTIONS DESKTOP TABS TAB IMAGE*/
+main .solutions-desktop .tabs-panels-container .tabs .tab:hover img {
+	filter: grayscale(0%);
+}
+
+/*[5.11] SOLUTIONS DESKTOP TABS TAB HEADING 1*/
+main .solutions-desktop .tabs-panels-container .tabs .tab h1 {
+	font-size: clamp(1.5rem, 1.2857rem + 0.4464vw, 2rem);
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-h1;
+}
+
+/*[5.12] SOLUTIONS DESKTOP TABS TAB HEADING 2*/
+main .solutions-desktop .tabs-panels-container .tabs .tab h2 {
+	font-size: clamp(1rem, 0.9143rem + 0.1786vw, 1.2rem);
+	font-weight: normal;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-h2;
+}
+
+/*[5.13] SOLUTIONS DESKTOP PANELS*/
+main .solutions-desktop .tabs-panels-container .panels {
+	margin-top: 2rem;
+	overflow: hidden;
+	animation: fadein .8s;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*[5.14] ANIMATE SOLUTIONS DESKTOP PANELS*/
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/*[5.15] SOLUTIONS DESKTOP PANELS PANEL*/
+main .solutions-desktop .tabs-panels-container .panels .panel {
+	width: 100%;
+	display: none;
+}
+
+/*[5.16] SOLUTIONS DESKTOP PANELS PANEL HEADING 1*/
+main .solutions-desktop .tabs-panels-container .panels .panel h1 {
+	color: var(--text-main-normal);
+	font-size: clamp(1.4rem, 1.2286rem + 0.3571vw, 1.8rem);
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+/*[5.17] HIGHLIGHT SOLUTIONS DESKTOP PANELS HEADING 1*/
+main .solutions-desktop .tabs-panels-container .panels .panel h1 .highlight {
+	color: var(--elements-colour-1);
+}
+
+/*[5.18] SOLUTIONS DESKTOP PANELS TEXT*/
+main .solutions-desktop .tabs-panels-container .panels .panel p {
+	color: var(--text-main-normal);
+	font-size: clamp(1rem, 0.9143rem + 0.1786vw, 1.2rem);
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+/*[5.19] SOLUTIONS DESKTOP PANELS CONTENTS CONTAINER*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+/*[5.20] */
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*[5.21] SOLUTIONS DESKTOP PANELS CONTENT WITH POINTS IN ROW*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .row {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	column-gap: 10rem;
+}
+
+/*[5.22] SOLUTIONS DESKTOP PANELS CONTENT WITH POINTS IN ROW TEXT*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .row .text-row .text {
+	min-width: 20rem;
+	max-width: 30rem;
+}
+
+/*[5.23] SOLUTIONS DESKTOP PANELS CONTENT CARD IMAGE CONTAINER*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .image-container-solutions {
+	position: relative;
+	max-width: 34%;
+	min-height: 34%;
+	margin-bottom: 1rem;
+}
+
+/*[5.24] SOLUTIONS DESKTOP PANELS CONTENT CARD IMAGE*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .image-container-solutions img {
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 40%;
+}
+
+/*[5.25A] SOLUTIONS DESKTOP PANELS CONTENT CARD*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	min-width: 15rem;
+	max-width: 15rem;
+	margin-bottom: 2rem;
+	min-height: 20rem;
+	transition: transform .5s;
+}
+
+/*[5.25B] SOLUTIONS DESKTOP PANELS CONTENT CARD*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);	
+}
+
+/*[5.26] ANIMATE SOLUTIONS DESKTOP PANELS CONTENT CARD HEADING*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card h4 {
+	color: var(--text-main-normal);
+	font-weight: 600;
+	font-size: clamp(1.2rem, 1.1143rem + 0.1786vw, 1.4rem);
+	margin-bottom: .9rem;
+	text-align: center;
+}
+
+/*[5.27] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card p {
+	color: var(--text-main-light);
+	font-weight: 400;
+	font-size: clamp(1.1rem, 1.0571rem + 0.0893vw, 1.2rem);
+	line-height: 1.6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-bottom: 1.6rem;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+/*[5.28] SOLUTIONS DESKTOP PANELS CONTENT CARD LEARN MORE BUTTON*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .btn-learnMore {
+	background: var(--elements-colour-1);
+	color: white;
+	border-radius: 10px;
+	width: 8.128rem;
+	height: 2.188rem;
+	font-size: .8rem;
+	margin-bottom: 2rem;
+}
+
+/*[5.29] SOLUTIONS DESKTOP PANELS CONTENT CARD LEARN MORE BUTTON ARROW*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .btn-learnMore > i {
+	visibility: hidden;
+	margin-left: 0;
+	transition: visibility .4s, transform .4s, margin-left .4s;
+}
+
+/*[5.30] ANIMATE SOLUTIONS DESKTOP PANELS CONTENT CARD LEARN MORE BUTTON*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .btn-learnMore:hover {
+	background-color: var(--elements-colour-1-hover);
+}
+
+/*[5.31] ANIMATE SOLUTIONS DESKTOP PANELS CONTENT CARD LEARN MORE BUTTON ARROW*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .card .btn-learnMore:hover > i {
+	transform: translateX(11px);
+	visibility: visible;
+	margin-left: 1rem;
+}
+
+/*[5.32] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .text {
+	display: grid;
+	grid-template-areas:
+	 'panel-content-text-counter panel-content-text';
+	color: var(--text-main-normal);
+	padding-bottom: 1rem;
+	min-width: 15rem;
+	max-width: 15rem;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+/*[5.33] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT HEADING 1*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .text h1 {
+	grid-area: panel-content-text-counter;
+	font-size: 1.2rem;
+	color: var(--text-main-normal);
+	font-weight: 500;
+	margin-right: 1rem;
+}
+
+/*[5.34] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT HEADING 2*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .text h2 {
+	grid-area: panel-content-text;
+	font-size: .9rem;
+	color: var(--text-main-normal);
+	font-weight: normal;
+	line-height: 1.5rem;
+}
+
+/*[5.35] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT IN ROW*/
+main .solutions-desktop .tabs-panels-container .panels .panel .contents .content .row {
+	display: flex;
+	flex-direction: row;
+}
+
+/*[5.36] SOLUTIONS DESKTOP PANELS CONTENT CARD TEXT IN ROW DISPLAY*/
+main .text-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/*[5.37] TOGGLE SOLUTIONS DESKTOP TABS*/
+#radio-1:checked ~ .tabs #lbl-tab-1,
+#radio-2:checked ~ .tabs #lbl-tab-2,
+#radio-3:checked ~ .tabs #lbl-tab-3,
+#radio-4:checked ~ .tabs #lbl-tab-4 {
+	border-left:  6px solid var(--elements-colour-1);
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+}
+
+/*[5.38] TOGGLE SOLUTIONS DESKTOP PANELS*/
+#radio-1:checked ~ * #panel-1,
+#radio-2:checked ~ * #panel-2,
+#radio-3:checked ~ * #panel-3,
+#radio-4:checked ~ * #panel-4 {
+	display: block;
+}
+
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+
+
+
+
+/****************************************************************************************START SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************START SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************START SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************START SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+
+/*[5.1A] SHOW SOLUTIONS MOBILE CONTAINER*/
+main .solutions-desktop {
+	width: 75vw;
+	margin: 0 auto;
+	margin-top: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*[5.1B] HIDE SOLUTIONS MOBILE CONTAINER*/
+main .solutions-mobile {
+	width: 92vw;
+	margin: 0 auto;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+/*[5.2] SOLUTIONS DESKTOP CONTAINER HEADING*/
+main .solutions-mobile h1 {
+	color: var(--text-main-normal);
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+main .solutions-mobile h2 {
+	color: var(--text-main-normal);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+
+#panel-mobile-1, #panel-mobile-2, #panel-mobile-3,#panel-mobile-4 {
+	display: none;
+}
+
+/*[5.3] SOLUTIONS MOBILE TABS AND PANELS CONTAINER*/
+main .solutions-mobile .tabs-panels-container {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+	width: 92vw;
+}
+
+
+main .solutions-mobile .tabs-panels-container .tabs-menu {
+	display: flex;
+	justify-content: space-around;
+	column-gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+main .solutions-mobile .tabs-panels-container .tabs-menu h2 {
+	font-size: 0.72rem;
+	font-weight: 600;
+	color: var(--text-main-normal);
+}
+
+
+
+/*[5.4] SOLUTIONS MOBILE TABS AND PANELS CONTAINER RADIO BUTTON*/
+main .solutions-mobile .tabs-panels-container .radio {
+	display: none;
+}
+
+/*[5.5] SOLUTIONS MOBILE TABS*/
+main .solutions-mobile .tabs-panels-container .tabs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+	width: 92vw;
+	gap: 1rem;
+}
+
+/*[5.6] SOLUTIONS MOBILE TABS LABELS*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs {
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/*[5.7] ANIMATE SOLUTIONS MOBILE TABS LABELS*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs:hover {
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+/*[5.8] SOLUTIONS MOBILE TABS TAB*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs .tab {
+	display: grid;
+	grid-template-areas:
+		'lbl-tabs-image lbl-tabs-h1 lbl-tabs-arrow';
+	padding: 0.6rem 1rem;
+	grid-column-gap: 0.4rem;
+	align-items: center;
+/*	justify-content: start;*/
+}
+
+/*[5.9] SOLUTIONS MOBILE TABS TAB IMAGE*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs .tab img {
+	filter: grayscale(100%);
+	min-width: 1.5rem;
+	grid-area: lbl-tabs-image;
+}
+
+/*[5.10] ANIMATE SOLUTIONS MOBILE TABS TAB IMAGE*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs .tab:hover img {
+	filter: grayscale(0%);
+}
+
+/*[5.11] SOLUTIONS MOBILE TABS TAB HEADING 1*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs .tab h1 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-h1;
+}
+
+/*[5.12] SOLUTIONS MOBILE TABS TAB ARROW 1*/
+main .solutions-mobile .tabs-panels-container .tabs .lbl-tabs .tab i {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: lbl-tabs-arrow;
+	transform: rotate(90deg);
+}
+
+/*[5.13] SOLUTIONS MOBILE PANELS*/
+main .solutions-mobile .tabs-panels-container .tabs .panel {
+	margin-top: 1.5rem;
+	overflow: hidden;
+	animation: fadein .8s;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*[5.14] ANIMATE SOLUTIONS MOBILE PANELS*/
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/*[5.15] SOLUTIONS MOBILE PANELS PANEL*/
+main .solutions-mobile .tabs-panels-container .tabs .panel {
+	width: 100%;
+	display: none;
+}
+
+/*[5.16] SOLUTIONS MOBILE PANELS PANEL HEADING 1*/
+main .solutions-mobile .tabs-panels-container .tabs .panel h1 {
+	color: var(--text-main-normal);
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+}
+
+/*[5.17] HIGHLIGHT SOLUTIONS MOBILE PANELS HEADING 1*/
+main .solutions-mobile .tabs-panels-container .tabs .panel h1 .highlight {
+	color: var(--elements-colour-1);
+}
+
+/*[5.18] SOLUTIONS MOBILE PANELS TEXT*/
+main .solutions-mobile .tabs-panels-container .tabs .panel p {
+	color: var(--text-main-normal);
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5rem;
+	text-align: left;
+}
+
+/*[5.19] SOLUTIONS MOBILE PANELS CONTENTS CONTAINER*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+/*[5.20] */
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*[5.21] SOLUTIONS MOBILE PANELS CONTENT WITH POINTS IN ROW*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .row {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	column-gap: 0rem;
+}
+
+/*[5.22] SOLUTIONS MOBILE PANELS CONTENT WITH POINTS IN ROW TEXT*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .row .text-row .text {
+	min-width: 20rem;
+	max-width: 30rem;
+}
+
+/*[5.23] SOLUTIONS MOBILE PANELS CONTENT CARD IMAGE CONTAINER*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .image-container-solutions {
+	position: relative;
+	max-width: 34%;
+	min-height: 34%;
+	margin-bottom: 1rem;
+}
+
+/*[5.24] SOLUTIONS MOBILE PANELS CONTENT CARD IMAGE*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .image-container-solutions img {
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 40%;
+}
+
+/*[5.25A] SOLUTIONS MOBILE PANELS CONTENT CARD*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	min-width: 15rem;
+	max-width: 15rem;
+	margin-bottom: 2rem;
+	min-height: 20rem;
+}
+
+/*[5.25B] SOLUTIONS MOBILE PANELS CONTENT CARD*/
+main .solutions-mobile .tabs-panels-container .panels .panel .contents .content .card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);	
+}
+
+/*[5.26] SOLUTIONS MOBILE PANELS CONTENT CARD HEADING*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card h4 {
+	color: var(--text-main-normal);
+	font-weight: 600;
+	font-size: clamp(1.2rem, 1.1143rem + 0.1786vw, 1.4rem);
+	margin-bottom: .9rem;
+	text-align: center;
+}
+
+/*[5.27] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card p {
+	color: var(--text-main-light);
+	font-weight: 400;
+	font-size: clamp(1.1rem, 1.0571rem + 0.0893vw, 1.2rem);
+	line-height: 1.6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-bottom: 1.6rem;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+/*[5.28] SOLUTIONS MOBILE PANELS CONTENT CARD LEARN MORE BUTTON*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .btn-learnMore {
+	background: var(--elements-colour-1);
+	color: white;
+	border-radius: 10px;
+	width: 8.128rem;
+	height: 2.188rem;
+	font-size: .8rem;
+	margin-bottom: 2rem;
+}
+
+/*[5.29] SOLUTIONS MOBILE PANELS CONTENT CARD LEARN MORE BUTTON ARROW*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .btn-learnMore > i {
+	visibility: hidden;
+	margin-left: 0;
+	transition: visibility .4s, transform .4s, margin-left .4s;
+}
+
+/*[5.30] ANIMATE SOLUTIONS MOBILE PANELS CONTENT CARD LEARN MORE BUTTON*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .btn-learnMore:hover {
+	background-color: var(--elements-colour-1-hover);
+}
+
+/*[5.31] ANIMATE SOLUTIONS MOBILE PANELS CONTENT CARD LEARN MORE BUTTON ARROW*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .card .btn-learnMore:hover > i {
+	transform: translateX(11px);
+	visibility: visible;
+	margin-left: 1rem;
+}
+
+/*[5.32] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .text {
+	display: grid;
+	grid-template-areas:
+	 'panel-content-text-counter panel-content-text';
+	color: var(--text-main-normal);
+	padding-bottom: 1rem;
+	min-width: 15rem;
+	max-width: 15rem;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+/*[5.33] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT HEADING 1*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .text h1 {
+	grid-area: panel-content-text-counter;
+	font-size: 1.2rem;
+	color: var(--text-main-normal);
+	font-weight: 500;
+	margin-right: 1rem;
+}
+
+/*[5.34] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT HEADING 2*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .text h2 {
+	grid-area: panel-content-text;
+	font-size: .9rem;
+	color: var(--text-main-normal);
+	font-weight: normal;
+	line-height: 1.5rem;
+}
+
+/*[5.35] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT IN ROW*/
+main .solutions-mobile .tabs-panels-container .tabs .panel .contents .content .row {
+	display: flex;
+	flex-direction: row;
+}
+
+/*[5.36] SOLUTIONS MOBILE PANELS CONTENT CARD TEXT IN ROW DISPLAY*/
+main .text-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/*[5.37] TOGGLE SOLUTIONS MOBILE TABS*/
+#radio-mobile-1:checked ~ .tabs #lbl-tab-mobile-1,
+#radio-mobile-2:checked ~ .tabs #lbl-tab-mobile-2,
+#radio-mobile-3:checked ~ .tabs #lbl-tab-mobile-3,
+#radio-mobile-4:checked ~ .tabs #lbl-tab-mobile-4 {
+	border-left:  8px solid var(--elements-colour-1);
+	box-shadow: 0 5px 20px 0 var(--elements-colour-shadow);
+}
+
+/*[5.38] TOGGLE SOLUTIONS MOBILE PANELS*/
+#radio-mobile-1:checked ~ * #panel-mobile-1,
+#radio-mobile-2:checked ~ * #panel-mobile-2,
+#radio-mobile-3:checked ~ * #panel-mobile-3,
+#radio-mobile-4:checked ~ * #panel-mobile-4 {
+	display: block;
+}
+
+/*[5.38] TOGGLE SOLUTIONS MOBILE PANELS*/
+#radio-mobile-1:checked ~ * #lbl-tab-menu-mobile-1 h2,
+#radio-mobile-2:checked ~ * #lbl-tab-menu-mobile-2 h2,
+#radio-mobile-3:checked ~ * #lbl-tab-menu-mobile-3 h2,
+#radio-mobile-4:checked ~ * #lbl-tab-menu-mobile-4 h2 {
+	color: var(--text-nav);
+	text-decoration: underline;
+}
+
+/****************************************************************************************END SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************END SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************END SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+/****************************************************************************************END SECTION 5B - MAIN - SOLUTIONS MOBILE*/
+
+
+
+
+
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+
+/*[6.1] CONTENT 4 CONTAINER*/
+main .product-range {
+	max-width: 60vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+/*[6.2] CONTENT 4 IMAGE CONTAINER*/
+main .product-range .image-box {
+	width: 50%;	
+	text-align: initial;
+	padding-left: 1rem;
+}
+
+/*[6.3] CONTENT 4 IMAGE*/
+main .product-range .image-box img {
+	width: 66%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+/*[6.4] CONTENT 4 TEXT CONTAINER*/
+main .product-range .text-box {
+	width: 50%;
+}
+
+/*[6.5A] CONTENT 4 TEXT HEADING*/
+main .product-range .text-box h1 {
+	color: var(--text-main-normal);
+	font-size: clamp(1rem, 0.8571rem + 0.7143vw, 2rem);
+	font-weight: 700;	
+	padding-bottom: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+	display: none;
+}
+
+/*[6.5B] CONTENT 4 TEXT HEADING*/
+main .product-range .text-box h2 {
+	color: var(--text-main-normal);
+	font-size: clamp(0.9rem, 0.8357rem + 0.3214vw, 1.35rem);
+	font-weight: 700;	
+	padding-bottom: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+}
+
+/*[6.6] CONTENT 4 TEXT DETAIL*/
+main .product-range .text-box p {
+	color: var(--text-main-light);
+	font-size: clamp(0.9rem, 0.8571rem + 0.2143vw, 1.2rem);
+	padding-bottom: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+	font-weight: normal;
+}
+
+/****************************************************************************************START SECTION 6 - END - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - END - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - END - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - END - PRODUCT RANGE*/
+
+
+
+
+
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+
+/*[7.1]*/
+main .arrange-demo {
+	width: 92vw;
+	height: 8rem;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	margin-top: 1rem;
+	flex-wrap: wrap;
+	gap: clamp(2rem, 1.1429rem + 4.2857vw, 8rem);
+}
+
+/*[7.2] STYLE DEMO BUTTON */
+main .arrange-demo #btn-demo-main {
+	width: clamp(8rem, 7.3571rem + 3.2143vw, 12.5rem);
+	height: clamp(2.4rem, 2.2071rem + 0.9643vw, 3.75rem);
+	color: white;
+	background-color: var(--elements-colour-1);
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: clamp(0.8rem, 0.7429rem + 0.2857vw, 1.2rem);
+	cursor: pointer;
+	padding-left: clamp(1.1rem, 1.0786rem + 0.1071vw, 1.25rem);
+	transition: background-color .3s, padding-left .3s;
+}
+
+/*[7.3] HIDE DEMO BUTTON ARROW*/
+main .arrange-demo #btn-demo-main > i {
+	visibility: hidden;
+	font-size: clamp(0.8rem, 0.7714rem + 0.1429vw, 1rem);
+	transform: translateX(-1.2rem);
+	transition: transform .3s, margin-left .3s;
+}
+
+/*[7.4] ANIMATE DEMO BUTTON */
+main .arrange-demo #btn-demo-main:hover {
+	background-color: var(--elements-colour-1-hover);
+}
+
+/*[7.5] SHOW DEMO BUTTON ARROW */
+main .arrange-demo #btn-demo-main:hover > i {
+	transform: translateX(.5rem);
+	visibility: visible;
+}
+
+/*[7.6] SHOW DEMO BUTTON ARROW */
+main .arrange-demo #btn-demo-main:hover {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*[7.7] STYLE SECTION TEXT*/
+main .arrange-demo h4 {
+	color: var(--text-main-light);
+	font-weight: 700;
+	font-size: clamp(1rem, 0.9143rem + 0.4286vw, 1.6rem);
+}
+
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+
+
+
+
+
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+
+/*[8] STYLE FOOTER*/
+/*[8.1]*/
+.footer {
+	margin: 0 auto;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	width: 92vw;
+	border-top: 1.6px solid var(--border-color-1);
+	padding-bottom: 2rem;
+}
+
+/*[8.2] SPACE OUT EACT MENU LIST*/
+.footer .list-container {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+/*[8.3]*/
+.footer .list-container .list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	line-height: clamp(1.8rem, 1.7714rem + 0.1429vw, 2rem);
+}
+
+/*[8.4]*/
+.footer .list-container .list h3 {
+	color: var(--text-main-normal);
+	font-weight: 700;
+	font-size: clamp(1.2rem, 1.1929rem + 0.0357vw, 1.25rem);
+	font-family: SourceSansPro-Bold, "Source Sans Pro";
+}
+
+/*[8.5]*/
+.footer .list-container .list a {
+	color: var(--text-main-light);
+	font-weight: 600;
+	font-size: .9rem;
+	font-family: SourceSansPro-SemiBold, "Source Sans Pro";
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+}
+
+/*[8.6] - ACTIVE PAGE*/
+.footer .list-container .list a.active {
+	color: var(--text-nav);
+}
+
+/*[8.7]*/
+.footer .list-container .list .blank-content {
+	visibility: hidden;
+}
+
+/*[8.8] STYLE FOOTER SOCIAL ICONS*/
+.footer .list-container .list .social-icons i {
+	color: var(--text-main-light);
+	margin-right: .6rem;
+	font-size: clamp(1rem, 0.9786rem + 0.1071vw, 1.15rem);
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+	transition: color .2s;
+}
+
+/*[8.9] STYLE FOOTER LOGO*/
+.footer .nav-logo {
+	background-image: url('../elements/Top Nav Bar/UON Logo.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: clamp(7rem, 6.8571rem + 0.7143vw, 8rem);
+	height: clamp(2rem, 2rem + 0vw, 2rem);
+	cursor: pointer;
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+}
+
+/*[8.10a] ANIMATE FOOTER NAV MENU ITEMS LINKS*/
+.footer .list-container .footer-nav-link:after {
+	content: "";
+	background-color: var(--text-nav);
+	width: 0;
+	height: .125rem;
+	border-radius: 50px;
+	position: absolute;
+	left: auto;
+	transition: width 200ms ease-in;
+	display: flex;
+}
+
+
+/*[8.10b] ANIMATE FOOTER NAV MENU ITEMS LINKS*/
+.footer .list-container .footer-nav-link:hover:after {
+	width: 100%;
+}
+
+/*[8.11] STYLE FOOTER LINK*/
+.footer .link-nested {
+	display: inline-block;
+/*	padding-right: .5rem;*/
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+}
+
+/*[8.12] ANIMATE FOOTER NAV MENU ITEMS LINKS*/
+.footer .list-container .list .social-icons i:hover {
+	color: var(--text-nav);
+	transform: scale(1.2);
+}
+
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+
+
+
+
+
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+
+
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+
+
+
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+
+
+
+
+
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************START SECTION 2 - MAIN - GLOBE*/
+	
+	/************************************************************************************START RESPONSIVE DESIGN - 768px*/
+		@media (max-width: 768px) {
+			/*[2.2] CONTENT-1 IMAGE CONTAINER*/
+			main .content-1 .image-container {
+				width: 100%;
+				height: 100%;
+			}
+
+			/*[2.5] CONTENT-1 HEADING*/
+			:-webkit-any(article, aside, nav, section) h1 {
+		    font-size: 1.2rem;
+		    padding-left: 2rem;
+		    padding-right: 2rem;
+			}
+		}
+	/************************************************************************************END RESPONSIVE DESIGN - 768px*/
+
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+/****************************************************************************************END SECTION 2 - MAIN - GLOBE*/
+
+
+
+
+
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************START SECTION 3 - MAIN - DESCRIPTION*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 768px*/
+	@media (max-width: 768px) {
+		/*[3.1] CONTENT-2 CONTAINER*/
+		main .content-2 {
+			flex-direction: column;
+		}
+
+		/*[3.2]* CONTENT-2 CONTAINER TO HOLD RESIZED IMAGE*/
+		main .content-2 .image-container {
+			width: 100%;
+		}
+
+		/*[3.3] SHOW CONTENT-2 IMAGE FOR DESKTOP*/
+		main .content-2 .image-container #content-2-image-desktop {
+			display: none;
+		}
+
+		/*[3.4] HIDE CONTENT-2 IMAGE FOR MOBILE*/
+		main .content-2 .image-container #content-2-image-mobile {
+			display: block;
+		}
+
+		/*[3.6] CONTENT-2 TEXT CONTAINER*/
+		main .content-2 .text-container  {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		/*[3.8] CONTENT-2 TEXT DETAIL*/
+		main .content-2 .text-container p {
+			font-size: 1rem;
+			position: relative;
+			left: initial;
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 768px*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - GREATER 1440px*/
+	@media(min-width: 1441px) {
+
+		/*[3.3] CONTENT-2 RESIZE IMAGE AND MOVE TO LEFT*/
+		main .content-2 .image-container img {
+			width: 90%;
+		}
+
+		/*[3.6] CONTENT-2 TEXT DETAIL*/
+		main .content-2 .text-container p {
+			font-size: 1.4rem;
+			padding-right: 20rem;
+		}
+	/************************************************************************************END RESPONSIVE DESIGN - GREATER 1440px*/
+}
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+/****************************************************************************************END SECTION 3 - MAIN - DESCRIPTION*/
+
+
+
+
+
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************START SECTION 4 - MAIN - UON SERVICES*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 768px*/
+	@media (max-width: 768px) {
+
+		/****************************************************************************************START UON SERVICES CARDS*/
+
+		/*[4.10] STYLE SERVICES CARD arrow*/
+		main .container-services .container-services-cards .services-card div > i {
+			padding-top: 1rem;
+			padding-right: 2rem;
+			visibility: visible;
+		}
+
+		/*[4.11] STYLE SERVICES CARD TEXT*/
+		main .container-services .container-services-cards .services-card > h4 {
+			font-size: 1rem;
+		}
+
+		/*[4.13] ANIMATE SERVICES CARD ARROW*/
+		main .container-services .container-services-cards .services-card:hover div > i {
+			visibility: visible;
+			transform: translateX(.5em);
+		}
+		/****************************************************************************************END SERVICES CARD*/
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 768px*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 1366px*/
+	@media (max-width: 1366px) {
+		/*[4.6]*/
+		main .container-services h1 {
+			font-size: 2rem;
+		}
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 1366px*/
+
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+/****************************************************************************************END SECTION 4 - MAIN - UON SERVICES*/
+
+
+
+
+
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************START SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 275px*/
+		@media (min-width: 275px) {
+
+			/*[5.1A] SHOW SOLUTIONS MOBILE CONTAINER*/
+			main .solutions-desktop {
+				display: none;
+			}
+
+			/*[5.1B] HIDE SOLUTIONS MOBILE CONTAINER*/
+			main .solutions-mobile {
+				display: block;
+			}
+		}
+	/************************************************************************************END RESPONSIVE DESIGN - 1024px*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 1024px*/
+		@media (min-width: 1024px) {
+
+			/*[5.1A] SHOW SOLUTIONS MOBILE CONTAINER*/
+			main .solutions-desktop {
+				display: none;
+			}
+
+			/*[5.1B] HIDE SOLUTIONS MOBILE CONTAINER*/
+			main .solutions-mobile {
+				display: block;
+			}
+		}
+	/************************************************************************************END RESPONSIVE DESIGN - 1024px*/
+
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+/****************************************************************************************END SECTION 5A - MAIN - SOLUTIONS DESKTOP*/
+
+
+
+
+
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************START SECTION 6 - MAIN - PRODUCT RANGE*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 768px*/
+	@media (max-width: 768px) {
+		/*[6.1] CONTENT 4 CONTAINER*/
+		main .product-range {
+			flex-direction: column;
+			max-width: 82vw;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			text-align: center;
+		}
+
+		/*[6.2] CONTENT 4 IMAGE CONTAINER*/
+		main .product-range .image-box {
+			width: 100%;	
+			text-align: center;
+			padding-left: 0rem;
+			padding-bottom: 2rem;
+		}
+
+		/*[6.3] CONTENT 4 IMAGE*/
+		main .product-range .image-box img {
+			width: 90%;
+		}
+
+		/*[6.4] CONTENT 4 TEXT CONTAINER*/
+		main .product-range .text-box {
+			width: 100%;
+			text-align: center;
+		}
+
+		/*[6.5A] CONTENT 4 TEXT HEADING*/
+		main .product-range .text-box h1 {
+			display: none;
+		}
+
+		/*[6.5B] CONTENT 4 TEXT HEADING*/
+		main .product-range .text-box h2 {
+			color: var(--text-main-light);
+			font-weight: 700;
+			padding-bottom: 1rem;
+			text-align: center;
+		}
+
+		/*[6.6] CONTENT 4 TEXT DETAIL*/
+		main .product-range .text-box p {
+			padding-bottom: 1rem;
+			font-weight: normal;
+			text-align: center;
+		}
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 768px*/
+
+/****************************************************************************************END SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************END SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************END SECTION 6 - MAIN - PRODUCT RANGE*/
+/****************************************************************************************END SECTION 6 - MAIN - PRODUCT RANGE*/
+
+
+
+
+
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************START SECTION 7 - MAIN - ARRANGE A DEMO*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 1024px*/
+	@media (max-width: 1024px) {
+
+		/*[7.3] HIDE DEMO BUTTON ARROW*/
+		main .arrange-demo #btn-demo-main > i {
+			visibility: hidden;
+			transform: translateX(-.5rem);
+			font-size: .8rem;
+		}
+
+		/*[7.5] SHOW DEMO BUTTON ARROW */
+		main .arrange-demo #btn-demo-main:hover > i {
+			transform: translateX(.4rem);
+			margin-left: .4rem;
+		}
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 1024px*/
+
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+/****************************************************************************************END SECTION 7 - MAIN - ARRANGE A DEMO*/
+
+
+
+
+
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+/****************************************************************************************START SECTION 8 - FOOTER*/
+
+	/************************************************************************************START RESPONSIVE DESIGN - 768px*/
+	@media (max-width: 768px) {
+		/*[8.3]*/
+		.footer .list-container {
+			flex-direction: column;
+		}
+	}
+	/************************************************************************************END RESPONSIVE DESIGN - 768px*/
+
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+/****************************************************************************************END SECTION 8 - FOOTER*/
+
+
+
+
+
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+
+
+/*WEBSITE BUILD BY Krishan.Naidoo912@gmail.com and Mark.Davies@uon.global*/

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Timers</title>
+	<style>
+		#container {
+			border: 2px solid blue;
+			text-align: center;
+			vertical-align: middle;
+			width: 400px;
+			height: 50px;
+			font-family: Calibri;
+			line-height: 24px;
+			line-height: 50px;
+		}
+
+		#marqueeTextDisplay {
+			height: 20px;
+			border: 2px solid blue;
+			padding-left: 15px;
+			width: 400px;
+		}
+	</style>
+	<script>
+		function countdown() {
+			setInterval(function calculate() {
+				now = new Date();
+				then = Date.parse(document.getElementById("date").value);
+				daysLeft = then - now;
+				days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
+				hours = Math.floor(daysLeft / (1000 * 60 * 60));
+				mins = Math.floor(daysLeft / (1000 * 60));
+				secs = Math.floor(daysLeft / (1000));
+				dd = days;
+				hh = hours - days * 24;
+				mm = mins - hours * 60;
+				ss = secs - mins * 60;
+				document.getElementById("countdownDisplay").innerHTML = dd + ' days ' + hh + ' hours ' + mm + ' minutes ' + ss + ' seconds ';
+			}, 1000);
+		}
+
+		//for marquee
+		var i = 0;
+		text = "Welcome, this is a scrolling text called Marquee!";
+		var sequence = setInterval(updateMarquee, 100)
+
+		function updateMarquee() {
+			i++;
+			if(i > text.length) {
+				i = 0 //reset marqee
+			}
+			marqueeText = text.substring(i, text.length);
+			//add spaces at begining and end of text when scrolling
+			marqueeText += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
+			marqueeText += text.substring(0, i);
+			document.getElementById("marqueeTextDisplay").innerHTML = marqueeText;
+		}
+	</script>
+</head>
+<body>
+	<div id=countdownContainer>
+		<p>Enter in a date and time in the format "January 01, 2021" </p>
+		<br>
+		<input type="text" id="date" size="50" />
+		<br>
+		<br>
+		<button onClick="countdown()">Calculate Count Down</button>
+		<br><br>
+		<div id="container">
+			<div id="countdownDisplay">Countdown</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div id="marqueeTextDisplay"></div>
+</body>
+</html>

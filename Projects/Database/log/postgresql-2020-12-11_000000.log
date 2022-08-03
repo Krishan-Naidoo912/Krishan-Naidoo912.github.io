@@ -1,0 +1,2 @@
+2020-12-14 20:31:29.459 CAT [6416] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-12-15 01:08:36.808 CAT [6416] LOG:  using stale statistics instead of current ones because stats collector is not responding

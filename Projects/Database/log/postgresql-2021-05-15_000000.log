@@ -1,0 +1,4 @@
+2021-05-19 11:00:33.539 CAT [10540] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-19 16:55:28.221 CAT [10540] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-20 14:48:13.716 CAT [10540] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-05-20 15:56:54.896 CAT [10540] LOG:  using stale statistics instead of current ones because stats collector is not responding

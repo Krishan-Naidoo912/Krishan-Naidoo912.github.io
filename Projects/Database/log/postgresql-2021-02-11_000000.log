@@ -1,0 +1,9 @@
+2021-02-12 12:25:29.407 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-12 12:26:40.685 CAT [2672] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-12 14:21:23.609 CAT [2448] LOG:  received fast shutdown request
+2021-02-12 14:21:26.229 CAT [2904] ERROR:  canceling statement due to user request
+2021-02-12 14:21:26.234 CAT [2448] LOG:  aborting any active transactions
+2021-02-12 14:21:26.241 CAT [2672] ERROR:  canceling statement due to user request
+2021-02-12 14:21:26.338 CAT [2448] LOG:  background worker "logical replication launcher" (PID 2904) exited with exit code 1
+2021-02-12 14:21:26.403 CAT [6032] LOG:  shutting down
+2021-02-12 14:21:50.677 CAT [2448] LOG:  database system is shut down

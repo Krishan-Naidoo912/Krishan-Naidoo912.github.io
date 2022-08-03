@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5-CSS3 Nav</title>
+	<style>
+		#container {
+			margin: 10px auto;
+		}
+
+		#banner {
+			width: 100%;
+			height: auto;
+			background-color: teal;
+			color: white;
+		}
+
+		nav {
+			background-color: skyblue;
+			width: 300px;
+			height: 400px;
+			float: left;
+			font-family: Arial;
+			font-size: 18pt;
+		}
+
+		nav ul ul {
+			display: none;
+		}
+
+		nav ul li:hover > ul {
+			display: block;
+		}
+
+		article {
+			background-color: yellow;
+			height: 400px;
+		}
+
+		#navPastals {
+			width: 100px;
+			height: 60px;
+			border: 2px solid blue;
+			padding: 0 20px;
+			float: left;
+			text-align: center;
+			line-height: 60px;
+			font-family: Calibri;
+			font-size: 18pt;
+			margin: 50px;
+			border-radius: 25px;
+			background-color: purple;
+		}
+
+		#navPaints {
+			width: 100px;
+			height: 60px;
+			border: 2px solid blue;
+			padding: 0 20px;
+			float: left;
+			text-align: center;
+			line-height: 60px;
+			font-family: Calibri;
+			font-size: 18pt;
+			margin: 50px;
+			border-radius: 25px;
+			background-color: skyblue;
+		}
+
+		#navSculpture {
+			width: 100px;
+			height: 60px;
+			border: 2px solid blue;
+			padding: 0 20px;
+			float: left;
+			text-align: center;
+			line-height: 60px;
+			font-family: Calibri;
+			font-size: 18pt;
+			margin: 50px;
+			border-radius: 25px;
+			background-color: green;
+		}
+
+		footer {
+			background-color: green;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="banner">
+			<h1>The Rennaissance Art Collective</h1>
+			<h2>Promoting Art for 30 years</h2>
+		</div>
+
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About Us
+					<ul>
+						<li>The Organisation</li>
+						<li>The People
+							<ul>
+								<li>Our Volunteers</li>
+								<li>Our Management</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Art</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+
+		<article>
+			<p><h2>We are curators of many different types of art. Click the links below for more information.</h2></p>
+			<div id="navContent">
+				<div id="navPastals">Pastals</div>
+				<div id="navPaints">Paints</div>
+				<div id="navSculpture">Sculpture</div>
+			</div>
+		</article>
+
+		<footer>
+			<h3>Copyright the The Rennaissance Art Collective</h3>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+2021-04-17 01:35:13.210 CAT [6208] LOG:  received fast shutdown request
+2021-04-17 01:35:13.841 CAT [6208] LOG:  aborting any active transactions
+2021-04-17 01:35:13.881 CAT [4560] ERROR:  canceling statement due to user request
+2021-04-17 01:35:13.872 CAT [3232] ERROR:  canceling statement due to user request
+2021-04-17 01:35:14.911 CAT [6208] LOG:  background worker "logical replication launcher" (PID 3232) exited with exit code 1
+2021-04-17 01:35:17.592 CAT [9420] LOG:  shutting down
+2021-04-17 01:35:48.872 CAT [6208] LOG:  database system is shut down

@@ -1,0 +1,1009 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/*CSS RESETS*/
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+	--background-color: #FFFFFF;
+	--text-main-normal: rgb(58, 74, 91); /*Normal Gray*/
+	--text-main-light: rgb(96, 123, 139); /*Light Gray*/
+	--text-nav: #F58C58; /*Orange*/
+	--border-color-1: rgba(96,123,139,.6) ; /*Gray*/
+	--navbar-navlink-size: 1.125rem;
+	--elements-colour-1: rgb(242, 103, 34); /*Orange*/
+	--elements-colour-1-hover: rgb(226, 75, 0); /*Orange*/
+	--elements-colour-shadow: #EDEFF0; /*Gray*/
+	--elements-colour-shadow-2: #FEF2EA; /*Orange*/
+	--transition: all 0.5s ease-in-out;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
+}
+
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************START SECTION 1 - HEADER STICKY NAV BAR*/
+/*[1.1] STYLE HEADER STICKY TOP NAV BAR*/
+.header {
+	width: 92vw;
+	min-height: 4.375rem;
+	margin: 0 auto 0;
+	overflow: hidden;
+}
+
+/*[1.2] STYLE TOP NAV BAR */
+.header .navbar {
+	width: 92vw;
+	display: flex;
+	min-height: 4.375rem;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(256,256,256, .9);
+	border-bottom: 1.6px solid var(--border-color-1);
+}
+
+/*[1.3] STYLE LOGO*/
+.header .navbar .nav-logo {
+	background-image: url('c:/Gundam.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 8rem;
+	max-width: 8rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+/*[1.4] ANIMATE LOGO*/
+.header .navbar .nav-logo:hover {
+	background-image: url('c:/Gundam.jpg');
+}
+
+/****************************************************************************************START HAMBURGER MENU*/
+/*[1.5] STYLE HAMBURGER MENU*/
+.navbar .nav-menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*[1.6]*/
+.navbar .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navbar .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.navbar .navbar .btn-menu {
+  display: none;
+}
+
+
+.navbar .btn-menu:checked ~ .nav-menu {
+  max-height: 100vh;
+}
+
+
+.navbar .btn-menu:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navbar .btn-menu:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navbar .btn-menu:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar .btn-menu:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .btn-menu:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/****************************************************************************************END HAMBURGER MENU*/
+
+/****************************************************************************************START TOP NAV MENU*/
+/*[1.7] STYLE TOP NAV MENU */
+.header .navbar .nav-menu {
+	display: flex;
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+
+/*[1.8] STYLE TOP NAV MENU ITEMS */
+.header .navbar .nav-menu .nav-item {
+	margin-right: 2.3rem;
+}
+
+/*[1.9a] STYLE TOP NAV MENU ITEMS LINKS*/
+.header .navbar .nav-menu .nav-item .nav-link {
+	color: var(--text-main-normal);
+	font-size: .9rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative; /*NEEDED FOR NAV LINK UNDERLINE HOVER EFFECT*/
+}
+
+/*[1.9b] STYLE TOP NAV MENU ITEMS LINKS - ACTIVE*/
+.header .navbar .nav-menu .nav-item .nav-link.active {
+	color: var(--text-nav);
+}
+
+
+/*[1.10] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar .nav-menu .nav-item .nav-link:hover {
+	color: var(--text-nav);
+}
+
+/*[1.11] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar .nav-menu .nav-item .nav-link:after {
+	content: "";
+	background-color: var(--text-nav);
+	width: 0;
+	height: .125rem;
+	border-radius: 50px;
+	position: absolute;
+	left: 0;
+	bottom: -.2rem;
+	transition: width 200ms ease-in;
+}
+
+/*[1.12] ANIMATE TOP NAV MENU ITEMS LINKS*/
+.header .navbar .nav-menu .nav-item .nav-link:hover:after {
+	width: 100%;
+}
+
+/*[1.13] STYLE TOP NAV MENU ITEMS LINKS ARROWS*/
+.header .navbar .nav-menu .nav-item .nav-link .navlink-arrow {
+	margin-left: 1.125rem;
+	font-size: .5rem; /*.5*/
+	font-weight: 900;
+}
+
+/*[1.14] ANIMATE TOP NAV MENU ITEMS LINKS ARROWS*/
+.header .navbar .nav-menu .nav-item .nav-link:hover .navlink-arrow {
+	transform: rotate(90deg);
+}
+
+/****************************************************************************************END TOP NAV MENU*/
+
+/****************************************************************************************START TOP NAV BAR DEMO BUTTON*/
+/*[1.15] STYLE TOP NAV BAR DEMO BUTTON */
+.header .navbar #btn-demo {
+	display: inline-block;
+	width: 9rem;
+	height: 2.188rem;
+	color: white;
+	background-color: var(--elements-colour-1);
+	border-radius: 12px;
+	font-weight: 400;
+	font-size: .9rem;
+	cursor: pointer;
+	padding-left: 1rem;
+	transition: background-color .3s, padding-left .3s;
+}
+
+/*[1.16] HIDE TOP NAV BAR DEMO BUTTON ARROW*/
+.header .navbar #btn-demo > i {
+	visibility: hidden;
+	margin-left: .5rem;
+	transform: translateX(-.5rem);
+	transition: transform .3s, margin-left .3s;
+}
+
+/*[1.17] ANIMATE TOP NAV BAR DEMO BUTTON ARROW */
+.header .navbar #btn-demo:hover > i {
+	transform: translateX(.3rem);
+	visibility: visible;
+	margin-left: .6rem;
+}
+
+/*[1.18] ANIMATE TOP NAV BAR DEMO BUTTON */
+.header .navbar #btn-demo:hover {
+	background-color: var(--elements-colour-1-hover);
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/****************************************************************************************END TOP NAV BAR DEMO BUTTON*/
+
+/****************************************************************************************START TOP NAV BAR DROP DOWN MENU - SERVICES*/
+/*[1.19] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services {
+	position: absolute;
+	left: 0rem;
+	width: 92vw;
+	min-height: 25rem;
+	opacity: 0;
+	visibility: hidden;
+	border-bottom: 1.5px solid var(--border-color-1);
+	padding-bottom: 2.5rem;
+	background: var(--elements-colour-1);
+	padding-right: 4rem;
+	padding-left: 4rem;
+	top: 0rem;
+	transition: visibility .2s, opacity 0s, background 0s, top .4s;
+}
+
+#check-nav, #check-nav-services {
+	display: none;
+}
+
+
+/*[1.20] SHOW TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item #check-nav-services:checked ~ .nav-dropdown-services {
+	visibility: visible;
+	opacity: 1;
+	background: #FFF;
+	top: 4.3rem;
+}
+
+/*[1.21] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .container-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+	gap: 4rem;
+	padding-top: 4rem;
+	justify-items: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/****************************************************************************************START DROP DOWN MENU CARD - SERVICES*/
+/*[1.22] STYLE TOP NAV BAR DROP DOWN MENU CARD*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card {
+	box-shadow: 0 10px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	width: 14rem;
+	min-height: 18rem;
+	cursor: pointer;
+	background: white;
+	transition: transform .3s, box-shadow .3s;
+}
+
+/*[1.23] ANIMATE TOP NAV BAR DROP DOWN MENU CARD*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);
+}
+
+/*[1.24] STYLE TOP NAV BAR DROP DOWN MENU HEADINGS*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services h3 {
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--text-main-normal);
+	margin-top: 2rem;
+}
+
+
+/*[1.25] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	max-height: 6.250rem;
+	margin-bottom: 1rem;
+}
+
+/*[1.26] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card div > img {
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+	width: 40%;
+	height:40%;
+}
+
+/*[1.27] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card div > i {
+	padding-top: 1rem;
+	padding-right: 1.250rem;
+	font-size: 1.250rem;
+	color: var(--text-main-light);
+	visibility: hidden;
+	transition: all .3s;
+}
+
+/*[1.28] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card > h4 {
+	font-size: 1.250rem;
+	font-weight: 600;
+	color: var(--text-main-light);
+	text-align: center;
+	padding-bottom: .9rem;
+}
+
+/*[1.29] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card > p {
+	font-size: .9rem;
+	font-weight: 400;
+	color: var(--text-main-light);
+	text-align: center;
+	line-height: 1.8rem;
+	padding-left: .6rem;
+	padding-right: .6rem;
+}
+
+/*[1.30] SHOW TOP NAV BAR DROP DOWN MENU CARD ARROW ON HOVER*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-services .nav-card:hover div > i {
+	visibility: visible;
+	transform: translateX(.5rem);
+}
+
+/****************************************************************************************END DROP DOWN MENU CARD - SERVICES*/
+/****************************************************************************************END TOP NAV BAR DROP DOWN MENU - SERVICES*/
+
+/****************************************************************************************START TOP NAV BAR DROP DOWN MENU - SOLUTIONS*/
+/*[1.31] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-solutions {
+	position: absolute;
+	left: 0rem;
+	width: 92vw;
+	opacity: 0;
+	visibility: hidden;
+	min-height: 18.128rem;
+	border-bottom: 1.5px solid var(--border-color-1);
+	padding-bottom: 2.5rem;
+	background: var(--elements-colour-1);
+	top: 0rem;
+	transition: visibility .2s, opacity 0s, background 0s, top .4s;
+}
+
+
+#check-nav-solutions {
+	display: none;
+}
+
+/*[1.32] SHOW TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item #check-nav-solutions:checked ~ .nav-dropdown-solutions {
+	visibility: visible;
+	opacity: 1;
+	background: #FFF;
+	top: 4.3rem;
+}
+
+/*[1.33] STYLE TOP NAV BAR DROP DOWN MENU*/
+.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .container-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(7.6rem, 1fr));
+	gap: .2rem;
+	padding-top: 3.125rem;
+	justify-items: center;
+}
+
+/****************************************************************************************START DROP DOWN MENU CARD - SOLUTIONS*/
+
+
+main .solutions {
+  width: 75vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+
+main .solutions .tabs-panels-container {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+main .solutions .tabs-panels-container .radio {
+  display:none;
+}
+
+main .solutions .tabs-panels-container .tabs {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main .solutions .tabs-panels-container .tabs .tab-lbl {
+  cursor: pointer;
+	display: inline-block;
+  width: 25%;
+}
+
+main .solutions .tabs-panels-container .tabs .tab-lbl:hover {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+main .solutions .tabs-panels-container .tabs .tab img {
+	width: 50px;
+	height: 50px;
+	filter: grayscale(60%);
+	grid-area: tab-img;
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab h1 {
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 1.2857142857142858rem + 0.4464285714285714vw, 2rem);
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: tab-h1;
+}
+
+main .solutions .tabs-panels-container .tabs .tab h2 {
+	font-size: 1.1rem;
+	font-size: clamp(1.1rem, 0.9714285714285715rem + 0.2678571428571427vw, 1.4rem);
+	color: var(--text-main-normal);
+	font-weight: normal;
+	grid-area: tab-h2;
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab img:hover {
+	filter: grayscale(0%);
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab {
+	display: grid;
+	grid-template-areas:
+		'tab-img tab-h1'
+		'tab-img tab-h2';
+	padding: 1rem 2rem;
+	align-items: center;
+}
+
+main .solutions .tabs-panels-container .panels {
+  box-shadow: 0 2rem 2rem #00000080;
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+	background: silver;
+  animation: fadein .8s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .solutions .tabs-panels-container .panels .panel {
+	display: none;
+}
+
+main .solutions .tabs-panels-container .panels .panel h1 {
+	color: var(--text-main-normal);
+	font-size: clamp(.5rem, 4vw + 1rem, 1.5rem);
+	font-weight: 600;
+}
+
+main .solutions .tabs-panels-container .panels .panel h1 #highlight {
+	color: orange;
+}
+
+main .solutions .tabs-panels-container .panels .panel p {
+	color: var(--text-main-normal);
+	font-size: clamp(.3rem, 4vw, 1.2rem);
+	margin-top: 1rem;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .image-container img {
+	width: 15rem;
+	margin-bottom: 2rem;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text {
+	display: grid;
+	grid-template-areas: 
+	 'panel-content-counter panel-content-text';
+	 align-items: center;
+	color: var(--text-main-normal);
+	font-size: 0.8rem;
+	font-size: clamp(0.8rem, 0.7200000000000001rem + 0.3999999999999999vw, 1.2rem);
+	padding-bottom: 1rem;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text h2 {
+	grid-template-areas: panel-content-counter;
+	font-size: 1.2rem;
+	color: var(--text-main-normal);
+	font-weight: 600;
+	margin-right: 2rem;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text h3 {
+	grid-template-areas: panel-content-text;
+	font-size: .9rem;
+	color: var(--text-main-normal);
+	font-weight: 600;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .row {
+	flex-direction: row;
+
+}
+main .solutions .tabs-panels-container .panels .panel .contents .row .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+#radio-1:checked ~ .tabs #lbl-tab-1,
+#radio-2:checked ~ .tabs #lbl-tab-2,
+#radio-3:checked ~ .tabs #lbl-tab-3,
+#radio-4:checked ~ .tabs #lbl-tab-4{
+  background:#fffffff6;
+  color:#000;
+  border-left: 5px solid orange;
+}
+
+
+#radio-1:checked ~ * #panel-1,
+#radio-2:checked ~ * #panel-2,
+#radio-3:checked ~ * #panel-3,
+#radio-4:checked ~ * #panel-4{
+  display:block
+}
+
+
+
+
+
+
+
+
+
+
+/*[1.34] STYLE TOP NAV BAR DROP DOWN MENU CARD*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card {
+	box-shadow: 0 10px 20px 0 var(--elements-colour-shadow);
+	border-radius: 15px;
+	width: 7.6rem;
+	height: 10rem;
+	cursor: pointer;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform .3s, box-shadow .4s;
+}*/
+
+/*[1.35] ANIMATE TOP NAV BAR DROP DOWN MENU CARD*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: translateY(-.5rem);
+}*/
+
+/*[1.36] STYLE TOP NAV BAR DROP DOWN MENU HEADINGS*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions h3 {
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: var(--text-main-light);
+	margin-top: 2rem;
+}
+*/
+
+/*[1.37] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: .6rem;
+}*/
+
+/*[1.38] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card div > img {
+	width: 3.438rem;
+	height: 4.125rem;
+}*/
+
+/*[1.39] ANIMATE TOP NAV BAR DROP DOWN MENU CARD ARROW*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > i {
+	margin-left: 3.5rem;
+	font-size: .8rem;
+	color: var(--text-main-light);
+	visibility: hidden;
+	transition: all .5s ease-in ease-out;
+	transform: translateY(.5rem);
+}*/
+
+/*[1.40] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > h4 {
+	font-size: .8rem;
+	font-weight: 700;
+	color: var(--text-main-light);
+	text-align: center;
+	padding-bottom: .5rem;
+}*/
+
+/*[1.41] STYLE TOP NAV BAR DROP DOWN MENU CARD TEXT*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card > p {
+	font-size: .66rem;
+	font-weight: 600;
+	color: var(--text-main-light);
+	text-align: center;
+	line-height: .8rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+}*/
+
+/*[1.42] SHOW TOP NAV BAR DROP DOWN MENU CARD ARROW ON HOVER*/
+/*.header .navbar .nav-menu .nav-item .nav-dropdown-solutions .nav-card:hover > i {
+	visibility: visible;
+	transform: translate(1em,.5rem);
+}*/
+
+/****************************************************************************************END DROP DOWN MENU CARD - SOLUTIONS*/
+/****************************************************************************************END TOP NAV BAR DROP DOWN MENU - SOLUTIONS*/
+
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+/****************************************************************************************END SECTION 1 - HEADER STICKY NAV BAR*/
+
+
+
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+
+/*[5.1] STYLE SOLUTIONS CONTAINER*/
+
+main .solutions {
+  width: 75vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+
+/*[5.2] STYLE SOLUTIONS CONTAINER HEADING*/
+main .solutions h1 {
+	font-size: 2rem;
+	font-size: clamp(2rem, 1.7857142857142858rem + 0.4464285714285714vw, 2.5rem);
+	font-weight: 700;
+	color: var(--text-main-normal);
+}
+
+
+main .solutions .tabs-panels-container {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+main .solutions .tabs-panels-container .radio {
+  display:none;
+}
+
+main .solutions .tabs-panels-container .tabs {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main .solutions .tabs-panels-container .tabs .tab-lbl {
+  cursor: pointer;
+	display: inline-block;
+  width: 25%;
+}
+
+main .solutions .tabs-panels-container .tabs .tab-lbl:hover {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+main .solutions .tabs-panels-container .tabs .tab img {
+	width: 50px;
+	height: 50px;
+	filter: grayscale(60%);
+	grid-area: tab-img;
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab h1 {
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 1.2857142857142858rem + 0.4464285714285714vw, 2rem);
+	font-weight: 600;
+	color: var(--text-main-normal);
+	grid-area: tab-h1;
+}
+
+main .solutions .tabs-panels-container .tabs .tab h2 {
+	font-size: 1.1rem;
+	font-size: clamp(1.1rem, 0.9714285714285715rem + 0.2678571428571427vw, 1.4rem);
+	color: var(--text-main-normal);
+	font-weight: normal;
+	grid-area: tab-h2;
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab img:hover {
+	filter: grayscale(0%);
+}
+
+
+main .solutions .tabs-panels-container .tabs .tab {
+	display: grid;
+	grid-template-areas:
+		'tab-img tab-h1'
+		'tab-img tab-h2';
+	padding: 1rem 2rem;
+	align-items: center;
+}
+
+main .solutions .tabs-panels-container .panels {
+  box-shadow: 0 2rem 2rem #00000080;
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+	background: silver;
+  animation: fadein .8s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .solutions .tabs-panels-container .panels .panel {
+	display: none;
+}
+
+main .solutions .tabs-panels-container .panels .panel h1 {
+	color: var(--text-main-normal);
+	font-size: clamp(.5rem, 4vw + 1rem, 1.5rem);
+	font-weight: 600;
+}
+
+main .solutions .tabs-panels-container .panels .panel h1 #highlight {
+	color: orange;
+}
+
+main .solutions .tabs-panels-container .panels .panel p {
+	color: var(--text-main-normal);
+	font-size: clamp(.3rem, 4vw, 1.2rem);
+	margin-top: 1rem;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .image-container img {
+	width: 15rem;
+	margin-bottom: 2rem;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text {
+	display: grid;
+	grid-template-areas: 
+	 'panel-content-counter panel-content-text';
+	 align-items: center;
+	color: var(--text-main-normal);
+	font-size: 0.8rem;
+	font-size: clamp(0.8rem, 0.7200000000000001rem + 0.3999999999999999vw, 1.2rem);
+	padding-bottom: 1rem;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text h2 {
+	grid-template-areas: panel-content-counter;
+	font-size: 1.2rem;
+	color: var(--text-main-normal);
+	font-weight: 600;
+	margin-right: 2rem;
+}
+
+main .solutions .tabs-panels-container .panels .panel .contents .content .text h3 {
+	grid-template-areas: panel-content-text;
+	font-size: .9rem;
+	color: var(--text-main-normal);
+	font-weight: 600;
+}
+
+
+main .solutions .tabs-panels-container .panels .panel .contents .row {
+	flex-direction: row;
+
+}
+main .solutions .tabs-panels-container .panels .panel .contents .row .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+#radio-1:checked ~ .tabs #lbl-tab-1,
+#radio-2:checked ~ .tabs #lbl-tab-2,
+#radio-3:checked ~ .tabs #lbl-tab-3,
+#radio-4:checked ~ .tabs #lbl-tab-4{
+  background:#fffffff6;
+  color:#000;
+  border-left: 5px solid orange;
+}
+
+
+#radio-1:checked ~ * #panel-1,
+#radio-2:checked ~ * #panel-2,
+#radio-3:checked ~ * #panel-3,
+#radio-4:checked ~ * #panel-4{
+  display:block
+}
+
+
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+
+
+
+
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+/****************************************************************************************BEGIN RESPONSIVE DESIGN*/
+
+
+
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************START SECTION 5 - MAIN - SOLUTIONS*/
+
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+/****************************************************************************************END SECTION 5 - MAIN - SOLUTIONS*/
+
+
+
+
+
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/
+/****************************************************************************************END RESPONSIVE DESIGN*/

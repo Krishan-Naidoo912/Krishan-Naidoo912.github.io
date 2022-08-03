@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>UON Home</title>
+
+	<!-- EXTERNAL ELEMENTS -->
+	<!-- font awesome cdn link: https://cdnjs.com/libraries/font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- google fonts: https://fonts.google.com/specimen/Nunito?query=poppins -->
+	<!-- clip-path generator: https://bennettfeely.com/clippy/ -->
+	<!-- border-radius genrator: https://9elements.github.io/fancy-border-radius/ -->
+	
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="HTML CSS - Responsive Nav Dropdown Menu.css">
+
+</head>
+<body>
+
+	<!-- START SECTION 1 - HEADER -->
+	<!-- START STICKY TOP NAV BAR -->
+	<header class="header">
+		<nav class="navbar-desktop">
+			<!-- TOGGLE RESPONSIVE NAVBAR MENU WITH HAMBURGER ICON -->
+			<input type="checkbox" name="check-nav-desktop" id="check-nav-desktop">
+			<label class="menu-icon" for="check-nav-desktop"><span class="navicon"></span></label>
+
+			<div class="nav-logo">
+				<a href="index.html"></a>
+			</div>
+			
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index workings.html" class="nav-link active">HOME</a>
+				</li>
+				<li class="nav-item">
+
+					<!-- TOGGLE DROP DOWN MENU FOR SERVICES -->
+					<input type="checkbox" name="check-nav-services" id="check-nav-services">
+					<a href="#" class="nav-link" id="nav-link-services"><label for="check-nav-services" id="lbl-nav-services">SERVICES<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+					
+					<!-- START DROP DOWN MENU CARDS - SERVICES -->
+					<div class="nav-dropdown-services">
+						<h3>UON Services</h3>
+						<ul class="container-cards">
+							<li>
+								<a href="UON-Services-Software-Development.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Development_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Development</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Consulting.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Consulting_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Consulting</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Data-Analytics.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Data Analytics_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Data Analytics</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Intelligence.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Intelligence _Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Intelligence</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Software-Solutions.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Solutions_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Solutions</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SERVICES -->
+	
+				<li class="nav-item">
+
+					<!-- TOGGLE DROP DOWN MENU FOR SOLUTIONS -->
+					<input type="checkbox" name="check-nav-solutions" id="check-nav-solutions">
+					<a href="UON-Services-Software-Solutions.html" class="nav-link"><label for="check-nav-solutions" id="lbl-nav-solutions">SOLUTIONS<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+
+					<!-- START DROP DOWN MENU CARDS - SOLUTIONS -->
+
+					<div class="nav-dropdown-solutions">
+						<div class="tabs-panels-container-desktop">
+							<input class="radio-nav" type="radio" name="radio-nav-group" id="radio-nav-1" checked>
+							<input class="radio-nav" type="radio" name="radio-nav-group" id="radio-nav-2">
+							<input class="radio-nav" type="radio" name="radio-nav-group" id="radio-nav-3">
+							<input class="radio-nav" type="radio" name="radio-nav-group" id="radio-nav-4">
+				
+							<div class="tabs-nav">
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-1" for="radio-nav-1">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Customer Management_Cube.svg">
+										<h1>Customer</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-2" for="radio-nav-2">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Dealer Management_Cube.svg">
+										<h1>Dealer</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-3" for="radio-nav-3">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Marketing Management_Cube.svg">
+										<h1>Maketing</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-4" for="radio-nav-4">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Sales Management_Cube.svg">
+										<h1>Sales</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+							</div>
+
+							<div class="panels-nav">
+								<div class="panel-nav" id="panel-nav-1">
+									<div class="contents">
+										<h1>Improving <span class="highlight">Customer Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+										<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Nurture-View.html">
+											      	<div class="card">
+											      		<div>
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Nurture View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Nurture View</h4>					
+														<p>Lead Nurturing to Optimise Closing Ratios</p>	
+													</div>
+												</a>
+											</div>
+											<div>
+										      	<a href="UON-Solutions-Dealer-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Dealer View</h4>					
+														<p>Integrated Franchise Management</p>	
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Fleet-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Fleet View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Fleet View</h4>					
+														<p>Corporate Client Management</p>	
+													</div>
+												</a>								
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-2">
+									<div class="contents">
+										<h1>Managing <span class="highlight">Dealer Performance</h1>
+										<p>Drive internal efficiencies through integration and automation (transparency, actionable insights?) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Dealer-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Dealer View</h4>					
+														<p>Integrated Franchise Management</p>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Financial-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Financial View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Financial View</h4>					
+														<p>Financial Reporting</p>
+														<p></p>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Training-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Training View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Training View</h4>					
+														<p>Training and Capacity Management</p>	
+													</div>
+												</a>							
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-3">
+									<div class="contents">
+										<h1>Unlocking your <span class="highlight">marketing potential</span></h1>
+										<p>Provide the right assets, at the right time to create and generate the marketing campaigns and responses you need to boost your sales. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Market-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Market View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Market View</h4>					
+														<p>Comprehensive Marketing Toolkit</p>	
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-4">
+									<div class="contents">
+										<h1>Tracking and improving <span class="highlight">Sales</span> and maximising <span class="highlight">Sales Opportunities</h1>
+										<p>Providing the right tools to measure your sales potential, whether you are selling to the right market and whether you are reaching your sales potential. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Sales-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Sales View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Sales View</h4>					
+														<p>Linking the Customer Vehicle and Competitor</p>
+													</div>
+												</a>
+											</div>
+											<div class="content">
+												<a href="UON-Solutions-Location-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Location View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Location View</h4>					
+														<p>Dealer Location Optimisation (GIS)</p>	
+													</div>
+												</a>
+											</div>
+											<div class="content" id="blank-card">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-range">
+							<div class="image-box">
+								<img src="elements\Product Pages\UON WebSpider.png">
+							</div>
+							<div class="text-box">
+								<h2>Improve efficiencies, drive growth and gain competitive advantage through world-class integrated solutions.</h2>
+								<p>Our range of products are flexible, customisable and modular.</p>
+							</div>			
+						</div>
+
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SOLUTIONS -->
+				
+				</li>
+				<li class="nav-item">
+					<a href="UON-About.html" class="nav-link">ABOUT UON</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Insights.html" class="nav-link">INSIGHTS</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Contact.html" class="nav-link">CONTACT</a>
+				</li>
+			</ul>
+
+			<!-- ARRANGE A DEMO BUTTON -->
+    		<a href="UON-Contact.html">
+    			<button id="btn-demo"><span class="btn-demo-text">Arrange a Demo</span> <i class="fas fa-arrow-right"></i></button>
+    		</a>
+		</nav>
+		<!-- END STICKY TOP NAV BAR -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+		<nav class="navbar-mobile">
+
+			<div class="nav-logo">
+				<a href="index.html"></a>
+			</div>
+			
+			<!-- TOGGLE RESPONSIVE NAVBAR MENU WITH HAMBURGER ICON -->
+			<input type="checkbox" name="check-nav-mobile" id="check-nav-mobile">
+			<label class="menu-icon" for="check-nav-mobile"><span class="navicon"></span></label>
+
+			<!-- ARRANGE A DEMO BUTTON -->
+    		<a href="UON-Contact.html">
+    			<button id="btn-demo"><span class="btn-demo-text">Arrange a Demo</span> <i class="fas fa-arrow-right"></i></button>
+    		</a>			
+
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index workings.html" class="nav-link active">HOME</a>
+				</li>
+				<li class="nav-item">
+
+					<!-- TOGGLE DROP DOWN MENU FOR SERVICES -->
+					<input type="checkbox" name="check-nav-services-mobile" id="check-nav-services-mobile">
+					<a href="#" class="nav-link" id="nav-link-services-mobile"><label for="check-nav-services-mobile" id="lbl-nav-services-mobile">SERVICES<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+					
+					<!-- START DROP DOWN MENU CARDS - SERVICES -->
+					<div class="nav-dropdown-services-mobile">
+						<ul class="container-cards">
+							<li>
+								<a href="UON-Services-Software-Development.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Development_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Development</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Consulting.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Consulting_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Consulting</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Data-Analytics.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Data Analytics_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Data Analytics</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Business-Intelligence.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Business Intelligence _Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Business Intelligence</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UON-Services-Software-Solutions.html">
+									<div class="nav-card">
+										<div>
+											<img src="elements\Home Page\UON Services\Software Solutions_Icon.svg">
+											<i class="fas fa-arrow-right"></i>
+										</div>							
+										<h4>Software Solutions</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SERVICES -->
+	
+				<li class="nav-item">
+
+					<!-- TOGGLE DROP DOWN MENU FOR SOLUTIONS -->
+					<input type="checkbox" name="check-nav-solutions-mobile" id="check-nav-solutions-mobile">
+					<a href="UON-Services-Software-Solutions.html" class="nav-link"><label for="check-nav-solutions-mobile" id="lbl-nav-solutions-mobile">SOLUTIONS<i class="fas fa-chevron-right navlink-arrow"></i></label></a>
+
+					<!-- START DROP DOWN MENU CARDS - SOLUTIONS -->
+
+					<div class="nav-dropdown-solutions-mobile">
+						<div class="tabs-panels-container-desktop">
+							<input class="radio-nav" type="radio" name="radio-nav-mobile-group" id="radio-nav-mobile-1" checked>
+							<input class="radio-nav" type="radio" name="radio-nav-mobile-group" id="radio-nav-mobile-2">
+							<input class="radio-nav" type="radio" name="radio-nav-mobile-group" id="radio-nav-mobile-3">
+							<input class="radio-nav" type="radio" name="radio-nav-mobile-group" id="radio-nav-mobile-4">
+				
+							<div class="tabs-nav">
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-1" for="radio-nav-mobile-1">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Customer Management_Cube.svg">
+										<h1>Customer</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-2" for="radio-nav-mobile-2">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Dealer Management_Cube.svg">
+										<h1>Dealer</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-3" for="radio-nav-mobile-3">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Marketing Management_Cube.svg">
+										<h1>Maketing</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+								<label class="lbl-nav-tabs" id="lbl-nav-tab-4" for="radio-nav-mobile-4">
+									<div class="tab">
+										<img src="elements\Home Page\UON View - Modular Software Solutions\Sales Management_Cube.svg">
+										<h1>Sales</h1>
+										<h2>Management</h2>
+										<i class="fas fa-chevron-right navlink-arrow"></i>							
+									</div>
+								</label>
+							</div>
+
+							<div class="panels-nav">
+								<div class="panel-nav" id="panel-nav-mobile-1">
+									<div class="contents">
+										<h1>Improving <span class="highlight">Customer Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+										<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Nurture-View.html">
+											      	<div class="card">
+											      		<div>
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Nurture View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Nurture View</h4>					
+														<p>Lead Nurturing to Optimise Closing Ratios</p>	
+													</div>
+												</a>
+											</div>
+											<div>
+										      	<a href="UON-Solutions-Dealer-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Dealer View</h4>					
+														<p>Integrated Franchise Management</p>	
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Fleet-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Fleet View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Fleet View</h4>					
+														<p>Corporate Client Management</p>	
+													</div>
+												</a>								
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-mobile-2">
+									<div class="contents">
+										<h1>Managing <span class="highlight">Dealer Performance</h1>
+										<p>Drive internal efficiencies through integration and automation (transparency, actionable insights?) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Dealer-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Dealer View</h4>					
+														<p>Integrated Franchise Management</p>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Financial-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Financial View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Financial View</h4>					
+														<p>Financial Reporting</p>
+														<p></p>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="UON-Solutions-Training-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Training View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Training View</h4>					
+														<p>Training and Capacity Management</p>	
+													</div>
+												</a>							
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-mobile-3">
+									<div class="contents">
+										<h1>Unlocking your <span class="highlight">marketing potential</span></h1>
+										<p>Provide the right assets, at the right time to create and generate the marketing campaigns and responses you need to boost your sales. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Market-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Market View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Market View</h4>					
+														<p>Comprehensive Marketing Toolkit</p>	
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-nav" id="panel-nav-mobile-4">
+									<div class="contents">
+										<h1>Tracking and improving <span class="highlight">Sales</span> and maximising <span class="highlight">Sales Opportunities</h1>
+										<p>Providing the right tools to measure your sales potential, whether you are selling to the right market and whether you are reaching your sales potential. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="container-cards">
+											<div>
+												<a href="UON-Solutions-Sales-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Sales View.svg">
+											  				<i class="fas fa-arrow-right"></i>		
+											  			</div>
+														<h4>Sales View</h4>					
+														<p>Linking the Customer Vehicle and Competitor</p>
+													</div>
+												</a>
+											</div>
+											<div class="content">
+												<a href="UON-Solutions-Location-View.html">
+											      	<div class="card">
+											  			<div class="image-container-solutions">
+											  				<img src="elements\Top Nav Bar\Drop Down Menu\Location View.svg">
+											  				<i class="fas fa-arrow-right"></i>	
+											  			</div>
+														<h4>Location View</h4>					
+														<p>Dealer Location Optimisation (GIS)</p>	
+													</div>
+												</a>
+											</div>
+											<div class="content" id="blank-card">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-range">
+							<div class="image-box">
+								<img src="elements\Product Pages\UON WebSpider.png">
+							</div>
+							<div class="text-box">
+								<h2>Improve efficiencies, drive growth and gain competitive advantage through world-class integrated solutions.</h2>
+								<p>Our range of products are flexible, customisable and modular.</p>
+							</div>			
+						</div>
+
+					</div>
+				</li>
+				<!-- END DROP DOWN MENU CARDS - SOLUTIONS -->
+				
+				</li>
+				<li class="nav-item">
+					<a href="UON-About.html" class="nav-link">ABOUT UON</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Insights.html" class="nav-link">INSIGHTS</a>
+				</li>
+				<li class="nav-item">
+					<a href="UON-Contact.html" class="nav-link">CONTACT</a>
+				</li>
+			</ul>
+
+
+		</nav>
+		<!-- END STICKY TOP NAV BAR -->
+
+
+
+
+
+
+
+
+
+
+
+	</header>
+	<!-- END SECTION 1 - HEADER -->
+	
+	<!-- START MAIN SECTIONS -->
+	<main>
+
+		<!-- START SECTION 2 - MAIN GLOBE IMAGE -->
+		<section class="content-1">
+			<div class="image-container">
+				<img src="elements\Home Page\Landing Page - Placeholder.png">
+			</div>
+			<div id="text-container">
+				<h1>Integrated Franchise Management Solutions For Tomorrow</h1>
+			</div>		
+		</section>
+		<!-- END SECTION 2 - MAIN GLOBE IMAGE -->
+		
+		<!-- START SECTION 3 - MAIN COMPANY DESCRIPTION -->
+		<section class="content-2">
+			<div class="image-container">
+				<img src="elements\Home Page\Home Page Visual.png" id="content-2-image-desktop">
+				<img src="elements\Home Page\Home Page Visual Mobile.png" id="content-2-image-mobile">
+			</div>
+			<div class="text-container">
+				<p><strong id="heading2">Automotive Franchise Management through a single, integrated view of the Customer, the Vehicle and the Network.</strong><br><br>Driving growth, improving efficiencies and gaining competitive advantage whilst maximising the value for each of our customers.<br><br>Data Driven Automotive Business Intelligence given in modular, adaptable, customisable and flexible solutions by unrivalled automotive experts.
+				</p>
+			</div>			
+		</section>
+		<!-- END SECTION 3 - MAIN COMPANY DESCRIPTION -->
+		
+		<!-- START SECTION 4 - MAIN UON SERVICES -->
+		<section class="services">
+			<div class="container-services">
+				<h1>UON Services</h1>
+
+				<!-- START SERVICES CARDS -->
+				<ul class="container-services-cards">
+					<li>
+						<a href="UON-Services-Software-Development.html">
+							<div class="services-card">
+								<div>
+									<img src="elements\Home Page\UON Services\Software Development_Icon.svg">
+									<i class="fas fa-arrow-right"></i>
+								</div>							
+								<h4>Software Development</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="UON-Services-Business-Consulting.html">
+							<div class="services-card">
+								<div>
+									<img src="elements\Home Page\UON Services\Business Consulting_Icon.svg">
+									<i class="fas fa-arrow-right"></i>
+								</div>							
+								<h4>Business Consulting</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="UON-Services-Data-Analytics.html">
+							<div class="services-card">
+								<div>
+									<img src="elements\Home Page\UON Services\Data Analytics_Icon.svg">
+									<i class="fas fa-arrow-right"></i>
+								</div>							
+								<h4>Data Analytics</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="UON-Services-Business-Intelligence.html">
+							<div class="services-card">
+								<div>
+									<img src="elements\Home Page\UON Services\Business Intelligence _Icon.svg">
+									<i class="fas fa-arrow-right"></i>
+								</div>							
+								<h4>Business Intelligence</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="UON-Services-Software-Solutions.html">
+							<div class="services-card">
+								<div>
+									<img src="elements\Home Page\UON Services\Software Solutions_Icon.svg">
+									<i class="fas fa-arrow-right"></i>
+								</div>							
+								<h4>Software Solutions</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- END SERVICES CARDS -->
+			
+			</div>	
+		</section>
+		<!-- END SECTION 4 - MAIN UON SERVICES -->
+
+		<!-- START SECTION 5A - MAIN UON SOLUTIONS DESKTOP-->
+		<section class="solutions-desktop">
+			<h1>UON View: Modular Software Solutions</h1>
+			<div class="tabs-panels-container">
+
+				<input class="radio" type="radio" name="radio-group-desktop" id="radio-1" checked>
+				<input class="radio" type="radio" name="radio-group-desktop" id="radio-2">
+				<input class="radio" type="radio" name="radio-group-desktop" id="radio-3">
+				<input class="radio" type="radio" name="radio-group-desktop" id="radio-4">
+				
+				<div class="tabs">
+					<label class="lbl-tabs" id="lbl-tab-1" for="radio-1">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Customer Management_Cube.svg">
+							<h1>Customer</h1>
+							<h2>Management</h2>							
+						</div>
+					</label>
+					<label class="lbl-tabs" id="lbl-tab-2" for="radio-2">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Dealer Management_Cube.svg">
+							<h1>Dealer</h1>
+							<h2>Management</h2>							
+						</div>
+					</label>
+					<label class="lbl-tabs" id="lbl-tab-3" for="radio-3">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Marketing Management_Cube.svg">
+							<h1>Maketing</h1>
+							<h2>Management</h2>							
+						</div>
+					</label>
+					<label class="lbl-tabs" id="lbl-tab-4" for="radio-4">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Sales Management_Cube.svg">
+							<h1>Sales</h1>
+							<h2>Management</h2>							
+						</div>
+					</label>
+				</div>
+
+				<div class="panels">
+					<div class="panel" id="panel-1">
+						<h1>Improving <span class="highlight">Customer Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Nurture View.svg">	
+						  			</div>
+									<h4>Nurture View</h4>					
+									<p>Lead Nurturing to Optimise Closing Ratios</p>	
+									<a href="UON-Solutions-Nurture-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage leads and opportunities with our CRM tool - Nurture View</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">	
+						  			</div>
+									<h4>Dealer View</h4>					
+									<p>Integrated Franchise Management</p>	
+									<a href="UON-Solutions-Dealer-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Minimise customer frustration and get early warning on product issues - Vehicle off Road</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Case management, resolution and tracking with Customer Care</h2>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Ensure quicker parts Part Order Fulfilment and optimise parts inventory - Parts Locator, Parts Ticketing, Parts Pricing within our Parts View modules</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Fleet View.svg">	
+						  			</div>
+									<h4>Fleet View</h4>					
+									<p>Corporate Client Management</p>	
+									<a href="UON-Solutions-Fleet-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Manage interactions with your fleets and corporate clients with Fleet View</h2>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-2">
+						<h1>Managing <span class="highlight">Dealer Performance</h1>
+						<p>Drive internal efficiencies through integration and automation (transparency, actionable insights?) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">	
+						  			</div>
+									<h4>Dealer View</h4>					
+									<p>Integrated Franchise Management</p>	
+									<a href="UON-Solutions-Dealer-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage network performance across departments with Dealer View.</h2>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Ensure consistent CI and Customer Experience using the online Assessments and Auditing tool.</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Manage the field staff effectiveness with Scheduler - the Dealer Visitation tool.</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Financial View.svg">	
+						  			</div>
+									<h4>Financial View</h4>					
+									<p>Financial Reporting</p>	
+									<a href="UON-Solutions-Financial-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Measure Dealer financial performance with Financial View</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Training View.svg">	
+						  			</div>
+									<h4>Training View</h4>					
+									<p>Training and Capacity Management</p>	
+									<a href="UON-Solutions-Training-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Track capacity and training, scope and depth measurement with Training View</h2>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-3">
+						<h1>Improving <span class="highlight">Marketing Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content row">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Market View.svg">	
+						  			</div>
+									<h4>Market View</h4>					
+									<p>Comprehensive Marketing Toolkit</p>	
+									<a href="UON-Solutions-Market-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text-row">
+									<div class="text">
+										<h1>01</h1>
+										<h2>Measure marketing efficacy and return on investment and sales using Market View Marketing Dashboards</h2>
+									</div>
+									<div class="text">
+										<h1>02</h1>
+										<h2>With a holistic marketing toolkit, Market View offers ad builders, template creation, digital asset library, marketing approval and claim workflow and agency asset processes</h2>
+									</div>
+									<div class="text">
+										<h1>03</h1>
+										<h2>Improve customer retention and loyalty and manage Service Interventions with our Service Leads module</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel-4">
+						<h1>Improving <span class="highlight">Sales Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Sales View.svg">	
+						  			</div>
+									<h4>Sales View</h4>					
+									<p>Linking the Customer, Vehicle and Competitor</p>	
+									<a href="UON-Solutions-Sales-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage forecasting forward planning through xxxx</h2>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Integrate stock, sales and lead information xxx predictive analytics</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Understand competitor activity and match this to media spend and buyer profiles and interest.</h2>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Online sales platform</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Location View.svg">	
+						  			</div>
+									<h4>Location View</h4>					
+									<p>Dealer Location Optimisation (GIS)</p>	
+									<a href="UON-Solutions-Location-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Understand where your network should be located and overlay this with the sales potential and throughput using complex GIS tool - Location View</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SECTION 5A - MAIN UON SOLUTIONS DESKTOP-->
+
+		<!-- START SECTION 5B - MAIN UON SOLUTIONS MOBILE-->
+		<section class="solutions-mobile">
+			<h1>UON View:</h1>
+			<h2>Modular Software Solutions</h2>
+			<div class="tabs-panels-container">
+
+				<input class="radio" type="radio" name="radio-group-mobile" id="radio-mobile-1" checked>
+				<input class="radio" type="radio" name="radio-group-mobile" id="radio-mobile-2">
+				<input class="radio" type="radio" name="radio-group-mobile" id="radio-mobile-3">
+				<input class="radio" type="radio" name="radio-group-mobile" id="radio-mobile-4">
+
+				<div class="tabs-menu">
+					<label class="lbl-tabs-menu" id="lbl-tab-menu-mobile-1" for="radio-mobile-1">
+						<h2>Customer View</h2>
+					</label>
+										
+					<label class="lbl-tabs-menu" id="lbl-tab-menu-mobile-2" for="radio-mobile-2">
+						<h2>Dealer View</h2>
+					</label>
+					
+					<label class="lbl-tabs-menu" id="lbl-tab-menu-mobile-3" for="radio-mobile-3">
+						<h2>Market View</h2>
+					</label>
+					
+					<label class="lbl-tabs-menu" id="lbl-tab-menu-mobile-4" for="radio-mobile-4">
+						<h2>Sales View</h2>
+					</label>
+				</div>
+
+				<div class="tabs">
+					
+					<label class="lbl-tabs" id="lbl-tab-mobile-1" for="radio-mobile-1">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Customer Management_Cube.svg">
+							<h1>Customer View</h1>
+							<i class="fas fa-chevron-right navlink-arrow"></i>					
+						</div>
+					</label>
+					<div class="panel" id="panel-mobile-1">
+						<h1>Improving <span class="highlight">Customer Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Nurture View.svg">	
+						  			</div>
+									<h4>Nurture View</h4>					
+									<p>Lead Nurturing to Optimise Closing Ratios</p>	
+									<a href="UON-Solutions-Nurture-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage leads and opportunities with our CRM tool - Nurture View</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">	
+						  			</div>
+									<h4>Dealer View</h4>					
+									<p>Integrated Franchise Management</p>	
+									<a href="UON-Solutions-Dealer-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Minimise customer frustration and get early warning on product issues - Vehicle off Road</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Case management, resolution and tracking with Customer Care</h2>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Ensure quicker parts Part Order Fulfilment and optimise parts inventory - Parts Locator, Parts Ticketing, Parts Pricing within our Parts View modules</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Fleet View.svg">	
+						  			</div>
+									<h4>Fleet View</h4>					
+									<p>Corporate Client Management</p>	
+									<a href="UON-Solutions-Fleet-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Manage interactions with your fleets and corporate clients with Fleet View</h2>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+					<label class="lbl-tabs" id="lbl-tab-mobile-2" for="radio-mobile-2">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Dealer Management_Cube.svg">
+							<h1>Dealer View</h1>
+							<i class="fas fa-chevron-right navlink-arrow"></i>					
+						</div>
+					</label>
+					<div class="panel" id="panel-mobile-2">
+						<h1>Managing <span class="highlight">Dealer Performance</h1>
+						<p>Drive internal efficiencies through integration and automation (transparency, actionable insights?) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Dealer View.svg">	
+						  			</div>
+									<h4>Dealer View</h4>					
+									<p>Integrated Franchise Management</p>	
+									<a href="UON-Solutions-Dealer-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage network performance across departments with Dealer View.</h2>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Ensure consistent CI and Customer Experience using the online Assessments and Auditing tool.</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Manage the field staff effectiveness with Scheduler - the Dealer Visitation tool.</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Financial View.svg">	
+						  			</div>
+									<h4>Financial View</h4>					
+									<p>Financial Reporting</p>	
+									<a href="UON-Solutions-Financial-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Measure Dealer financial performance with Financial View</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Training View.svg">	
+						  			</div>
+									<h4>Training View</h4>					
+									<p>Training and Capacity Management</p>	
+									<a href="UON-Solutions-Training-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Track capacity and training, scope and depth measurement with Training View</h2>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+					<label class="lbl-tabs" id="lbl-tab-mobile-3" for="radio-mobile-3">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Marketing Management_Cube.svg">
+							<h1>Market View</h1>
+							<i class="fas fa-chevron-right navlink-arrow"></i>						
+						</div>
+					</label>
+					<div class="panel" id="panel-mobile-3">
+						<h1>Improving <span class="highlight">Marketing Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content row">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Market View.svg">	
+						  			</div>
+									<h4>Market View</h4>					
+									<p>Comprehensive Marketing Toolkit</p>	
+									<a href="UON-Solutions-Market-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text-row">
+									<div class="text">
+										<h1>01</h1>
+										<h2>Measure marketing efficacy and return on investment and sales using Market View Marketing Dashboards</h2>
+									</div>
+									<div class="text">
+										<h1>02</h1>
+										<h2>With a holistic marketing toolkit, Market View offers ad builders, template creation, digital asset library, marketing approval and claim workflow and agency asset processes</h2>
+									</div>
+									<div class="text">
+										<h1>03</h1>
+										<h2>Improve customer retention and loyalty and manage Service Interventions with our Service Leads module</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<label class="lbl-tabs" id="lbl-tab-mobile-4" for="radio-mobile-4">
+						<div class="tab">
+							<img src="elements\Home Page\UON View - Modular Software Solutions\Sales Management_Cube.svg">
+							<h1>Sales View</h1>
+							<i class="fas fa-chevron-right navlink-arrow"></i>						
+						</div>
+					</label>
+					<div class="panel" id="panel-mobile-4">
+						<h1>Improving <span class="highlight">Sales Experience</span> to drive customer <span class="highlight">retention</span> and <span class="highlight">loyalty</span></h1>
+						<p>Streamline customer service using our CRM and Customer Service related tools. Driving accountability and transparency through interactive xxx. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="contents">
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Sales View.svg">	
+						  			</div>
+									<h4>Sales View</h4>					
+									<p>Linking the Customer, Vehicle and Competitor</p>	
+									<a href="UON-Solutions-Sales-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>01</h1>
+									<h2>Manage forecasting forward planning through xxxx</h2>
+								</div>
+								<div class="text">
+									<h1>02</h1>
+									<h2>Integrate stock, sales and lead information xxx predictive analytics</h2>
+								</div>
+								<div class="text">
+									<h1>03</h1>
+									<h2>Understand competitor activity and match this to media spend and buyer profiles and interest.</h2>
+								</div>
+								<div class="text">
+									<h1>04</h1>
+									<h2>Online sales platform</h2>
+								</div>
+							</div>
+							<div class="content">
+						      	<div class="card">
+						  			<div class="image-container-solutions">
+						  				<img src="elements\Top Nav Bar\Drop Down Menu\Location View.svg">	
+						  			</div>
+									<h4>Location View</h4>					
+									<p>Dealer Location Optimisation (GIS)</p>	
+									<a href="UON-Solutions-Location-View.html">
+										<button class="btn-learnMore">Learn More<i class="fas fa-arrow-right"></i></button>
+									</a>
+								</div>
+								<div class="text">
+									<h1>05</h1>
+									<h2>Understand where your network should be located and overlay this with the sales potential and throughput using complex GIS tool - Location View</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SECTION 5B - MAIN UON SOLUTIONS MOBILE-->
+
+		<!-- START SECTION 6 - MAIN PRODUCT RANGE -->
+		<section class="product-range">
+			<div class="image-box">
+				<img src="elements\Product Pages\UON WebSpider.png">
+			</div>
+			<div class="text-box">
+				<h1>Our Modular Software Solutions</h1>
+				<h2>Improve efficiencies, drive growth and gain competitive advantage through world-class integrated solutions.</h2>
+				<p>Our range of products are flexible, customisable and modular.</p>
+			</div>			
+		</section>
+		<!-- END SECTION 6 - MAIN PRODUCT RANGE -->
+		
+		<!-- START SECTION 7 - MAIN ARRANGE A DEMO -->
+		<section class="arrange-demo">
+			<h4>Move Your Franchised Network Forward</h4>
+			<a href="UON-Contact.html">
+				<button id="btn-demo-main">Arrange a Demo <i class="fas fa-arrow-right"></i></button>	
+			</a>
+		</section>
+		<!-- END SECTION 7 - MAIN ARRANGE A DEMO -->
+
+	</main>
+	<!-- END MAIN SECTIONS -->
+	
+	<!-- START SECTION 8 - FOOTER -->
+	<footer class="footer">
+		<div class="list-container">
+			<div class="list">
+				<div class="nav-logo"><a href="index.html"></a></div>
+				<div class="blank-content">.</div>
+				<div class="blank-content">.</div>
+				<a class="footer-nav-link" href="index.html">UON Global Ltd. 2021</a>
+			</div>
+			<div class="list">
+				<h3>Menu</h3>
+				<a class="footer-nav-link active" href="index.html">Home</a>
+				<a class="footer-nav-link" href="UON-Services-Software-Solutions.html">Solutions</a>
+				<a class="footer-nav-link" href="UON-About.html">About UON</a>
+			</div>
+			<div class="list">
+				<h3>Information</h3>
+				<ul>
+					<li class="link-nested">
+						<a class="footer-nav-link" href="UON-Terms-Of-Use.html">Terms of Use</a>
+					</li>
+					<li class="link-nested">/</li>
+					<li class="link-nested">
+						<a class="footer-nav-link" href="UON-Privacy-Policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+				<a class="footer-nav-link" href="UON-Insights.html">Insights</a>
+				<a class="footer-nav-link" href="UON-Careers.html">Careers</a>
+			</div>
+			<div class="list">
+				<h3>Contact Us</h3>
+				<a href="UON-Contact.html" class="footer-nav-link">sales@uon.global</a>
+				<div class="blank-content">.</div>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END SECTION 8 - FOOTER -->
+	
+	<!-- CUSTOM JAVASCRIPT -->
+	<!-- <script type="text/javascript" src="scripts/scripts-UON-Home.js"></script> -->
+
+	<!-- WEBSITE BUILD BY Krishan.Naidoo912@gmail.com and Mark.Davies@uon.global -->
+
+</body>
+</html>

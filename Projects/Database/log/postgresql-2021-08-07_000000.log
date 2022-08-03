@@ -1,0 +1,5 @@
+2021-08-12 03:29:20.804 CAT [7716] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-08-12 09:07:25.994 CAT [3444] LOG:  autovacuum launcher process (PID 7716) exited with exit code 1
+2021-08-12 09:07:25.999 CAT [3444] LOG:  terminating any other active server processes
+2021-08-12 09:07:27.094 CAT [3444] LOG:  all server processes terminated; reinitializing
+2021-08-12 09:07:28.662 CAT [7700] LOG:  database system was interrupted; last known up at 2021-07-26 10:02:09 CAT
